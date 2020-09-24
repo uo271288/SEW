@@ -1,0 +1,4 @@
+<!-- la carpeta de recursos gráficos "images" debe estar en el misma carpeta del archivo -->
+<a href=" http://jigsaw.w3.org/css-validator/check/referer ">
+            <img src="images/CSS3.png"
+            alt="CSS Válido!" height="63" width="64"/></a>

@@ -1,0 +1,3 @@
+<!-- la carpeta de recursos gráficos "images" debe estar en el misma carpeta del archivo -->
+      <a href="https://validator.w3.org/check?uri=referer">
+        <img src="images/HTML5.png" alt=" HTML5 Válido!" /></a>

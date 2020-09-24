@@ -1,0 +1,14 @@
+body {
+      font: 400 15px Tahoma; /*Familia sans-serif*/
+      line-height: 1.8;
+      color: #818181;
+  }
+h1 {
+      background-color:#FF5733; 
+      color: #fff;
+      text-transform: uppercase;
+      padding: 100px 25px;
+      text-align: center;     
+  }
+
+
