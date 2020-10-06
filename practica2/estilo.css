@@ -1,0 +1,67 @@
+body 
+{
+    font: 400 15px Papyrus,fantasy;
+    color: white;
+    line-height: 1.8;
+    background-color: black;
+    background: url("img/background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+p
+{
+    text-align: justify;
+}
+
+h1 
+{
+    text-transform: uppercase;
+    padding: 5px;
+    text-align: center;
+}
+
+h2
+{
+    padding: 10px;
+    text-align: center;
+}
+
+section
+{
+    padding-right: 100px;
+    padding-left: 100px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+table
+{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,td
+{
+    height: 100%;
+    border: 1px;
+    border-style: solid;
+    border-color: white;
+    text-align: center;
+}
+
+
+ul
+{
+    list-style: none;
+    padding-left: 0px;
+}
+
+footer
+{
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    text-align: center;
+}
