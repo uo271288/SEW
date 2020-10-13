@@ -1,9 +1,9 @@
 /*0001*/
 body 
 {
-    font: 400 15px Papyrus,fantasy;
+    font: 400 0.938em Papyrus,fantasy;
     color: white;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    text-shadow: -0.063em 0 black, 0 0.063em black, 0.063em 0 black, 0 -0.063em black;
     line-height: 1.8;
     background-color: black;
     background: url("img/background.jpg");
@@ -21,24 +21,24 @@ p
 h1 
 {
     text-transform: uppercase;
-    padding: 5px;
+    padding: 0.313em;
     text-align: center;
 }
 
 /*0001*/
 h2
 {
-    padding: 10px;
+    padding: 0.625em;
     text-align: center;
 }
 
 /*0001*/
 section
 {
-    padding-right: 100px;
-    padding-left: 100px;
-    padding-top: 20px;
-    padding-bottom: 10px;
+    padding-right: 6.25em;
+    padding-left: 6.25em;
+    padding-top: 1.25em;
+    padding-bottom: 0.625em;
 }
 
 /*0001*/
@@ -52,7 +52,7 @@ table
 th,td
 {
     height: 100%;
-    border: 1px;
+    border: 0.063em;
     border-style: solid;
     border-color: white;
     text-align: center;
@@ -62,14 +62,14 @@ th,td
 ul
 {
     list-style: none;
-    padding-left: 0px;
+    padding-left: 0em;
 }
 
 /*0001*/
 footer
 {
-    left: 0px;
-    bottom: 0px;
+    left: 0em;
+    bottom: 0em;
     width: 100%;
     text-align: center;
 }
