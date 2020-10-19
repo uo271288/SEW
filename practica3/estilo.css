@@ -3,19 +3,21 @@ body
 {
     font: 400 0.938em Papyrus,fantasy;
     color: white;
-    text-shadow: -0.063em 0 black, 0 0.063em black, 0.063em 0 black, 0 -0.063em black;
     line-height: 1.8;
-    background-color: black;
-    background: url("img/background.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: #2D383A;
+}
+
+/*0001*/
+a
+{
+    color: #D2C880;
+    text-decoration: none;
 }
 
 /*0001*/
 p
 {
     font-size: 1.1em;
-    text-align: justify;
 }
 
 /*0001*/
