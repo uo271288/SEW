@@ -1,43 +1,60 @@
 /*0001*/
-body 
-{
-    font: 400 0.938em Papyrus,fantasy;
-    color: white;
+body {
+    font: 400 0.938em Papyrus, fantasy;
     line-height: 1.8;
     background-color: #2D383A;
+    color: white;
+}
+
+/*0002*/
+nav > ul {
+    display: flex;
+    justify-content: space-between;
 }
 
 /*0001*/
-a
-{
+a {
+    background-color: inherit;
     color: #D2C880;
     text-decoration: none;
 }
 
+/*0011*/
+a:link,
+/*0011*/
+a:visited {
+    background-color: inherit;
+    color: #D2C880;
+}
+
+/*0011*/
+a:hover,
+/*0011*/
+a:active {
+    background-color: inherit;
+    color: #D2C000;
+}
+
 /*0001*/
-p
-{
+p {
     font-size: 1.1em;
 }
 
 /*0001*/
-h1 
-{
+h1 {
     text-transform: uppercase;
     padding: 0.313em;
     text-align: center;
 }
 
 /*0001*/
-h2
-{
+h2 {
     padding: 0.625em;
     text-align: center;
 }
 
 /*0001*/
-section
-{
+section {
     padding-right: 6.25em;
     padding-left: 6.25em;
     padding-top: 1.25em;
@@ -45,15 +62,15 @@ section
 }
 
 /*0001*/
-table
-{
+table {
     width: 100%;
     border-collapse: collapse;
 }
 
 /*0001*/
-th,td
-{
+/*0001*/
+th,
+td {
     height: 100%;
     border: 0.063em;
     border-style: solid;
@@ -62,15 +79,13 @@ th,td
 }
 
 /*0001*/
-ul
-{
+ul {
     list-style: none;
     padding-left: 0em;
 }
 
 /*0001*/
-footer
-{
+footer {
     left: 0em;
     bottom: 0em;
     width: 100%;
@@ -78,34 +93,29 @@ footer
 }
 
 /*0001*/
-figure
-{
+figure {
     display: inline-block;
 }
 
 /*0002*/
-figure img
-{
+figure > img {
     width: 15.625em;
     height: 23.438em;
 }
 
 /*0002*/
-figcaption img
-{
+figcaption > img {
     width: 1.25em;
     height: 1.25em;
 }
 
 /*0001*/
-audio
-{
+audio {
     width: 90%;
 }
 
 /*0001*/
-video
-{
+video {
     width: 50%;
     height: 50%;
 }
