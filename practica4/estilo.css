@@ -23,7 +23,7 @@ nav strong {
 /*001*/
 a {
     background-color: inherit;
-    color: #D2C880;
+    color: #DECD9E;
     text-decoration: none;
 }
 
@@ -32,7 +32,7 @@ a:link,
 /*011*/
 a:visited {
     background-color: inherit;
-    color: #D2C880;
+    color: #DECD9E;
 }
 
 /*011*/
@@ -40,7 +40,7 @@ a:hover,
 /*011*/
 a:active {
     background-color: inherit;
-    color: #D2C000;
+    color: #E3D7B7;
 }
 
 /*001*/
