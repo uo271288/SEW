@@ -1,0 +1,11 @@
+/*100*/
+#poesias :not(.poesiaElfica) {
+    display: flex;
+    flex-flow: column;
+}
+
+/*010*/
+.lamento {
+    display: flex;
+    flex-flow: column;
+}
