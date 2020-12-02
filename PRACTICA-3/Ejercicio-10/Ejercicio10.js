@@ -7,6 +7,8 @@ class Cambio {
                 format: "json"
             })
             .done(function(data) {
+                $("table").remove();
+                $("body").append("<table><tr><th>Conversion</th><th>Valor</th></tr></table>");
                 $.each(data, function(i, item) {
                     $("table").append("<tr><td>" + i + "</td><td>" + item + "</td></tr>");
                 });
