@@ -27,9 +27,13 @@ class Calculadora {
         document.getElementById("precio").value = "";
     }
     calcular() {
+        var table = document.createElement('table');
+        table.id = 'tabla';
+        document.getElementsByTagName("body")[0].appendChild(table);
         document.getElementById("tabla").outerHTML = '<table id="tabla"><tr><th>Electrodoméstico</th><th>Precio</th></tr></table>';
         var total = 0.0;
         for (var electrodomestico of this.electrodomesticos) {
+
             document.getElementById("tabla").innerHTML += "<tr><td>" + electrodomestico.getNombre() + "</td><td>" + electrodomestico.getConsumo() + " €/h</td></tr>";
             total += electrodomestico.getConsumo();
         }
