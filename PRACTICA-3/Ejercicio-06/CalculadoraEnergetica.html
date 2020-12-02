@@ -12,14 +12,16 @@
 
 <body>
     <h1>Calculadora de consumo energético de una vivienda</h1>
-    <label for="electrodomestico">Electrodoméstico:</label>
-    <input id="electrodomestico" type="text">
-    <label for="potencia">Potencia:</label>
-    <input id="potencia" type="number">
-    <label for="precio">Precio:</label>
-    <input id="precio" type="number">
-    <button id="annadir" onclick="calculadora.annadir()">Añadir electrodoméstico</button>
-    <button id="calcular" onclick="calculadora.calcular()">Calcular</button>
+    <div>
+        <label for="electrodomestico">Electrodoméstico:</label>
+        <input id="electrodomestico" type="text">
+        <label for="potencia">Potencia:</label>
+        <input id="potencia" type="number">
+        <label for="precio">Precio:</label>
+        <input id="precio" type="number">
+        <button id="annadir" onclick="calculadora.annadir()">Añadir electrodoméstico</button>
+        <button id="calcular" onclick="calculadora.calcular()">Calcular</button>
+    </div>
     <table id="tabla">
         <tr>
             <th>Electrodoméstico</th>

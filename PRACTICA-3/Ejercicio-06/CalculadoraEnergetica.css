@@ -34,3 +34,9 @@ td {
     border: 0.063em;
     text-align: right;
 }
+
+div {
+    width: 10em;
+    display: grid;
+    gap: 1em;
+}
