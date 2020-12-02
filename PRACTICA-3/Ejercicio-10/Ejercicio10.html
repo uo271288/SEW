@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width">
+    <meta name="author" content="Alejandro Álvarez Varela UO271288">
+    <title>jQuery y JSON</title>
+    <link rel="stylesheet" type="text/css" href="Ejercicio10.css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="Ejercicio10.js"></script>
+</head>
+
+<body>
+    <h1>Cambio de divisa <a href="https://www.currencyconverterapi.com">Currency converter</a></h1>
+    <button id="EUR_USD" onclick="cambio.cambio('EUR_USD')">Euro a Dólar estadounidense</button>
+    <button id="EUR_PHP" onclick="cambio.cambio('EUR_PHP')">Euro a Peso filipino</button>
+    <button id="EUR_AED" onclick="cambio.cambio('EUR_AED')">Euro a Dirham de los Emiratos Árabes Unidos</button>
+    <button id="EUR_AFN" onclick="cambio.cambio('EUR_AFN')">Euro a Afgani afgano</button>
+    <button id="EUR_ZAR" onclick="cambio.cambio('EUR_ZAR')">Euro a Rand sudafricano</button>
+    <button id="EUR_MRO" onclick="cambio.cambio('EUR_MRO')">Euro a Uguiya mauritana</button>
+
+    <table>
+        <tr>
+            <th>Conversion</th>
+            <th>Valor</th>
+        </tr>
+    </table>
+</body>
+
+</html>

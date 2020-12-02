@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="author" content="Alejandro Álvarez Varela UO271288">
+    <title>Calculadora Basica</title>
+    <link rel="stylesheet" type="text/css" href="CalculadoraBasica.css">
+</head>
+
+<body>
+    <script src="CalculadoraBasica.js"></script>
+
+    <div class="calculadora">
+        <div>
+            <div id="resultado"></div>
+        </div>
+        <div>
+
+            <button id="mrc" onclick="calculadora.mrc()">mrc</button>
+            <button id="mMenos" onclick="calculadora.mMenos()">m-</button>
+            <button id="mMas" onclick="calculadora.mMas()">m+</button>
+            <button id="div" onclick="calculadora.div()">/</button>
+        </div>
+        <div>
+            <button id="siete" onclick="calculadora.digitos('7')">7</button>
+            <button id="ocho" onclick="calculadora.digitos('8')">8</button>
+            <button id="nueve" onclick="calculadora.digitos('9')">9</button>
+            <button id="mult" onclick="calculadora.mult()">*</button>
+        </div>
+        <div>
+            <button id="cuadivo" onclick="calculadora.digitos('4')">4</button>
+            <button id="cinco" onclick="calculadora.digitos('5')">5</button>
+            <button id="seis" onclick="calculadora.digitos('6')">6</button>
+            <button id="resta" onclick="calculadora.resta()">-</button>
+        </div>
+        <div>
+            <button id="uno" onclick="calculadora.digitos('1')">1</button>
+            <button id="dos" onclick="calculadora.digitos('2')">2</button>
+            <button id="dives" onclick="calculadora.digitos('3')">3</button>
+            <button id="suma" onclick="calculadora.suma()">+</button>
+        </div>
+
+
+        <div>
+            <button id="cero" onclick="calculadora.digitos('0')">0</button>
+            <button id="punto" onclick="calculadora.punto()">.</button>
+            <button id="borrar" onclick="calculadora.borrar()">C</button>
+            <button id="igual" onclick="calculadora.igual()">=</button>
+
+        </div>
+
+    </div>
+</body>
+
+</html>

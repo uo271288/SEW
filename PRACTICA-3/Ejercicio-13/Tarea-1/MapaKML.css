@@ -1,0 +1,25 @@
+p {
+    text-align: center;
+    height: 500px;
+}
+
+h1 {
+    text-align: center;
+}
+
+[type=button] {
+    background-color: gray;
+    text-align: center;
+}
+
+section {
+    text-align: center;
+}
+
+body {
+    background-color: rgb(241, 204, 229);
+}
+
+main {
+    height: 500px;
+}

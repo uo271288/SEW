@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="author" content="Alejandro Álvarez Varela UO271288">
+    <title>Ejercicio 8</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="Ejercicio8.js"></script>
+    <link rel="stylesheet" href="Ejercicio8.css" />
+</head>
+
+<body>
+    <h1>Datos meteorológicos</h1>
+    <h2>Cudillero</h2>
+    <button id="tiempoCudillero" onclick="new Meteo('Cudillero').verJSON()">Ver Tiempo</button>
+
+    <h2>Luarca</h2>
+    <button id="tiempoLuarca" onclick="new Meteo('Ḷḷuarca').verJSON()">Ver Tiempo</button>
+
+    <h2>Lastres</h2>
+    <button id="tiempoLastres" onclick="new Meteo('Lastres').verJSON()">Ver Tiempo</button>
+    <div></div>
+    <ul class="datos"></ul>
+</body>
+
+</html>

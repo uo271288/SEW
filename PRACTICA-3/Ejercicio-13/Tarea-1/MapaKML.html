@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Hugo Diaz Noriega UO270889">
+    <meta name="descripcion" content="Procesamiento de archivos .KML" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 13</title>
+    <link rel="stylesheet" type="text/css" href="MapaKML.css" />
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAtF0HSYfDaXjyc_GcuBioFAfXEa3Gpaj4&v=3.exp"></script>
+    <script src="MapaKML.js"></script>
+</head>
+
+<body>
+    <main>
+        <h1>Servicio de geolocalizacion de KML</h1>
+        <input id="archivosSubidos" type="file" name="Archivos" onchange="mapa.procesar(this.files)">
+        <section id="mapa">
+            <h2>Mapa dinamico del KML</h2>
+            <p id="map"></p>
+        </section>
+    </main>
+</body>
+
+</html>

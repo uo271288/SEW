@@ -1,0 +1,65 @@
+/*001*/
+
+body {
+    background-color: white;
+    color: lightgray;
+}
+
+
+/*001*/
+
+h1 {
+    background-color: white;
+    text-align: center;
+    color: green;
+}
+
+
+/*001*/
+
+h2 {
+    background-color: white;
+    text-align: left;
+    color: blue;
+}
+
+
+/*001*/
+
+h3 {
+    background-color: white;
+    text-align: center;
+    color: red;
+}
+
+
+/*001*/
+
+h4 {
+    background-color: white;
+    color: goldenrod;
+}
+
+
+/*001*/
+
+p {
+    background-color: white;
+    color: gray;
+}
+
+
+/*001*/
+
+button {
+    position: relative;
+    cursor: pointer;
+    width: 150px;
+    height: 40px;
+    background: lightslategray;
+    border-radius: 33px;
+    margin: 0px 7px 11px 1px;
+    color: white;
+    line-height: 36px;
+    text-align: center;
+}

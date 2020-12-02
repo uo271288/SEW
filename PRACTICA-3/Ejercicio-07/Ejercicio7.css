@@ -1,0 +1,73 @@
+/*001*/
+
+body {
+    font: 400 0.938em Papyrus, fantasy;
+    line-height: 1.8;
+    background-color: #2D383A;
+    color: white;
+}
+
+
+/*001*/
+
+p {
+    font-size: 1.1em;
+}
+
+
+/*001*/
+
+h1 {
+    text-transform: uppercase;
+    padding: 0.313em;
+    text-align: center;
+}
+
+
+/*001*/
+
+h2 {
+    padding: 0.625em;
+    text-align: center;
+}
+
+
+/*001*/
+
+section {
+    padding-right: 6.25em;
+    padding-left: 6.25em;
+    padding-top: 1.25em;
+    padding-bottom: 0.625em;
+}
+
+
+/*001*/
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+
+/*001*/
+
+th,
+
+/*001*/
+
+td {
+    height: 100%;
+    border: 0.063em;
+    border-style: solid;
+    border-color: white;
+    text-align: center;
+}
+
+
+/*001*/
+
+input {
+    color: white;
+    background-color: #2D383A;
+}
