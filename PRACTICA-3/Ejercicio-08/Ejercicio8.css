@@ -1,12 +1,7 @@
-/*001*/
-
 body {
     background-color: white;
     color: lightgray;
 }
-
-
-/*001*/
 
 h1 {
     background-color: white;
@@ -14,17 +9,11 @@ h1 {
     color: green;
 }
 
-
-/*001*/
-
 h2 {
     background-color: white;
     text-align: left;
     color: blue;
 }
-
-
-/*001*/
 
 h3 {
     background-color: white;
@@ -32,34 +21,25 @@ h3 {
     color: red;
 }
 
-
-/*001*/
-
 h4 {
     background-color: white;
     color: goldenrod;
 }
-
-
-/*001*/
 
 p {
     color: gray;
     background-color: white;
 }
 
-
-/*001*/
-
 button {
     position: relative;
     cursor: pointer;
     width: 150px;
     height: 40px;
-    background: lightslategray;
+    background: lightgray;
     border-radius: 33px;
     margin: 0px 7px 11px 1px;
-    color: white;
+    color: black;
     line-height: 36px;
     text-align: center;
 }
