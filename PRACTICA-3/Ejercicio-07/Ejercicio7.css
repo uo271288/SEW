@@ -71,3 +71,9 @@ input {
     color: white;
     background-color: #2D383A;
 }
+
+div {
+    width: 10em;
+    display: flex;
+    gap: 1em;
+}
