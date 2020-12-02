@@ -37,10 +37,12 @@ td {
 button {
     position: relative;
     cursor: pointer;
-    background: lightslategray;
+    width: 150px;
+    height: 40px;
+    background: lightgray;
     border-radius: 33px;
     margin: 0px 7px 11px 1px;
-    color: white;
+    color: black;
     line-height: 36px;
     text-align: center;
 }
