@@ -56,10 +56,10 @@ button {
     cursor: pointer;
     width: 150px;
     height: 40px;
-    background: lightslategray;
+    background: lightgray;
     border-radius: 33px;
     margin: 0px 7px 11px 1px;
-    color: white;
+    color: black;
     line-height: 36px;
     text-align: center;
 }
