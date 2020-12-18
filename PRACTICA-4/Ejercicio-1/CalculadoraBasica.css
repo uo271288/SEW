@@ -1,0 +1,74 @@
+/*010*/
+
+.calculadora {
+    display: grid;
+    margin: 0.125em;
+    padding: 1em;
+    background-color: rgb(48, 48, 48);
+    color: white;
+    width: 17.1em;
+    height: 30em;
+    border-radius: 0.625em;
+}
+
+
+/*012*/
+
+button {
+    width: 2.5em;
+    height: 2.5em;
+    font-size: 1.563em;
+    margin-right: 0.1em;
+    background-color: lightcyan;
+    color: black;
+}
+
+
+/*100*/
+
+#resultado {
+    text-align: right;
+    font-size: 2.5em;
+    margin-bottom: 1em;
+    width: 6.7em;
+    height: 3em;
+    background-color: rgb(218, 213, 148);
+    overflow-x: scroll;
+    color: black;
+}
+
+
+/*100*/
+
+#div,
+
+/*100*/
+
+#mult,
+
+/*100*/
+
+#resta,
+
+/*100*/
+
+#suma {
+    background-color: rgb(224, 75, 75);
+    color: black;
+}
+
+
+/*100*/
+
+#mrc,
+
+/*100*/
+
+#mMenos,
+
+/*100*/
+
+#mMas {
+    background-color: gold;
+    color: black;
+}

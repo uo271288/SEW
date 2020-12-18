@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+	<head>
+		<meta charset="UTF-8"/>
+		<title>Busca datos</title>
+		<meta name="author" content="Alejandro Álvarez Varela UO271288">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="Ejercicio7.css" rel="stylesheet" />
+	</head>
+
+	<body>
+		<h1>Gestión BBDD MySQL con PHP</h1>
+		<h2>Menú para gestionar la BBDD:</h2>
+		<nav>
+			<ul>
+				<li><a href="CreaBBDD.php" title="Crear Base de Datos">Crear Base de Datos</a></li>
+				<li><a href="InsertarDatos.php" title="Insertar Datos">Insertar datos</a></li>
+				<li><a href="EliminarDatos.php" title="Eliminar Datos Introducidos">Eliminar datos</a></li>
+			</ul>
+		</nav>
+		<h1>Buscar introducidos</h1>
+		<form id="formbase" action='#' method='post'>
+			Pulse para mostrar los datos almacenados:
+			<input type='submit' class='button' name='buscar' value='Mostrar'/>
+		</form>
+		<?php
+			require('BaseDatos.php');
+			$base = new BaseDatos();
+				if (count($_POST)>0)
+					if(isset($_POST['buscar']))     {
+						$base->buscarAlumno();
+						$base->buscarMateria();
+						$base->buscarAsistencia();
+					}
+		?>
+	</body>
+</html>

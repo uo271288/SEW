@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+	<head>
+		<meta charset="UTF-8"/>
+		<title>Eliminar datos</title>
+		<meta name="author" content="Alejandro Álvarez Varela UO271288">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="Ejercicio7.css" rel="stylesheet" />
+	</head>
+
+	<body>
+		<h1>Gestión BBDD MySQL con PHP</h1>
+		<h2>Menú para gestionar la BBDD:</h2>
+		<nav>
+			<ul>
+				<li><a href="CreaBBDD.php" title="Crear Base de Datos">Crear Base de Datos</a></li>
+				<li><a href="InsertarDatos.php" title="Insertar Datos de prueba">Insertar datos</a></li>
+				<li><a href="BuscarDatos.php" title="BuscarDatosTabla">Buscar datos en una tabla</a></li>
+			</ul>
+		</nav>
+		<h1>Eliminar dato introducido</h1>
+		<form id="formbase" action='#' method='post'>
+			<p>Id del elemento a eliminar:</p>
+			<input type='text' class='text' name='id'/> <br>
+			<input type='submit' class='button' name='eliminara' value='Eliminar alumno'/> <br>
+			<input type='submit' class='button' name='eliminarm' value='Eliminar materia'/> <br>
+			<input type='submit' class='button' name='eliminaras' value='Eliminar asistencia'/>
+		</form>
+		<?php
+			require('BaseDatos.php');
+			$base = new BaseDatos();
+
+			if (count($_POST)>0)
+				if(isset($_POST['eliminara']))
+					$base->borrarAlumno();
+				if(isset($_POST['eliminarm']))
+					$base->borrarMateria();
+				if(isset($_POST['eliminaras']))
+					$base->borrarAsistencia();
+		?>
+	</body>
+</html>
