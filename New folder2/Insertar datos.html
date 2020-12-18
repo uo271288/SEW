@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+	<head>
+		<meta charset="UTF-8"/>
+		<title>Insertar datos</title>
+		<meta name="author" content="Alejandro Álvarez Varela UO271288">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="Ejercicio7.css" rel="stylesheet" />
+	</head>
+
+	<body>
+		<h1>Gestión BBDD MySQL con PHP</h1>
+		<h2>Menú para gestionar la BBDD:</h2>
+		<nav>
+			<ul>
+				<li><a href="CreaBBDD.php" title="Crear Base de Datos">Crear Base de Datos</a></li>
+				<li><a href="BuscarDatos.php" title="Buscar Datos Introducidos">Buscar datos</a></li>
+				<li><a href="EliminarDatos.php" title="Eliminar Datos Introducidos">Eliminar datos</a></li>
+			</ul>
+		</nav>
+		<h1>Complete los datos a insertar</h1>
+		<form id="formbase" action='#' method='post'>
+			<h2>Alumno:</h2>
+			<label for="namea">Nombre del alumno:</label>
+				<input id="namea" type='text' class='text' name='nombrea'/>
+				<br>
+				<label for="edad">Edad del alumno:</label>
+				<input id="edad" type='number' class='text' name='edad'/>
+				<br>
+			<input type='submit' class='button' name='insertara' value='Insertar datos alumno'/>
+			<h2>Materia:</h2>
+			<label for="nombrem">Nombre de la materia:</label>
+				<input id="nombrem" type='text' class='text' name='nombrem'/>
+				<br>
+			<label for="departamento">Departamento de la materia</label>
+				<input id="departamento" type='text' class='text' name='departamento'/>
+				<br>
+			<input type='submit' class='button' name='insertarm' value='Insertar datos materia'/>
+			<h2>Asistencia:</h2>
+			<label for="nota">Nota:</label>
+				<input id="nota" type='number' class='text' name='nota'/>
+				<br>
+				<label for="idalumno">Id del alumno:</label>
+				<input id="idalumno" type='text' class='text' name='idalumno'/>
+				<br>
+				<label for="idmateria">Id de la materia:</label>
+				<input id="idmateria" type='text' class='text' name='idmateria'/>
+				<br>
+			<input type='submit' class='button' name='insertaras' value='Insertar datos asistencia'/>
+		</form>
+
+			</body>
+</html>
