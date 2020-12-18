@@ -1,0 +1,135 @@
+/*010*/
+
+.calculadora {
+    display: grid;
+    margin: 0.125em;
+    padding: 1em;
+    background-color: rgb(48, 48, 48);
+    width: 22.9em;
+    height: 43em;
+    border-radius: 0.625em;
+    color: white;
+}
+
+
+/*012*/
+
+button {
+    width: 2.7em;
+    height: 2.7em;
+    font-size: 1.563em;
+    margin-right: 0.1em;
+    background-color: lightcyan;
+    color: black;
+}
+
+
+/*100*/
+
+#resultado {
+    display: block;
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+    width: 9em;
+    height: 3em;
+    background-color: rgb(218, 213, 148);
+    overflow-x: scroll;
+    color: black;
+}
+
+
+/*100*/
+
+#div,
+
+/*100*/
+
+#mult,
+
+/*100*/
+
+#resta,
+
+/*100*/
+
+#suma {
+    background-color: rgb(224, 75, 75);
+    color: black;
+}
+
+
+/*100*/
+
+#mr,
+
+/*100*/
+
+#mc,
+
+/*100*/
+
+#ms,
+
+/*100*/
+
+#mMenos,
+
+/*100*/
+
+#mMas,
+
+/*100*/
+
+#borrar,
+
+/*100*/
+
+#retroceso {
+    background-color: gold;
+    color: black;
+}
+
+
+/*100*/
+
+#uno,
+
+/*100*/
+
+#dos,
+
+/*100*/
+
+#tres,
+
+/*100*/
+
+#cuatro,
+
+/*100*/
+
+#cinco,
+
+/*100*/
+
+#seis,
+
+/*100*/
+
+#siete,
+
+/*100*/
+
+#ocho,
+
+/*100*/
+
+#nueve,
+
+/*100*/
+
+#cero {
+    background-color: rgb(131, 255, 255);
+    color: black;
+}

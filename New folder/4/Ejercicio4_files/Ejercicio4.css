@@ -1,0 +1,47 @@
+/*001*/
+
+h1 {
+    background-color: white;
+    text-align: center;
+    color: green;
+}
+
+
+/*001*/
+
+table {
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/*001*/
+
+th,
+
+/*001*/
+
+td {
+    height: 100%;
+    border-left: 3em;
+    border-right: 3em;
+    border-style: solid;
+    border-color: white;
+    text-align: center;
+}
+
+
+/*001*/
+
+button {
+    position: relative;
+    cursor: pointer;
+    height: 40px;
+    background: lightgray;
+    border-radius: 33px;
+    margin: 0px 7px 11px 1px;
+    color: black;
+    line-height: 36px;
+    text-align: center;
+}
