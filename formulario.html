@@ -11,7 +11,7 @@
 
 <body>
     <h1>Alan Kay</h1>
-    <form>
+    <form action="resumen" id="alanForm" method="post">
         <label for="Alan">¿Crees que Alan Kay ha sido relevante en la historia de la informática?</label><br><input id="Alan" type="text" name="textfield">
         <br>
         <label for="aportacion">¿Cuál crees que ha sido su mayor aportación?</label><br><input id="aportacion" type="text" name="textfield">
@@ -20,7 +20,10 @@
         <br>
         <label for="Squeak">¿Qué opinas de Squeak?</label><br><input id="Squeak" type="text" name="textfield">
         <br>
-        <label for="reconocimiento">¿Crees que debería de haber recibido más reconocimiento del que ya tiene?</label><br><input id="reconocimiento" type="text" name="textfield">
+        <label for="reconocimiento">¿Crees que debería de haber recibido más reconocimiento del que ya tiene?</label>
+            <br>
+        <input id="reconocimiento" type="text" name="textfield">
+        <button type="submit">Submit Form</button>
     </form>
 </body>
 </html>
