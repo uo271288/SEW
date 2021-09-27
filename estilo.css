@@ -62,12 +62,14 @@ table {
 /*001*/
 th {
     background-color: #4D4D4D;
+    color: inherit;
     width: 20%;
 }
 
 /*001*/
 td {
     background-color: #727272;
+    color: inherit;
 }
 
 /*001*/
