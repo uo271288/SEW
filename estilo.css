@@ -1,23 +1,21 @@
 /*001*/
 body {
-    font: 400 0.938em Papyrus, fantasy;
-    line-height: 1.8;
-    background-color: #2D383A;
+    font: 0.938em;
+    font-family: "Lucida Console", "Courier New", monospace;
+    line-height: 2em;
+    background-color: black;
     color: white;
 }
 
-/*002*/
-nav li {
-    display: inline;
-    float: left;
+/*001*/
+nav {
+   text-align: center;
 }
 
-/*002*/
-nav a,
-/*002*/
-nav strong {
-    display: block;
-    padding: 0.5em;
+/*003*/
+nav ul li {
+    display: inline-block;
+    padding: 1em;
 }
 
 /*001*/
@@ -27,20 +25,12 @@ a {
     text-decoration: none;
 }
 
-/*011*/
-a:link,
-/*011*/
-a:visited {
-    background-color: inherit;
-    color: #DECD9E;
-}
-
-/*011*/
-a:hover,
-/*011*/
-a:active {
-    background-color: inherit;
-    color: #E3D7B7;
+/*001*/
+button {
+    font-size: 0.938em;
+    border: 1em;
+    padding: 0.5em;
+    margin: 2em 0em;
 }
 
 /*001*/
@@ -62,17 +52,22 @@ h2 {
 }
 
 /*001*/
-section {
-    padding-right: 6.25em;
-    padding-left: 6.25em;
-    padding-top: 1.25em;
-    padding-bottom: 0.625em;
+table {
+    width: 75%;
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /*001*/
-table {
-    width: 100%;
-    border-collapse: collapse;
+th {
+    background-color: #4D4D4D;
+    width: 20%;
+}
+
+/*001*/
+td {
+    background-color: #727272;
 }
 
 /*001*/
@@ -86,39 +81,21 @@ td {
     text-align: center;
 }
 
-/*001*/
-ul {
+/*002*/
+nav ul {
     list-style: none;
     padding-left: 0em;
 }
 
-/*001*/
-footer {
-    left: 0em;
-    bottom: 0em;
-    width: 100%;
-    text-align: center;
+/*100*/
+#imgDynabook {
+    margin-bottom: 2em;
+    width: 25em;
+    float: left;
 }
 
-/*002*/
-figure > img {
-    width: 15.625em;
-    height: 23.438em;
-}
-
-/*002*/
-figcaption > img {
-    width: 1.25em;
-    height: 1.25em;
-}
-
-/*001*/
-audio {
-    width: 20%;
-}
-
-/*001*/
-video {
-    width: 50%;
-    height: 50%;
+/*100*/
+#videoDynabook {
+    width: 25em;
+    float: right;
 }
