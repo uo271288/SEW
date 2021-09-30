@@ -8,13 +8,44 @@ body {
 }
 
 /*001*/
+header {
+    top: 0;
+    position: static;
+    width: 100%;
+    text-align: center;
+    display: block;
+}
+
+/*001*/
 nav {
-   text-align: center;
+    position: fixed;
+    float: left;
+    text-align: center;
+    height: 100%;
+}
+
+/*001*/
+section {
+    padding-left: 20%;
+}
+
+/*001*/
+footer {
+    position: static;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+/*002*/
+nav ul {
+    list-style: none;
+    padding-left: 0em;
 }
 
 /*003*/
 nav ul li {
-    display: inline-block;
+    display: block;
     padding: 1em;
 }
 
@@ -81,12 +112,6 @@ td {
     border-style: solid;
     border-color: white;
     text-align: center;
-}
-
-/*002*/
-nav ul {
-    list-style: none;
-    padding-left: 0em;
 }
 
 /*100*/
