@@ -7,9 +7,9 @@ body {
     color: white;
     display: grid;
     grid-template-areas:
-      "header header header"
+      "nav header header"
       "nav main main"
-      "footer footer footer"
+      "nav footer footer";
 }
 
 /*001*/
@@ -18,7 +18,7 @@ main {
     display: grid;
     grid-template-areas:
       "section aside"
-      "section aside"
+      "section aside";      
 }
 
 /*001*/
