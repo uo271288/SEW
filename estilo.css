@@ -5,16 +5,20 @@ body {
     line-height: 2em;
     background-color: black;
     color: white;
-    
+    display: grid;
+    grid-template-areas:
+      "header header header"
+      "nav main main"
+      "footer footer footer"
 }
 
 /*001*/
 main {
+    grid-area: main;
     display: grid;
     grid-template-areas:
-      "nav header header"
-      "nav section aside"
-      "nav footer footer"
+      "section aside"
+      "section aside"
 }
 
 /*001*/
