@@ -5,35 +5,36 @@ body {
     line-height: 2em;
     background-color: black;
     color: white;
+    
+}
+
+/*001*/
+main {
+    display: grid;
+    grid-template-areas:
+      "nav header header"
+      "nav section aside"
+      "nav footer footer"
 }
 
 /*001*/
 header {
-    top: 0;
-    position: static;
-    width: 100%;
-    text-align: center;
-    display: block;
+    grid-area: header;
 }
 
 /*001*/
 nav {
-    position: fixed;
-    float: left;
-    text-align: center;
-    height: 100%;
+    grid-area: nav;
 }
 
 /*001*/
 section {
-    padding-left: 20%;
+    grid-area: section;
 }
 
 /*001*/
 footer {
-    position: static;
-    bottom: 0;
-    width: 100%;
+    grid-area: footer;
     text-align: center;
 }
 
