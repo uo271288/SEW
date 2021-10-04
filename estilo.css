@@ -7,9 +7,9 @@ body {
     color: white;
     display: grid;
     grid-template-areas:
-      "nav header header"
-      "nav main main"
-      "nav footer footer";
+      "header header header"
+      "main main main"
+      "footer footer footer";
 }
 
 /*001*/
@@ -17,8 +17,8 @@ main {
     grid-area: main;
     display: grid;
     grid-template-areas:
-      "section aside"
-      "section aside";      
+      "nav section aside"
+      "nav section aside";
 }
 
 /*001*/
@@ -29,6 +29,9 @@ header {
 /*001*/
 nav {
     grid-area: nav;
+    position: sticky;
+    top: 0;
+    height: fit-content;
 }
 
 /*001*/
@@ -40,6 +43,7 @@ section {
 footer {
     grid-area: footer;
     text-align: center;
+    font-size: 0.7em;
 }
 
 /*002*/
