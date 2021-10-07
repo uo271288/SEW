@@ -57,8 +57,9 @@ aside {
 }
 
 /*002*/
-aside ul {
+aside ul li {
     list-style: square;
+    padding: 1em;
 }
 
 /*002*/
