@@ -40,6 +40,14 @@ section {
 }
 
 /*001*/
+aside {
+    grid-area: aside;
+}
+aside h3 {
+    text-align: center;
+}
+
+/*001*/
 footer {
     grid-area: footer;
     text-align: center;

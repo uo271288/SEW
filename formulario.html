@@ -12,46 +12,61 @@
 </head>
 
 <body>
-    
+
     <header>
         <h1>Alan Kay</h1>
     </header>
     <main>
-    <nav>
-        <ul>
-            <li><a href="index.html" accesskey="i">Inicio</a></li>
-            <li><a href="premios.html" accesskey="p">Premios</a></li>
-            <li><a href="profesional.html" accesskey="r">Profesional</a></li>
-            <li><strong>Formulario</strong></li>
-        </ul>
-    </nav>
+        <nav>
+            <ul>
+                <li><a href="index.html" accesskey="i">Inicio</a></li>
+                <li><a href="premios.html" accesskey="p">Premios</a></li>
+                <li><a href="profesional.html" accesskey="r">Profesional</a></li>
+                <li><strong>Formulario</strong></li>
+            </ul>
+        </nav>
         <section>
             <h2>Formulario</h2>
             <form action="resumen" id="alanForm" method="post">
-                <label for="Alan">¿Crees que Alan Kay ha sido relevante en la historia de la informática?</label>
+                <label for="Alan">Nombre y apellidos</label>
                 <br>
                 <input id="Alan" type="text" name="textfield">
                 <br>
-                <label for="aportacion">¿Cuál crees que ha sido su mayor aportación?</label>
+                <label for="aportacion">Fecha de nacimiento</label>
                 <br>
-                <input id="aportacion" type="text" name="textfield">
+                <input id="aportacion" type="date" name="textfield">
                 <br>
-                <label for="GUI">¿Crees que si Alan Kay no hubiera existido estaríamos muy retrasados a día de hoy en cuanto a
-                    interfaces de usuario?</label>
-                <br>
-                <input id="GUI" type="text" name="textfield">
-                <br>
-                <label for="Squeak">¿Qué opinas de Squeak?</label>
-                <br>
-                <input id="Squeak" type="text" name="textfield">
-                <br>
-                <label for="reconocimiento">¿Crees que debería de haber recibido más reconocimiento del que ya tiene?</label>
-                <br>
-                <input id="reconocimiento" type="text" name="textfield">
-                <br>
+                <fieldset>
+                    <legend> Género </legend>
+                    <input id="hombre" type="radio" name="score">
+                    <label for="hombre">Hombre</label>
+                    <input id="mujer" type="radio" name="score">
+                    <label for="mujer">Mujer</label>
+                    <input id="no-binario" type="radio" name="score">
+                    <label for="no-binario">No binario</label>
+                    <input id="otro" type="radio" name="score">
+                    <label for="otro">Otro</label>
+                </fieldset>
                 <button type="submit">Submit</button>
             </form>
         </section>
+        <aside>
+            <h3>Read more:</h3>
+            <ul>
+                <li><a
+                        href="https://web.archive.org/web/20080710144930/http://gagne.homedns.org/~tgagne/contrib/EarlyHistoryST.html">The
+                        Early History of Smalltalk</a></li>
+                <li><a href="http://www.windley.com/archives/2006/02/alan_kay_is_com.shtml">The Best Way to Predict the
+                        Future is to Prevent It</a></li>
+                <li><a href="http://www.windley.com/archives/2006/02/alan_kay_the_10.shtml">The $100 Laptop, Learners,
+                        and Powerful Ideas</a></li>
+                <li><a href="https://web.archive.org/web/20080218153636/http://swiki.agro.uba.ar/small_land/76">Las
+                        ideas poderosas necesitan también amor</a></li>
+                <li><a href="https://web.archive.org/web/20080317144434/http://swiki.agro.uba.ar/small_land/243">Retorno
+                        a Dynabook. Una conversación con Alan Kay</a></li>
+            </ul>
+            </ul>
+        </aside>
     </main>
     <footer>
         <address>

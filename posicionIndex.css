@@ -1,0 +1,13 @@
+/*001*/
+main {
+    grid-area: main;
+    display: grid;
+    grid-template-areas:
+      "nav article aside"
+      "nav article aside";
+}
+
+/*001*/
+article {
+    grid-area: article;
+}
