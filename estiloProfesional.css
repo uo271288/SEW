@@ -1,6 +1,7 @@
 /*001*/
 table {
-    width: 75%;
+    width: fit-content;
+    height: fit-content;
     border-collapse: collapse;
     margin-left: auto;
     margin-right: auto;
@@ -10,7 +11,7 @@ table {
 th {
     background-color: #4D4D4D;
     color: inherit;
-    width: 20%;
+    width: 13%;
 }
 
 /*001*/
@@ -23,7 +24,6 @@ td {
 th,
 /*001*/
 td {
-    height: 100%;
     border: 0.063em;
     border-style: solid;
     border-color: white;
