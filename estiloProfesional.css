@@ -1,18 +1,12 @@
 /*001*/
 table {
-    font-size: 1.1em;
-    width: fit-content;
-    height: fit-content;
     border-collapse: collapse;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 /*001*/
 th {
     background-color: #4D4D4D;
     color: inherit;
-    width: 13%;
 }
 
 /*001*/
