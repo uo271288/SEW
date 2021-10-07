@@ -1,15 +1,8 @@
-/*100*/
-#opinion {
-    height: 10em;
-    width: 35em;
-}
+
 
 fieldset{
     width: fit-content;
     height: fit-content;
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    column-gap: 1.5em;
 }
 
 /*002*/
