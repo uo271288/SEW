@@ -4,6 +4,11 @@
     width: 35em;
 }
 
+/*012*/
+fieldset label{
+    padding: 0.5em;
+}
+
 /*001*/
 button {
     font-size: 0.938em;
