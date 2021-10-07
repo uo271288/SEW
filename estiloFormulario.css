@@ -1,4 +1,8 @@
-
+/*100*/
+#opinion {
+    height: 5em;
+    width: 20em;
+}
 
 fieldset{
     width: fit-content;
