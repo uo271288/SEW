@@ -11,3 +11,16 @@ main {
 article {
     grid-area: article;
 }
+
+/*100*/
+#imgDynabook {
+    margin-bottom: 2em;
+    width: 25em;
+    float: left;
+}
+
+/*100*/
+#videoDynabook {
+    width: 25em;
+    float: right;
+}

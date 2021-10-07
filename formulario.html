@@ -9,6 +9,7 @@
     <meta name="description" content="Formulario sobre Alan Kay" />
     <meta name="keywords" content="Alan Kay, Alan, Kay, informática, GUI, Smalltalk" />
     <link rel="stylesheet" type="text/css" href="estilo.css" />
+    <link rel="stylesheet" type="text/css" href="estiloFormulario.css" />
 </head>
 
 <body>
@@ -28,17 +29,17 @@
         <section>
             <h2>Formulario</h2>
             <form action="resumen" id="alanForm" method="post">
-                <label for="Alan">Nombre y apellidos</label>
+                <label for="name">Nombre y apellidos: </label>
                 <br>
-                <input id="Alan" type="text" name="textfield">
+                <input id="name" type="text">
                 <br>
-                <label for="aportacion">Fecha de nacimiento</label>
+                <label for="date">Fecha de nacimiento: </label>
                 <br>
-                <input id="aportacion" type="date" name="textfield">
+                <input id="date" type="date">
                 <br>
                 <fieldset>
                     <legend> Género </legend>
-                    <input id="hombre" type="radio" name="score">
+                    <input id="hombre" type="radio" name="score" checked>
                     <label for="hombre">Hombre</label>
                     <input id="mujer" type="radio" name="score">
                     <label for="mujer">Mujer</label>
@@ -47,7 +48,19 @@
                     <input id="otro" type="radio" name="score">
                     <label for="otro">Otro</label>
                 </fieldset>
-                <button type="submit">Submit</button>
+                <label for="email">Email: </label>
+                <br>
+                <input id="email" type="email">
+                <br>
+                <label for="phone">Teléfono: </label>
+                <br>
+                <input id="phone" type="tel" pattern="[0-9]{9}">
+                <br>
+                <label for="opinion">Escribe tu comentario: </label>
+                <br>
+                <input id="opinion" type="text">
+                <br>
+                <button type="submit">Enviar</button>
             </form>
         </section>
         <aside>
@@ -64,7 +77,6 @@
                         ideas poderosas necesitan también amor</a></li>
                 <li><a href="https://web.archive.org/web/20080317144434/http://swiki.agro.uba.ar/small_land/243">Retorno
                         a Dynabook. Una conversación con Alan Kay</a></li>
-            </ul>
             </ul>
         </aside>
     </main>

@@ -17,7 +17,6 @@ main {
     grid-area: main;
     display: grid;
     grid-template-areas:
-      "nav section aside"
       "nav section aside";
 }
 
@@ -32,26 +31,7 @@ nav {
     position: sticky;
     top: 0;
     height: fit-content;
-}
-
-/*001*/
-section {
-    grid-area: section;
-}
-
-/*001*/
-aside {
-    grid-area: aside;
-}
-aside h3 {
-    text-align: center;
-}
-
-/*001*/
-footer {
-    grid-area: footer;
-    text-align: center;
-    font-size: 0.7em;
+    padding-right: 2em;
 }
 
 /*002*/
@@ -67,18 +47,37 @@ nav ul li {
 }
 
 /*001*/
+section {
+    grid-area: section;
+}
+
+/*001*/
+aside {
+    grid-area: aside;
+}
+
+/*002*/
+aside ul {
+    list-style: square;
+}
+
+/*002*/
+aside h3 {
+    text-align: center;
+}
+
+/*001*/
+footer {
+    grid-area: footer;
+    text-align: center;
+    font-size: 0.7em;
+}
+
+/*001*/
 a {
     background-color: inherit;
     color: #DECD9E;
     text-decoration: none;
-}
-
-/*001*/
-button {
-    font-size: 0.938em;
-    border: 1em;
-    padding: 0.5em;
-    margin: 2em 0em;
 }
 
 /*001*/
@@ -97,49 +96,4 @@ h1 {
 h2 {
     padding: 0.625em;
     text-align: center;
-}
-
-/*001*/
-table {
-    width: 75%;
-    border-collapse: collapse;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-/*001*/
-th {
-    background-color: #4D4D4D;
-    color: inherit;
-    width: 20%;
-}
-
-/*001*/
-td {
-    background-color: #727272;
-    color: inherit;
-}
-
-/*001*/
-th,
-/*001*/
-td {
-    height: 100%;
-    border: 0.063em;
-    border-style: solid;
-    border-color: white;
-    text-align: center;
-}
-
-/*100*/
-#imgDynabook {
-    margin-bottom: 2em;
-    width: 25em;
-    float: left;
-}
-
-/*100*/
-#videoDynabook {
-    width: 25em;
-    float: right;
 }

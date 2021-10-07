@@ -1,0 +1,31 @@
+/*001*/
+table {
+    width: 75%;
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*001*/
+th {
+    background-color: #4D4D4D;
+    color: inherit;
+    width: 20%;
+}
+
+/*001*/
+td {
+    background-color: #727272;
+    color: inherit;
+}
+
+/*001*/
+th,
+/*001*/
+td {
+    height: 100%;
+    border: 0.063em;
+    border-style: solid;
+    border-color: white;
+    text-align: center;
+}
