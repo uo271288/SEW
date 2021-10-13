@@ -56,7 +56,7 @@ aside {
     grid-area: aside;
 }
 
-/*002*/
+/*003*/
 aside ul li {
     list-style: square;
     padding: 1em;
