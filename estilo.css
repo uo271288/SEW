@@ -54,12 +54,13 @@ section {
 /*001*/
 aside {
     grid-area: aside;
+    max-width: 30em;
 }
 
 /*003*/
 aside ul li {
     list-style: square;
-    padding: 1em;
+    padding: 0.5em;
 }
 
 /*002*/
