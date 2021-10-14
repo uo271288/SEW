@@ -1,0 +1,46 @@
+/*001*/
+body {
+    display: grid;
+    grid-template-areas:
+      "header header header"
+      "main main main"
+      "footer footer footer";
+}
+
+/*001*/
+main {
+    grid-area: main;
+    display: grid;
+    grid-template-areas:
+      "nav section aside";
+}
+
+/*001*/
+header {
+    grid-area: header;
+}
+
+/*001*/
+nav {
+    grid-area: nav;
+    position: sticky;
+    top: 0;
+    height: fit-content;
+    padding-right: 2em;
+}
+
+/*001*/
+section {
+    grid-area: section;
+}
+
+/*001*/
+aside {
+    grid-area: aside;
+    max-width: 30em;
+}
+
+/*001*/
+footer {
+    grid-area: footer;
+}

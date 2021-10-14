@@ -11,16 +11,3 @@ main {
 article {
     grid-area: article;
 }
-
-/*012*/
-section:nth-child(3) > img {
-    margin-bottom: 2em;
-    width: 25em;
-    float: left;
-}
-
-/*100*/
-video {
-    width: 25em;
-    float: right;
-}
