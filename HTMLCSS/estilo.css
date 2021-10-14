@@ -7,18 +7,6 @@ body {
     color: white;
 }
 
-/*002*/
-nav ul {
-    list-style: none;
-    padding-left: 0em;
-}
-
-/*003*/
-nav ul li {
-    display: block;
-    padding: 1em;
-}
-
 /*003*/
 aside ul li {
     list-style: square;

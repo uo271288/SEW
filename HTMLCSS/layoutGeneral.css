@@ -29,6 +29,18 @@ nav {
     padding-right: 2em;
 }
 
+/*002*/
+nav ul {
+    list-style: none;
+    padding-left: 0em;
+}
+
+/*003*/
+nav ul li {
+    display: block;
+    padding: 1em;
+}
+
 /*001*/
 section {
     grid-area: section;
