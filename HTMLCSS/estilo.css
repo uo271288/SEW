@@ -59,3 +59,16 @@ h2 {
     padding: 0.625em;
     text-align: center;
 }
+
+/*012*/
+section:nth-child(3) > img {
+    margin-bottom: 2em;
+    width: 25em;
+    float: left;
+}
+
+/*100*/
+video {
+    width: 25em;
+    float: right;
+}
