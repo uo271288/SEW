@@ -32,15 +32,15 @@
             <form action="resumen" method="post">
                 <label for="nombre">Nombre y apellidos: </label>
                 <br>
-                <input id="nombre" type="text">
+                <input id="nombre" type="text" placeholder="Alejandro Álvarez Varela" required>
                 <br>
                 <label for="fecha">Fecha de nacimiento: </label>
                 <br>
-                <input id="fecha" type="date">
+                <input id="fecha" type="date" required>
                 <br>
                 <fieldset>
                     <legend> Género </legend>
-                    <input id="hombre" type="radio" name="genero" checked>
+                    <input id="hombre" type="radio" name="genero">
                     <label for="hombre">Hombre</label>
                     <input id="mujer" type="radio" name="genero">
                     <label for="mujer">Mujer</label>
@@ -51,15 +51,15 @@
                 </fieldset>
                 <label for="correo">Correo electrónico: </label>
                 <br>
-                <input id="correo" type="email">
+                <input id="correo" type="email" placeholder="uo271288@uniovi.es" required>
                 <br>
                 <label for="telefono">Teléfono: </label>
                 <br>
-                <input id="telefono" type="tel" pattern="[0-9]{9}">
+                <input id="telefono" type="tel" pattern="[0-9]{9}" placeholder="123456789">
                 <br>
                 <label for="opinion">Escribe tu comentario: </label>
                 <br>
-                <input id="opinion" type="text">
+                <textarea name="opinion" placeholder="Comentario..." required></textarea>
                 <br>
                 <button type="submit">Enviar</button>
             </form>
