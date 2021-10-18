@@ -1,2 +1,24 @@
 <!ELEMENT arbol_genealogico (persona)>
-<!ELEMENT persona ((persona,persona)?)>
+<!ELEMENT persona (lugar_nacimiento,lugar_fallecimiento?,foto+,video*,comentarios?,(persona,persona)?)>
+<!ELEMENT lugar_nacimiento (coordenadas)>
+<!ELEMENT lugar_fallecimiento (coordenadas)>
+<!ELEMENT coordenadas (latitud,longitud,altitud)>
+<!ELEMENT latitud (#PCDATA)>
+<!ELEMENT longitud (#PCDATA)>
+<!ELEMENT altitud (#PCDATA)>
+<!ELEMENT foto (#PCDATA)>
+<!ELEMENT video (#PCDATA)>
+<!ELEMENT comentarios (#PCDATA)>
+<!ATTLIST lugar_nacimiento 
+    lugar CDATA #REQUIRED>
+<!ATTLIST lugar_fallecimiento 
+    lugar CDATA #REQUIRED>
+<!ATTLIST persona 
+    nombre CDATA #REQUIRED
+    apellidos CDATA #REQUIRED
+    fecha_nacimiento CDATA #REQUIRED
+    fecha_fallecimiento CDATA #IMPLIED>
+<!ATTLIST 
+    foto url CDATA #REQUIRED>
+<!ATTLIST 
+    video url CDATA #REQUIRED>

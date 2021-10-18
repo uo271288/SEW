@@ -1,18 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE arbol_genealogico SYSTEM "rutas_caravana.dtd">
+<!DOCTYPE arbol_genealogico SYSTEM "arbol_genealogico.dtd">
 
 <arbol_genealogico>
     <persona nombre="yo" apellidos="ape llido" fecha_nacimiento="1-1-1999" fecha_fallecimiento="2-2-2000">
-        <lugar_nacimiento >
-            Aqui
+        <lugar_nacimiento lugar="">
             <coordenadas>
                 <latitud></latitud>
                 <longitud></longitud>
                 <altitud></altitud>
             </coordenadas>
         </lugar_nacimiento>
-        <lugar_fallecimiento>
-            Alli
+        <lugar_fallecimiento lugar="">
             <coordenadas>
                 <latitud></latitud>
                 <longitud></longitud>
@@ -26,16 +24,14 @@
         <comentarios>
         </comentarios>
         <persona nombre="padre" apellidos="ape llido" fecha_nacimiento="1-1-1999" fecha_fallecimiento="2-2-2000">
-            <lugar_nacimiento >
-                Aqui
+            <lugar_nacimiento lugar="">
                 <coordenadas>
                     <latitud></latitud>
                     <longitud></longitud>
                     <altitud></altitud>
                 </coordenadas>
             </lugar_nacimiento>
-            <lugar_fallecimiento>
-                Alli
+            <lugar_fallecimiento lugar="">
                 <coordenadas>
                     <latitud></latitud>
                     <longitud></longitud>
@@ -49,16 +45,14 @@
             <comentarios>
             </comentarios>
             <persona nombre="abuelo" apellidos="ape llido" fecha_nacimiento="1-1-1999" fecha_fallecimiento="2-2-2000">
-                <lugar_nacimiento >
-                    Aqui
+                <lugar_nacimiento lugar="" >
                     <coordenadas>
                         <latitud></latitud>
                         <longitud></longitud>
                         <altitud></altitud>
                     </coordenadas>
                 </lugar_nacimiento>
-                <lugar_fallecimiento>
-                    Alli
+                <lugar_fallecimiento lugar="">
                     <coordenadas>
                         <latitud></latitud>
                         <longitud></longitud>
@@ -72,16 +66,14 @@
                 <comentarios>
                 </comentarios>
                 <persona nombre="bisabuelo" apellidos="ape llido" fecha_nacimiento="1-1-1999" fecha_fallecimiento="2-2-2000">
-                    <lugar_nacimiento >
-                        Aqui
+                    <lugar_nacimiento lugar="">
                         <coordenadas>
                             <latitud></latitud>
                             <longitud></longitud>
                             <altitud></altitud>
                         </coordenadas>
                     </lugar_nacimiento>
-                    <lugar_fallecimiento>
-                        Alli
+                    <lugar_fallecimiento lugar="">
                         <coordenadas>
                             <latitud></latitud>
                             <longitud></longitud>
@@ -96,16 +88,14 @@
                     </comentarios>
                 </persona>
                 <persona nombre="bisabuela" apellidos="ape llido" fecha_nacimiento="1-1-1999" fecha_fallecimiento="2-2-2000">
-                    <lugar_nacimiento >
-                        Aqui
+                    <lugar_nacimiento lugar="">
                         <coordenadas>
                             <latitud></latitud>
                             <longitud></longitud>
                             <altitud></altitud>
                         </coordenadas>
                     </lugar_nacimiento>
-                    <lugar_fallecimiento>
-                        Alli
+                    <lugar_fallecimiento lugar="">
                         <coordenadas>
                             <latitud></latitud>
                             <longitud></longitud>
@@ -121,16 +111,14 @@
                 </persona>
             </persona>
             <persona nombre="abuela" apellidos="ape llido" fecha_nacimiento="1-1-1999" fecha_fallecimiento="2-2-2000">
-                <lugar_nacimiento >
-                    Aqui
+                <lugar_nacimiento lugar="">
                     <coordenadas>
                         <latitud></latitud>
                         <longitud></longitud>
                         <altitud></altitud>
                     </coordenadas>
                 </lugar_nacimiento>
-                <lugar_fallecimiento>
-                    Alli
+                <lugar_fallecimiento lugar="">
                     <coordenadas>
                         <latitud></latitud>
                         <longitud></longitud>
@@ -144,16 +132,14 @@
                 <comentarios>
                 </comentarios>
                 <persona nombre="bisabuelo" apellidos="ape llido" fecha_nacimiento="1-1-1999" fecha_fallecimiento="2-2-2000">
-                    <lugar_nacimiento >
-                        Aqui
+                    <lugar_nacimiento lugar="">
                         <coordenadas>
                             <latitud></latitud>
                             <longitud></longitud>
                             <altitud></altitud>
                         </coordenadas>
                     </lugar_nacimiento>
-                    <lugar_fallecimiento>
-                        Alli
+                    <lugar_fallecimiento lugar="">
                         <coordenadas>
                             <latitud></latitud>
                             <longitud></longitud>
@@ -168,16 +154,14 @@
                     </comentarios>
                 </persona>
                 <persona nombre="bisabuela" apellidos="ape llido" fecha_nacimiento="1-1-1999" fecha_fallecimiento="2-2-2000">
-                    <lugar_nacimiento >
-                        Aqui
+                    <lugar_nacimiento lugar="">
                         <coordenadas>
                             <latitud></latitud>
                             <longitud></longitud>
                             <altitud></altitud>
                         </coordenadas>
                     </lugar_nacimiento>
-                    <lugar_fallecimiento>
-                        Alli
+                    <lugar_fallecimiento lugar="">
                         <coordenadas>
                             <latitud></latitud>
                             <longitud></longitud>
@@ -194,16 +178,14 @@
             </persona>
         </persona>
         <persona nombre="madre" apellidos="ape llido" fecha_nacimiento="1-1-1999" fecha_fallecimiento="2-2-2000">
-            <lugar_nacimiento >
-                Aqui
+            <lugar_nacimiento lugar="">
                 <coordenadas>
                     <latitud></latitud>
                     <longitud></longitud>
                     <altitud></altitud>
                 </coordenadas>
             </lugar_nacimiento>
-            <lugar_fallecimiento>
-                Alli
+            <lugar_fallecimiento lugar="">
                 <coordenadas>
                     <latitud></latitud>
                     <longitud></longitud>
@@ -217,16 +199,14 @@
             <comentarios>
             </comentarios>
             <persona nombre="abuelo" apellidos="ape llido" fecha_nacimiento="1-1-1999" fecha_fallecimiento="2-2-2000">
-                <lugar_nacimiento >
-                    Aqui
+                <lugar_nacimiento lugar="">
                     <coordenadas>
                         <latitud></latitud>
                         <longitud></longitud>
                         <altitud></altitud>
                     </coordenadas>
                 </lugar_nacimiento>
-                <lugar_fallecimiento>
-                    Alli
+                <lugar_fallecimiento lugar="">
                     <coordenadas>
                         <latitud></latitud>
                         <longitud></longitud>
@@ -240,16 +220,14 @@
                 <comentarios>
                 </comentarios>
                 <persona nombre="bisabuelo" apellidos="ape llido" fecha_nacimiento="1-1-1999" fecha_fallecimiento="2-2-2000">
-                    <lugar_nacimiento >
-                        Aqui
+                    <lugar_nacimiento lugar="">
                         <coordenadas>
                             <latitud></latitud>
                             <longitud></longitud>
                             <altitud></altitud>
                         </coordenadas>
                     </lugar_nacimiento>
-                    <lugar_fallecimiento>
-                        Alli
+                    <lugar_fallecimiento lugar="">
                         <coordenadas>
                             <latitud></latitud>
                             <longitud></longitud>
@@ -264,16 +242,14 @@
                     </comentarios>
                 </persona>
                 <persona nombre="bisabuela" apellidos="ape llido" fecha_nacimiento="1-1-1999" fecha_fallecimiento="2-2-2000">
-                    <lugar_nacimiento >
-                        Aqui
+                    <lugar_nacimiento lugar="">
                         <coordenadas>
                             <latitud></latitud>
                             <longitud></longitud>
                             <altitud></altitud>
                         </coordenadas>
                     </lugar_nacimiento>
-                    <lugar_fallecimiento>
-                        Alli
+                    <lugar_fallecimiento lugar="">
                         <coordenadas>
                             <latitud></latitud>
                             <longitud></longitud>
@@ -289,16 +265,14 @@
                 </persona>
             </persona>
             <persona nombre="abuela" apellidos="ape llido" fecha_nacimiento="1-1-1999" fecha_fallecimiento="2-2-2000">
-                <lugar_nacimiento >
-                    Aqui
+                <lugar_nacimiento lugar="">
                     <coordenadas>
                         <latitud></latitud>
                         <longitud></longitud>
                         <altitud></altitud>
                     </coordenadas>
                 </lugar_nacimiento>
-                <lugar_fallecimiento>
-                    Alli
+                <lugar_fallecimiento lugar="">
                     <coordenadas>
                         <latitud></latitud>
                         <longitud></longitud>
@@ -312,16 +286,14 @@
                 <comentarios>
                 </comentarios>
                 <persona nombre="bisabuelo" apellidos="ape llido" fecha_nacimiento="1-1-1999" fecha_fallecimiento="2-2-2000">
-                    <lugar_nacimiento >
-                        Aqui
+                    <lugar_nacimiento lugar="">
                         <coordenadas>
                             <latitud></latitud>
                             <longitud></longitud>
                             <altitud></altitud>
                         </coordenadas>
                     </lugar_nacimiento>
-                    <lugar_fallecimiento>
-                        Alli
+                    <lugar_fallecimiento lugar="">
                         <coordenadas>
                             <latitud></latitud>
                             <longitud></longitud>
@@ -336,16 +308,14 @@
                     </comentarios>
                 </persona>
                 <persona nombre="bisabuela" apellidos="ape llido" fecha_nacimiento="1-1-1999" fecha_fallecimiento="2-2-2000">
-                    <lugar_nacimiento >
-                        Aqui
+                    <lugar_nacimiento lugar="">
                         <coordenadas>
                             <latitud></latitud>
                             <longitud></longitud>
                             <altitud></altitud>
                         </coordenadas>
                     </lugar_nacimiento>
-                    <lugar_fallecimiento>
-                        Alli
+                    <lugar_fallecimiento lugar="">
                         <coordenadas>
                             <latitud></latitud>
                             <longitud></longitud>
