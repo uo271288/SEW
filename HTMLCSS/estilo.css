@@ -25,7 +25,8 @@ footer {
 
 /*001*/
 a {
-    background-color: inherit;
+    background-color: #252525;
+    padding: 0.2em;
     color: #DECD9E;
     text-decoration: none;
 }
