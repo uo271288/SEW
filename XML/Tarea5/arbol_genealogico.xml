@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE arbol_genealogico >
+<arbol_genealogico xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="arbol_genealogico.xsd">
+    <persona nombre="yo" apellidos="ape llido" fecha_nacimiento="1999-01-01">
+        <lugar_nacimiento lugar="">
+            <coordenadas>
+                <latitud>0.0</latitud>
+                <longitud>0.0</longitud>
+                <altitud>0.0</altitud>
+            </coordenadas>
+        </lugar_nacimiento>
+        <lugar_fallecimiento lugar="">
+            <coordenadas>
+                <latitud>0.0</latitud>
+                <longitud>0.0</longitud>
+                <altitud>0.0</altitud>
+            </coordenadas>
+        </lugar_fallecimiento>
+        <foto url="a"></foto>
+        <video url="a"></video>
+        <comentarios></comentarios>
+        <persona nombre="padre" apellidos="ape llido" fecha_nacimiento="1999-01-01" fecha_fallecimiento="2000-02-02">
+            <lugar_nacimiento lugar="">
+                <coordenadas>
+                    <latitud>0.0</latitud>
+                    <longitud>0.0</longitud>
+                    <altitud>0.0</altitud>
+                </coordenadas>
+            </lugar_nacimiento>
+            <lugar_fallecimiento lugar="">
+                <coordenadas>
+                    <latitud>0.0</latitud>
+                    <longitud>0.0</longitud>
+                    <altitud>0.0</altitud>
+                </coordenadas>
+            </lugar_fallecimiento>
+            <foto url="a"></foto>
+            <video url="a"></video>
+            <comentarios></comentarios>
+            <persona nombre="abuelo" apellidos="ape llido" fecha_nacimiento="1999-01-01" fecha_fallecimiento="2000-02-02">
+                <lugar_nacimiento lugar="">
+                    <coordenadas>
+                        <latitud>0.0</latitud>
+                        <longitud>0.0</longitud>
+                        <altitud>0.0</altitud>
+                    </coordenadas>
+                </lugar_nacimiento>
+                <lugar_fallecimiento lugar="">
+                    <coordenadas>
+                        <latitud>0.0</latitud>
+                        <longitud>0.0</longitud>
+                        <altitud>0.0</altitud>
+                    </coordenadas>
+                </lugar_fallecimiento>
+                <foto url="a"></foto>
+                <video url="a"></video>
+                <comentarios></comentarios>
+                <persona nombre="bisabuelo" apellidos="ape llido" fecha_nacimiento="1999-01-01" fecha_fallecimiento="2000-02-02">
+                    <lugar_nacimiento lugar="">
+                        <coordenadas>
+                            <latitud>0.0</latitud>
+                            <longitud>0.0</longitud>
+                            <altitud>0.0</altitud>
+                        </coordenadas>
+                    </lugar_nacimiento>
+                    <lugar_fallecimiento lugar="">
+                        <coordenadas>
+                            <latitud>0.0</latitud>
+                            <longitud>0.0</longitud>
+                            <altitud>0.0</altitud>
+                        </coordenadas>
+                    </lugar_fallecimiento>
+                    <foto url="a"></foto>
+                    <video url="a"></video>
+                    <comentarios></comentarios>
+                </persona>
+                <persona nombre="bisabuela" apellidos="ape llido" fecha_nacimiento="1999-01-01" fecha_fallecimiento="2000-02-02">
+                    <lugar_nacimiento lugar="">
+                        <coordenadas>
+                            <latitud>0.0</latitud>
+                            <longitud>0.0</longitud>
+                            <altitud>0.0</altitud>
+                        </coordenadas>
+                    </lugar_nacimiento>
+                    <lugar_fallecimiento lugar="">
+                        <coordenadas>
+                            <latitud>0.0</latitud>
+                            <longitud>0.0</longitud>
+                            <altitud>0.0</altitud>
+                        </coordenadas>
+                    </lugar_fallecimiento>
+                    <foto url="a"></foto>
+                    <video url="a"></video>
+                    <comentarios></comentarios>
+                </persona>
+            </persona>
+            <persona nombre="abuela" apellidos="ape llido" fecha_nacimiento="1999-01-01" fecha_fallecimiento="2000-02-02">
+                <lugar_nacimiento lugar="">
+                    <coordenadas>
+                        <latitud>0.0</latitud>
+                        <longitud>0.0</longitud>
+                        <altitud>0.0</altitud>
+                    </coordenadas>
+                </lugar_nacimiento>
+                <lugar_fallecimiento lugar="">
+                    <coordenadas>
+                        <latitud>0.0</latitud>
+                        <longitud>0.0</longitud>
+                        <altitud>0.0</altitud>
+                    </coordenadas>
+                </lugar_fallecimiento>
+                <foto url="a"></foto>
+                <video url="a"></video>
+                <comentarios></comentarios>
+                <persona nombre="bisabuelo" apellidos="ape llido" fecha_nacimiento="1999-01-01" fecha_fallecimiento="2000-02-02">
+                    <lugar_nacimiento lugar="">
+                        <coordenadas>
+                            <latitud>0.0</latitud>
+                            <longitud>0.0</longitud>
+                            <altitud>0.0</altitud>
+                        </coordenadas>
+                    </lugar_nacimiento>
+                    <lugar_fallecimiento lugar="">
+                        <coordenadas>
+                            <latitud>0.0</latitud>
+                            <longitud>0.0</longitud>
+                            <altitud>0.0</altitud>
+                        </coordenadas>
+                    </lugar_fallecimiento>
+                    <foto url="a"></foto>
+                    <video url="a"></video>
+                    <comentarios></comentarios>
+                </persona>
+                <persona nombre="bisabuela" apellidos="ape llido" fecha_nacimiento="1999-01-01" fecha_fallecimiento="2000-02-02">
+                    <lugar_nacimiento lugar="">
+                        <coordenadas>
+                            <latitud>0.0</latitud>
+                            <longitud>0.0</longitud>
+                            <altitud>0.0</altitud>
+                        </coordenadas>
+                    </lugar_nacimiento>
+                    <lugar_fallecimiento lugar="">
+                        <coordenadas>
+                            <latitud>0.0</latitud>
+                            <longitud>0.0</longitud>
+                            <altitud>0.0</altitud>
+                        </coordenadas>
+                    </lugar_fallecimiento>
+                    <foto url="a"></foto>
+                    <video url="a"></video>
+                    <comentarios></comentarios>
+                </persona>
+            </persona>
+        </persona>
+        <persona nombre="madre" apellidos="ape llido" fecha_nacimiento="1999-01-01" fecha_fallecimiento="2000-02-02">
+            <lugar_nacimiento lugar="">
+                <coordenadas>
+                    <latitud>0.0</latitud>
+                    <longitud>0.0</longitud>
+                    <altitud>0.0</altitud>
+                </coordenadas>
+            </lugar_nacimiento>
+            <lugar_fallecimiento lugar="">
+                <coordenadas>
+                    <latitud>0.0</latitud>
+                    <longitud>0.0</longitud>
+                    <altitud>0.0</altitud>
+                </coordenadas>
+            </lugar_fallecimiento>
+            <foto url="a"></foto>
+            <video url="a"></video>
+            <comentarios></comentarios>
+            <persona nombre="abuelo" apellidos="ape llido" fecha_nacimiento="1999-01-01" fecha_fallecimiento="2000-02-02">
+                <lugar_nacimiento lugar="">
+                    <coordenadas>
+                        <latitud>0.0</latitud>
+                        <longitud>0.0</longitud>
+                        <altitud>0.0</altitud>
+                    </coordenadas>
+                </lugar_nacimiento>
+                <lugar_fallecimiento lugar="">
+                    <coordenadas>
+                        <latitud>0.0</latitud>
+                        <longitud>0.0</longitud>
+                        <altitud>0.0</altitud>
+                    </coordenadas>
+                </lugar_fallecimiento>
+                <foto url="a"></foto>
+                <video url="a"></video>
+                <comentarios></comentarios>
+                <persona nombre="bisabuelo" apellidos="ape llido" fecha_nacimiento="1999-01-01" fecha_fallecimiento="2000-02-02">
+                    <lugar_nacimiento lugar="">
+                        <coordenadas>
+                            <latitud>0.0</latitud>
+                            <longitud>0.0</longitud>
+                            <altitud>0.0</altitud>
+                        </coordenadas>
+                    </lugar_nacimiento>
+                    <lugar_fallecimiento lugar="">
+                        <coordenadas>
+                            <latitud>0.0</latitud>
+                            <longitud>0.0</longitud>
+                            <altitud>0.0</altitud>
+                        </coordenadas>
+                    </lugar_fallecimiento>
+                    <foto url="a"></foto>
+                    <video url="a"></video>
+                    <comentarios></comentarios>
+                </persona>
+                <persona nombre="bisabuela" apellidos="ape llido" fecha_nacimiento="1999-01-01" fecha_fallecimiento="2000-02-02">
+                    <lugar_nacimiento lugar="">
+                        <coordenadas>
+                            <latitud>0.0</latitud>
+                            <longitud>0.0</longitud>
+                            <altitud>0.0</altitud>
+                        </coordenadas>
+                    </lugar_nacimiento>
+                    <lugar_fallecimiento lugar="">
+                        <coordenadas>
+                            <latitud>0.0</latitud>
+                            <longitud>0.0</longitud>
+                            <altitud>0.0</altitud>
+                        </coordenadas>
+                    </lugar_fallecimiento>
+                    <foto url="a"></foto>
+                    <video url="a"></video>
+                    <comentarios></comentarios>
+                </persona>
+            </persona>
+            <persona nombre="abuela" apellidos="ape llido" fecha_nacimiento="1999-01-01" fecha_fallecimiento="2000-02-02">
+                <lugar_nacimiento lugar="">
+                    <coordenadas>
+                        <latitud>0.0</latitud>
+                        <longitud>0.0</longitud>
+                        <altitud>0.0</altitud>
+                    </coordenadas>
+                </lugar_nacimiento>
+                <lugar_fallecimiento lugar="">
+                    <coordenadas>
+                        <latitud>0.0</latitud>
+                        <longitud>0.0</longitud>
+                        <altitud>0.0</altitud>
+                    </coordenadas>
+                </lugar_fallecimiento>
+                <foto url="a"></foto>
+                <video url="a"></video>
+                <comentarios></comentarios>
+                <persona nombre="bisabuelo" apellidos="ape llido" fecha_nacimiento="1999-01-01" fecha_fallecimiento="2000-02-02">
+                    <lugar_nacimiento lugar="">
+                        <coordenadas>
+                            <latitud>0.0</latitud>
+                            <longitud>0.0</longitud>
+                            <altitud>0.0</altitud>
+                        </coordenadas>
+                    </lugar_nacimiento>
+                    <lugar_fallecimiento lugar="">
+                        <coordenadas>
+                            <latitud>0.0</latitud>
+                            <longitud>0.0</longitud>
+                            <altitud>0.0</altitud>
+                        </coordenadas>
+                    </lugar_fallecimiento>
+                    <foto url="a"></foto>
+                    <video url="a"></video>
+                    <comentarios></comentarios>
+                </persona>
+                <persona nombre="bisabuela" apellidos="ape llido" fecha_nacimiento="1999-01-01" fecha_fallecimiento="2000-02-02">
+                    <lugar_nacimiento lugar="">
+                        <coordenadas>
+                            <latitud>0.0</latitud>
+                            <longitud>0.0</longitud>
+                            <altitud>0.0</altitud>
+                        </coordenadas>
+                    </lugar_nacimiento>
+                    <lugar_fallecimiento lugar="">
+                        <coordenadas>
+                            <latitud>0.0</latitud>
+                            <longitud>0.0</longitud>
+                            <altitud>0.0</altitud>
+                        </coordenadas>
+                    </lugar_fallecimiento>
+                    <foto url="a"></foto>
+                    <video url="a"></video>
+                    <comentarios></comentarios>
+                </persona>
+            </persona>
+        </persona>
+    </persona>
+</arbol_genealogico>

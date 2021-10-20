@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="arbol_genealogico">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="persona" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="persona">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="lugar_nacimiento" />
+				<xs:element minOccurs="0" maxOccurs="1" ref="lugar_fallecimiento" />
+				<xs:element minOccurs="1" maxOccurs="unbounded" ref="foto" />
+				<xs:element minOccurs="0" maxOccurs="3" ref="video" />
+				<xs:element minOccurs="0" maxOccurs="1" ref="comentarios" />
+				<xs:sequence minOccurs="0" maxOccurs="1">
+					<xs:element ref="persona" />
+					<xs:element ref="persona" />
+				</xs:sequence>
+			</xs:sequence>
+			<xs:attribute name="nombre" type="xs:string" use="required" />
+			<xs:attribute name="apellidos" type="xs:string" use="required" />
+			<xs:attribute name="fecha_nacimiento" type="xs:date" use="required" />
+			<xs:attribute name="fecha_fallecimiento" type="xs:date" />
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="lugar_nacimiento">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="coordenadas" />
+			</xs:sequence>
+			<xs:attribute name="lugar" type="xs:string" use="required" />
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="lugar_fallecimiento">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="coordenadas" />
+			</xs:sequence>
+			<xs:attribute name="lugar" type="xs:string" use="required" />
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="coordenadas">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="latitud" />
+				<xs:element ref="longitud" />
+				<xs:element ref="altitud" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="latitud" type="xs:double" />
+	<xs:element name="longitud" type="xs:double" />
+	<xs:element name="altitud" type="xs:double" />
+	<xs:element name="foto">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="xs:string">
+					<xs:attribute name="url" type="xs:anyURI" use="required" />
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="video">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="xs:string">
+					<xs:attribute name="url" type="xs:anyURI" use="required" />
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="comentarios" type="xs:string" />
+</xs:schema>
