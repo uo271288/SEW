@@ -1,333 +1,231 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE arbol_genealogico SYSTEM "arbol_genealogico.dtd">
-
 <arbol_genealogico>
-    <persona nombre="yo" apellidos="ape llido" fecha_nacimiento="1-1-1999" fecha_fallecimiento="2-2-2000">
-        <lugar_nacimiento lugar="">
+    <persona nombre="Alejandro" apellidos="Álvarez Varela" fecha_nacimiento="2000-08-13">
+        <lugar_nacimiento lugar="Gozón">
             <coordenadas>
-                <latitud></latitud>
-                <longitud></longitud>
-                <altitud></altitud>
+                <latitud>43.595556</latitud>
+                <longitud>-5.892778</longitud>
+                <altitud>50</altitud>
             </coordenadas>
         </lugar_nacimiento>
-        <lugar_fallecimiento lugar="">
-            <coordenadas>
-                <latitud></latitud>
-                <longitud></longitud>
-                <altitud></altitud>
-            </coordenadas>
-        </lugar_fallecimiento>
-        <foto url="a">
-        </foto>
-        <video url="a">
-        </video>
-        <comentarios>
-        </comentarios>
-        <persona nombre="padre" apellidos="ape llido" fecha_nacimiento="1-1-1999" fecha_fallecimiento="2-2-2000">
-            <lugar_nacimiento lugar="">
+        <foto url="https://raw.githubusercontent.com/uo271288/SEW/main/XML/Multimedia/foto_alejandro.jpg">Foto de mí</foto>
+        <video url="https://youtu.be/FUdiyvvlyro">Video de mí</video>
+        <comentarios>Estudiante de la EII de Oviedo</comentarios>
+        <persona nombre="Pedro" apellidos="Álvarez Fuente" fecha_nacimiento="1968-03-11">
+            <lugar_nacimiento lugar="Avilés">
                 <coordenadas>
-                    <latitud></latitud>
-                    <longitud></longitud>
-                    <altitud></altitud>
+                    <latitud>43.555556</latitud>
+                    <longitud>-5.924167</longitud>
+                    <altitud>17</altitud>
                 </coordenadas>
             </lugar_nacimiento>
-            <lugar_fallecimiento lugar="">
-                <coordenadas>
-                    <latitud></latitud>
-                    <longitud></longitud>
-                    <altitud></altitud>
-                </coordenadas>
-            </lugar_fallecimiento>
-            <foto url="a">
-            </foto>
-            <video url="a">
-            </video>
-            <comentarios>
-            </comentarios>
-            <persona nombre="abuelo" apellidos="ape llido" fecha_nacimiento="1-1-1999" fecha_fallecimiento="2-2-2000">
-                <lugar_nacimiento lugar="" >
+            <foto url="https://raw.githubusercontent.com/uo271288/SEW/main/XML/Multimedia/foto_padre.jpg">Foto de mi padre</foto>
+            <comentarios>Se casó a los 30</comentarios>
+            <persona nombre="Gustavo" apellidos="Álvarez Peña" fecha_nacimiento="1937-06-19" fecha_fallecimiento="2010-02-02">
+                <lugar_nacimiento lugar="Vigo">
                     <coordenadas>
-                        <latitud></latitud>
-                        <longitud></longitud>
-                        <altitud></altitud>
+                        <latitud>42.230833</latitud>
+                        <longitud>-8.714444</longitud>
+                        <altitud>83</altitud>
                     </coordenadas>
                 </lugar_nacimiento>
-                <lugar_fallecimiento lugar="">
+                <lugar_fallecimiento lugar="Oviedo">
                     <coordenadas>
-                        <latitud></latitud>
-                        <longitud></longitud>
-                        <altitud></altitud>
+                        <latitud>43.375556</latitud>
+                        <longitud>-5.827222</longitud>
+                        <altitud>221</altitud>
                     </coordenadas>
                 </lugar_fallecimiento>
-                <foto url="a">
-                </foto>
-                <video url="a">
-                </video>
-                <comentarios>
-                </comentarios>
-                <persona nombre="bisabuelo" apellidos="ape llido" fecha_nacimiento="1-1-1999" fecha_fallecimiento="2-2-2000">
-                    <lugar_nacimiento lugar="">
+                <foto url="https://raw.githubusercontent.com/uo271288/SEW/main/XML/Multimedia/foto_padre_padre.jpg">Foto del padre de mi padre</foto>
+                <comentarios>Fue economista</comentarios>
+                <persona nombre="Jesús" apellidos="Álvarez Rodenas" fecha_nacimiento="1919-12-25" fecha_fallecimiento="2005-11-05">
+                    <lugar_nacimiento lugar="Zamora">
                         <coordenadas>
-                            <latitud></latitud>
-                            <longitud></longitud>
-                            <altitud></altitud>
+                            <latitud>41.469444</latitud>
+                            <longitud>-5.768056</longitud>
+                            <altitud>665</altitud>
                         </coordenadas>
                     </lugar_nacimiento>
-                    <lugar_fallecimiento lugar="">
+                    <lugar_fallecimiento lugar="Zamora">
                         <coordenadas>
-                            <latitud></latitud>
-                            <longitud></longitud>
-                            <altitud></altitud>
+                            <latitud>41.469444</latitud>
+                            <longitud>-5.768056</longitud>
+                            <altitud>665</altitud>
                         </coordenadas>
                     </lugar_fallecimiento>
-                    <foto url="a">
-                    </foto>
-                    <video url="a">
-                    </video>
-                    <comentarios>
-                    </comentarios>
+                    <foto url="https://raw.githubusercontent.com/uo271288/SEW/main/XML/Multimedia/foto_padre_padre_padre.jpg">Foto del padre del padre de mi padre</foto>
+                    <comentarios>Trabajó toda su vida en el campo</comentarios>
                 </persona>
-                <persona nombre="bisabuela" apellidos="ape llido" fecha_nacimiento="1-1-1999" fecha_fallecimiento="2-2-2000">
-                    <lugar_nacimiento lugar="">
+                <persona nombre="Margarita Oliva" apellidos="Peña Ruiz" fecha_nacimiento="1918-01-15" fecha_fallecimiento="1969-06-02">
+                    <lugar_nacimiento lugar="Valladolid">
                         <coordenadas>
-                            <latitud></latitud>
-                            <longitud></longitud>
-                            <altitud></altitud>
+                            <latitud>41.641111</latitud>
+                            <longitud>-4.726111</longitud>
+                            <altitud>689</altitud>
                         </coordenadas>
                     </lugar_nacimiento>
-                    <lugar_fallecimiento lugar="">
+                    <lugar_fallecimiento lugar="Zamora">
                         <coordenadas>
-                            <latitud></latitud>
-                            <longitud></longitud>
-                            <altitud></altitud>
+                            <latitud>41.469444</latitud>
+                            <longitud>-5.768056</longitud>
+                            <altitud>665</altitud>
                         </coordenadas>
                     </lugar_fallecimiento>
-                    <foto url="a">
-                    </foto>
-                    <video url="a">
-                    </video>
-                    <comentarios>
-                    </comentarios>
+                    <foto url="https://raw.githubusercontent.com/uo271288/SEW/main/XML/Multimedia/foto_padre_padre_madre.jpg">Foto de la madre del padre de mi padre</foto>
+                    <comentarios>Fallece prematuramente a casua de un cáncer</comentarios>
                 </persona>
             </persona>
-            <persona nombre="abuela" apellidos="ape llido" fecha_nacimiento="1-1-1999" fecha_fallecimiento="2-2-2000">
-                <lugar_nacimiento lugar="">
+            <persona nombre="Azucena" apellidos="Fuente Codina" fecha_nacimiento="1940-08-17">
+                <lugar_nacimiento lugar="Santiago de Compostela">
                     <coordenadas>
-                        <latitud></latitud>
-                        <longitud></longitud>
-                        <altitud></altitud>
+                        <latitud>42.875278</latitud>
+                        <longitud>-8.546111</longitud>
+                        <altitud>244</altitud>
                     </coordenadas>
                 </lugar_nacimiento>
-                <lugar_fallecimiento lugar="">
-                    <coordenadas>
-                        <latitud></latitud>
-                        <longitud></longitud>
-                        <altitud></altitud>
-                    </coordenadas>
-                </lugar_fallecimiento>
-                <foto url="a">
-                </foto>
-                <video url="a">
-                </video>
-                <comentarios>
-                </comentarios>
-                <persona nombre="bisabuelo" apellidos="ape llido" fecha_nacimiento="1-1-1999" fecha_fallecimiento="2-2-2000">
-                    <lugar_nacimiento lugar="">
+                <foto url="https://raw.githubusercontent.com/uo271288/SEW/main/XML/Multimedia/foto_padre_madre.jpg">Foto de la madre de mi padre</foto>
+                <comentarios>Fue la primera de su familia en obtener un título universitario</comentarios>
+                <persona nombre="José Ramón" apellidos="Fuente Soto" fecha_nacimiento="1910-08-19" fecha_fallecimiento="2000-10-22">
+                    <lugar_nacimiento lugar="Oleiros">
                         <coordenadas>
-                            <latitud></latitud>
-                            <longitud></longitud>
-                            <altitud></altitud>
+                            <latitud>43.333611</latitud>
+                            <longitud>-8.317778</longitud>
+                            <altitud>123</altitud>
                         </coordenadas>
                     </lugar_nacimiento>
-                    <lugar_fallecimiento lugar="">
+                    <lugar_fallecimiento lugar="Santiago de Compostela">
                         <coordenadas>
-                            <latitud></latitud>
-                            <longitud></longitud>
-                            <altitud></altitud>
+                            <latitud>42.875278</latitud>
+                            <longitud>-8.546111</longitud>
+                            <altitud>244</altitud>
                         </coordenadas>
                     </lugar_fallecimiento>
-                    <foto url="a">
-                    </foto>
-                    <video url="a">
-                    </video>
-                    <comentarios>
-                    </comentarios>
+                    <foto url="https://raw.githubusercontent.com/uo271288/SEW/main/XML/Multimedia/foto_padre_madre_padre.jpg">Foto del padre de la madre de mi padre</foto>
+                    <comentarios>Trabajó en una fábrica desde los 16 años</comentarios>
                 </persona>
-                <persona nombre="bisabuela" apellidos="ape llido" fecha_nacimiento="1-1-1999" fecha_fallecimiento="2-2-2000">
-                    <lugar_nacimiento lugar="">
+                <persona nombre="Cándida" apellidos="Codina Guerrero" fecha_nacimiento="1912-03-04" fecha_fallecimiento="2004-10-21">
+                    <lugar_nacimiento lugar="A Coruña">
                         <coordenadas>
-                            <latitud></latitud>
-                            <longitud></longitud>
-                            <altitud></altitud>
+                            <latitud>43.356944</latitud>
+                            <longitud>-8.413056</longitud>
+                            <altitud>41</altitud>
                         </coordenadas>
                     </lugar_nacimiento>
-                    <lugar_fallecimiento lugar="">
+                    <lugar_fallecimiento lugar="Oviedo">
                         <coordenadas>
-                            <latitud></latitud>
-                            <longitud></longitud>
-                            <altitud></altitud>
+                            <latitud>43.375556</latitud>
+                            <longitud>-5.827222</longitud>
+                            <altitud>221</altitud>
                         </coordenadas>
                     </lugar_fallecimiento>
-                    <foto url="a">
-                    </foto>
-                    <video url="a">
-                    </video>
-                    <comentarios>
-                    </comentarios>
+                    <foto url="https://raw.githubusercontent.com/uo271288/SEW/main/XML/Multimedia/foto_padre_madre_madre.jpg">Foto de la madre de la madre de mi padre</foto>
+                    <comentarios>Siempre fue ama de casa</comentarios>
                 </persona>
             </persona>
         </persona>
-        <persona nombre="madre" apellidos="ape llido" fecha_nacimiento="1-1-1999" fecha_fallecimiento="2-2-2000">
-            <lugar_nacimiento lugar="">
+        <persona nombre="Nora" apellidos="Varela Muñoz" fecha_nacimiento="1970-01-30">
+            <lugar_nacimiento lugar="Castropol">
                 <coordenadas>
-                    <latitud></latitud>
-                    <longitud></longitud>
-                    <altitud></altitud>
+                    <latitud>43.513611</latitud>
+                    <longitud>-7.022778</longitud>
+                    <altitud>53</altitud>
                 </coordenadas>
             </lugar_nacimiento>
-            <lugar_fallecimiento lugar="">
-                <coordenadas>
-                    <latitud></latitud>
-                    <longitud></longitud>
-                    <altitud></altitud>
-                </coordenadas>
-            </lugar_fallecimiento>
-            <foto url="a">
-            </foto>
-            <video url="a">
-            </video>
-            <comentarios>
-            </comentarios>
-            <persona nombre="abuelo" apellidos="ape llido" fecha_nacimiento="1-1-1999" fecha_fallecimiento="2-2-2000">
-                <lugar_nacimiento lugar="">
+            <foto url="https://raw.githubusercontent.com/uo271288/SEW/main/XML/Multimedia/foto_madre.jpg">Foto de mi madre</foto>
+            <comentarios>Es profesora</comentarios>
+            <persona nombre="Enrique" apellidos="Varela García" fecha_nacimiento="1936-02-28">
+                <lugar_nacimiento lugar="Navia">
                     <coordenadas>
-                        <latitud></latitud>
-                        <longitud></longitud>
-                        <altitud></altitud>
+                        <latitud>43.539444</latitud>
+                        <longitud>-6.723056</longitud>
+                        <altitud>13</altitud>
                     </coordenadas>
                 </lugar_nacimiento>
-                <lugar_fallecimiento lugar="">
-                    <coordenadas>
-                        <latitud></latitud>
-                        <longitud></longitud>
-                        <altitud></altitud>
-                    </coordenadas>
-                </lugar_fallecimiento>
-                <foto url="a">
-                </foto>
-                <video url="a">
-                </video>
-                <comentarios>
-                </comentarios>
-                <persona nombre="bisabuelo" apellidos="ape llido" fecha_nacimiento="1-1-1999" fecha_fallecimiento="2-2-2000">
-                    <lugar_nacimiento lugar="">
+                <foto url="https://raw.githubusercontent.com/uo271288/SEW/main/XML/Multimedia/foto_madre_padre.jpg">Foto del padre de mi madre</foto>
+                <comentarios>Fue médico de familia</comentarios>
+                <persona nombre="Manuel" apellidos="Varela Varela" fecha_nacimiento="1915-09-13" fecha_fallecimiento="2000-09-30">
+                    <lugar_nacimiento lugar="Navelgas">
                         <coordenadas>
-                            <latitud></latitud>
-                            <longitud></longitud>
-                            <altitud></altitud>
+                            <latitud>43.404167</latitud>
+                            <longitud>-6.544167</longitud>
+                            <altitud>221</altitud>
                         </coordenadas>
                     </lugar_nacimiento>
-                    <lugar_fallecimiento lugar="">
+                    <lugar_fallecimiento lugar="Navia">
                         <coordenadas>
-                            <latitud></latitud>
-                            <longitud></longitud>
-                            <altitud></altitud>
+                            <latitud>43.539444</latitud>
+                            <longitud>-6.723056</longitud>
+                            <altitud>13</altitud>
                         </coordenadas>
                     </lugar_fallecimiento>
-                    <foto url="a">
-                    </foto>
-                    <video url="a">
-                    </video>
-                    <comentarios>
-                    </comentarios>
+                    <foto url="https://raw.githubusercontent.com/uo271288/SEW/main/XML/Multimedia/foto_madre_padre_padre.jpg">Foto del padre del padre de mi madre</foto>
+                    <comentarios>Fue marinero y mariscador</comentarios>
                 </persona>
-                <persona nombre="bisabuela" apellidos="ape llido" fecha_nacimiento="1-1-1999" fecha_fallecimiento="2-2-2000">
-                    <lugar_nacimiento lugar="">
+                <persona nombre="Marga" apellidos="García Chacón" fecha_nacimiento="1913-11-20" fecha_fallecimiento="1999-05-19">
+                    <lugar_nacimiento lugar="EL Bierzo">
                         <coordenadas>
-                            <latitud></latitud>
-                            <longitud></longitud>
-                            <altitud></altitud>
+                            <latitud>42.594444</latitud>
+                            <longitud>-6.665</longitud>
+                            <altitud>522</altitud>
                         </coordenadas>
                     </lugar_nacimiento>
-                    <lugar_fallecimiento lugar="">
+                    <lugar_fallecimiento lugar="Navia">
                         <coordenadas>
-                            <latitud></latitud>
-                            <longitud></longitud>
-                            <altitud></altitud>
+                            <latitud>43.539444</latitud>
+                            <longitud>-6.723056</longitud>
+                            <altitud>13</altitud>
                         </coordenadas>
                     </lugar_fallecimiento>
-                    <foto url="a">
-                    </foto>
-                    <video url="a">
-                    </video>
-                    <comentarios>
-                    </comentarios>
+                    <foto url="https://raw.githubusercontent.com/uo271288/SEW/main/XML/Multimedia/foto_madre_padre_madre.jpg">Foto de la madre del padre de mi madre</foto>
+                    <comentarios>Trabajaba en una textil</comentarios>
                 </persona>
             </persona>
-            <persona nombre="abuela" apellidos="ape llido" fecha_nacimiento="1-1-1999" fecha_fallecimiento="2-2-2000">
-                <lugar_nacimiento lugar="">
+            <persona nombre="Alba" apellidos="Muñoz Aramburu" fecha_nacimiento="1940-04-27">
+                <lugar_nacimiento lugar="Aulestia">
                     <coordenadas>
-                        <latitud></latitud>
-                        <longitud></longitud>
-                        <altitud></altitud>
+                        <latitud>43.296667</latitud>
+                        <longitud>-2.562778</longitud>
+                        <altitud>92</altitud>
                     </coordenadas>
                 </lugar_nacimiento>
-                <lugar_fallecimiento lugar="">
-                    <coordenadas>
-                        <latitud></latitud>
-                        <longitud></longitud>
-                        <altitud></altitud>
-                    </coordenadas>
-                </lugar_fallecimiento>
-                <foto url="a">
-                </foto>
-                <video url="a">
-                </video>
-                <comentarios>
-                </comentarios>
-                <persona nombre="bisabuelo" apellidos="ape llido" fecha_nacimiento="1-1-1999" fecha_fallecimiento="2-2-2000">
-                    <lugar_nacimiento lugar="">
+                <foto url="https://raw.githubusercontent.com/uo271288/SEW/main/XML/Multimedia/foto_madre_madre.jpg">Foto de la madre de mi madre</foto>
+                <comentarios>Tenía una mercería</comentarios>
+                <persona nombre="Oskar" apellidos="Muñoz Aanda" fecha_nacimiento="1921-08-15" fecha_fallecimiento="2021-09-10">
+                    <lugar_nacimiento lugar="Vergara">
                         <coordenadas>
-                            <latitud></latitud>
-                            <longitud></longitud>
-                            <altitud></altitud>
+                            <latitud>43.122778</latitud>
+                            <longitud>-2.421944</longitud>
+                            <altitud>139</altitud>
                         </coordenadas>
                     </lugar_nacimiento>
-                    <lugar_fallecimiento lugar="">
+                    <lugar_fallecimiento lugar="Oviedo">
                         <coordenadas>
-                            <latitud></latitud>
-                            <longitud></longitud>
-                            <altitud></altitud>
+                            <latitud>43.375556</latitud>
+                            <longitud>-5.827222</longitud>
+                            <altitud>221</altitud>
                         </coordenadas>
                     </lugar_fallecimiento>
-                    <foto url="a">
-                    </foto>
-                    <video url="a">
-                    </video>
-                    <comentarios>
-                    </comentarios>
+                    <foto url="https://raw.githubusercontent.com/uo271288/SEW/main/XML/Multimedia/foto_madre_madre_padre.jpg">Foto del padre de la madre de mi madre</foto>
+                    <comentarios>Tenía una ganadería</comentarios>
                 </persona>
-                <persona nombre="bisabuela" apellidos="ape llido" fecha_nacimiento="1-1-1999" fecha_fallecimiento="2-2-2000">
-                    <lugar_nacimiento lugar="">
+                <persona nombre="Ane" apellidos="Aramburu Zelaya" fecha_nacimiento="1922-06-16" fecha_fallecimiento="1997-10-24">
+                    <lugar_nacimiento lugar="Hernani">
                         <coordenadas>
-                            <latitud></latitud>
-                            <longitud></longitud>
-                            <altitud></altitud>
+                            <latitud>43.266389</latitud>
+                            <longitud>-1.975833</longitud>
+                            <altitud>56</altitud>
                         </coordenadas>
                     </lugar_nacimiento>
-                    <lugar_fallecimiento lugar="">
+                    <lugar_fallecimiento lugar="Oviedo">
                         <coordenadas>
-                            <latitud></latitud>
-                            <longitud></longitud>
-                            <altitud></altitud>
+                            <latitud>43.375556</latitud>
+                            <longitud>-5.827222</longitud>
+                            <altitud>221</altitud>
                         </coordenadas>
                     </lugar_fallecimiento>
-                    <foto url="a">
-                    </foto>
-                    <video url="a">
-                    </video>
-                    <comentarios>
-                    </comentarios>
+                    <foto url="https://raw.githubusercontent.com/uo271288/SEW/main/XML/Multimedia/foto_madre_madre_madre.jpg">Foto de la madre de la madre de mi madre</foto>
+                    <comentarios>Se dedicó a la música y el baile</comentarios>
                 </persona>
             </persona>
         </persona>
