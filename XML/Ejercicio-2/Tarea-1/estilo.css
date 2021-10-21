@@ -1,0 +1,44 @@
+/*001*/
+body {
+    font: 0.938em;
+    font-family: "Lucida Console", "Courier New", monospace;
+    line-height: 2em;
+    background-color: black;
+    color: white;
+}
+
+/*001*/
+section {
+    display: grid;
+}
+
+/*001*/
+footer {
+    text-align: center;
+}
+
+/*001*/
+p {
+    font-size: 1.1em;
+}
+
+/*001*/
+h1 {
+    padding: 0.313em;
+    text-align: center;
+}
+
+/*001*/
+h2 {
+    padding: 0.625em;
+}
+
+/*001*/
+img {
+    width: 15em;
+}
+
+/*001*/
+video {
+    width: 25em;
+}
