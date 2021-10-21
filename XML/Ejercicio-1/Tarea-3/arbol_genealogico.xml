@@ -9,8 +9,8 @@
                 <altitud>50</altitud>
             </coordenadas>
         </lugar_nacimiento>
-        <foto url="https://raw.githubusercontent.com/uo271288/SEW/main/XML/Multimedia/foto_alejandro.jpg">Foto de mí</foto>
-        <video url="https://youtu.be/FUdiyvvlyro">Video de mí</video>
+        <foto url="foto_alejandro.jpg">Foto de mí</foto>
+        <video url="video_alejandro.mp4">Video de mí</video>
         <comentarios>Estudiante de la EII de Oviedo</comentarios>
         <persona nombre="Pedro" apellidos="Álvarez Fuente" fecha_nacimiento="1968-03-11">
             <lugar_nacimiento lugar="Avilés">
@@ -20,7 +20,7 @@
                     <altitud>17</altitud>
                 </coordenadas>
             </lugar_nacimiento>
-            <foto url="https://raw.githubusercontent.com/uo271288/SEW/main/XML/Multimedia/foto_padre.jpg">Foto de mi padre</foto>
+            <foto url="foto_padre.jpg">Foto de mi padre</foto>
             <comentarios>Se casó a los 30</comentarios>
             <persona nombre="Gustavo" apellidos="Álvarez Peña" fecha_nacimiento="1937-06-19" fecha_fallecimiento="2010-02-02">
                 <lugar_nacimiento lugar="Vigo">
@@ -37,7 +37,7 @@
                         <altitud>221</altitud>
                     </coordenadas>
                 </lugar_fallecimiento>
-                <foto url="https://raw.githubusercontent.com/uo271288/SEW/main/XML/Multimedia/foto_padre_padre.jpg">Foto del padre de mi padre</foto>
+                <foto url="foto_padre_padre.jpg">Foto del padre de mi padre</foto>
                 <comentarios>Fue economista</comentarios>
                 <persona nombre="Jesús" apellidos="Álvarez Rodenas" fecha_nacimiento="1919-12-25" fecha_fallecimiento="2005-11-05">
                     <lugar_nacimiento lugar="Zamora">
@@ -54,7 +54,7 @@
                             <altitud>665</altitud>
                         </coordenadas>
                     </lugar_fallecimiento>
-                    <foto url="https://raw.githubusercontent.com/uo271288/SEW/main/XML/Multimedia/foto_padre_padre_padre.jpg">Foto del padre del padre de mi padre</foto>
+                    <foto url="foto_padre_padre_padre.jpg">Foto del padre del padre de mi padre</foto>
                     <comentarios>Trabajó toda su vida en el campo</comentarios>
                 </persona>
                 <persona nombre="Margarita Oliva" apellidos="Peña Ruiz" fecha_nacimiento="1918-01-15" fecha_fallecimiento="1969-06-02">
@@ -72,7 +72,7 @@
                             <altitud>665</altitud>
                         </coordenadas>
                     </lugar_fallecimiento>
-                    <foto url="https://raw.githubusercontent.com/uo271288/SEW/main/XML/Multimedia/foto_padre_padre_madre.jpg">Foto de la madre del padre de mi padre</foto>
+                    <foto url="foto_padre_padre_madre.jpg">Foto de la madre del padre de mi padre</foto>
                     <comentarios>Fallece prematuramente a casua de un cáncer</comentarios>
                 </persona>
             </persona>
@@ -84,7 +84,7 @@
                         <altitud>244</altitud>
                     </coordenadas>
                 </lugar_nacimiento>
-                <foto url="https://raw.githubusercontent.com/uo271288/SEW/main/XML/Multimedia/foto_padre_madre.jpg">Foto de la madre de mi padre</foto>
+                <foto url="foto_padre_madre.jpg">Foto de la madre de mi padre</foto>
                 <comentarios>Fue la primera de su familia en obtener un título universitario</comentarios>
                 <persona nombre="José Ramón" apellidos="Fuente Soto" fecha_nacimiento="1910-08-19" fecha_fallecimiento="2000-10-22">
                     <lugar_nacimiento lugar="Oleiros">
@@ -101,7 +101,7 @@
                             <altitud>244</altitud>
                         </coordenadas>
                     </lugar_fallecimiento>
-                    <foto url="https://raw.githubusercontent.com/uo271288/SEW/main/XML/Multimedia/foto_padre_madre_padre.jpg">Foto del padre de la madre de mi padre</foto>
+                    <foto url="foto_padre_madre_padre.jpg">Foto del padre de la madre de mi padre</foto>
                     <comentarios>Trabajó en una fábrica desde los 16 años</comentarios>
                 </persona>
                 <persona nombre="Cándida" apellidos="Codina Guerrero" fecha_nacimiento="1912-03-04" fecha_fallecimiento="2004-10-21">
@@ -119,7 +119,7 @@
                             <altitud>221</altitud>
                         </coordenadas>
                     </lugar_fallecimiento>
-                    <foto url="https://raw.githubusercontent.com/uo271288/SEW/main/XML/Multimedia/foto_padre_madre_madre.jpg">Foto de la madre de la madre de mi padre</foto>
+                    <foto url="foto_padre_madre_madre.jpg">Foto de la madre de la madre de mi padre</foto>
                     <comentarios>Siempre fue ama de casa</comentarios>
                 </persona>
             </persona>
@@ -132,7 +132,7 @@
                     <altitud>53</altitud>
                 </coordenadas>
             </lugar_nacimiento>
-            <foto url="https://raw.githubusercontent.com/uo271288/SEW/main/XML/Multimedia/foto_madre.jpg">Foto de mi madre</foto>
+            <foto url="foto_madre.jpg">Foto de mi madre</foto>
             <comentarios>Es profesora</comentarios>
             <persona nombre="Enrique" apellidos="Varela García" fecha_nacimiento="1936-02-28">
                 <lugar_nacimiento lugar="Navia">
@@ -142,7 +142,7 @@
                         <altitud>13</altitud>
                     </coordenadas>
                 </lugar_nacimiento>
-                <foto url="https://raw.githubusercontent.com/uo271288/SEW/main/XML/Multimedia/foto_madre_padre.jpg">Foto del padre de mi madre</foto>
+                <foto url="foto_madre_padre.jpg">Foto del padre de mi madre</foto>
                 <comentarios>Fue médico de familia</comentarios>
                 <persona nombre="Manuel" apellidos="Varela Varela" fecha_nacimiento="1915-09-13" fecha_fallecimiento="2000-09-30">
                     <lugar_nacimiento lugar="Navelgas">
@@ -159,7 +159,7 @@
                             <altitud>13</altitud>
                         </coordenadas>
                     </lugar_fallecimiento>
-                    <foto url="https://raw.githubusercontent.com/uo271288/SEW/main/XML/Multimedia/foto_madre_padre_padre.jpg">Foto del padre del padre de mi madre</foto>
+                    <foto url="foto_madre_padre_padre.jpg">Foto del padre del padre de mi madre</foto>
                     <comentarios>Fue marinero y mariscador</comentarios>
                 </persona>
                 <persona nombre="Marga" apellidos="García Chacón" fecha_nacimiento="1913-11-20" fecha_fallecimiento="1999-05-19">
@@ -177,7 +177,7 @@
                             <altitud>13</altitud>
                         </coordenadas>
                     </lugar_fallecimiento>
-                    <foto url="https://raw.githubusercontent.com/uo271288/SEW/main/XML/Multimedia/foto_madre_padre_madre.jpg">Foto de la madre del padre de mi madre</foto>
+                    <foto url="foto_madre_padre_madre.jpg">Foto de la madre del padre de mi madre</foto>
                     <comentarios>Trabajaba en una textil</comentarios>
                 </persona>
             </persona>
@@ -189,7 +189,7 @@
                         <altitud>92</altitud>
                     </coordenadas>
                 </lugar_nacimiento>
-                <foto url="https://raw.githubusercontent.com/uo271288/SEW/main/XML/Multimedia/foto_madre_madre.jpg">Foto de la madre de mi madre</foto>
+                <foto url="foto_madre_madre.jpg">Foto de la madre de mi madre</foto>
                 <comentarios>Tenía una mercería</comentarios>
                 <persona nombre="Oskar" apellidos="Muñoz Aanda" fecha_nacimiento="1921-08-15" fecha_fallecimiento="2021-09-10">
                     <lugar_nacimiento lugar="Vergara">
@@ -206,7 +206,7 @@
                             <altitud>221</altitud>
                         </coordenadas>
                     </lugar_fallecimiento>
-                    <foto url="https://raw.githubusercontent.com/uo271288/SEW/main/XML/Multimedia/foto_madre_madre_padre.jpg">Foto del padre de la madre de mi madre</foto>
+                    <foto url="foto_madre_madre_padre.jpg">Foto del padre de la madre de mi madre</foto>
                     <comentarios>Tenía una ganadería</comentarios>
                 </persona>
                 <persona nombre="Ane" apellidos="Aramburu Zelaya" fecha_nacimiento="1922-06-16" fecha_fallecimiento="1997-10-24">
@@ -224,7 +224,7 @@
                             <altitud>221</altitud>
                         </coordenadas>
                     </lugar_fallecimiento>
-                    <foto url="https://raw.githubusercontent.com/uo271288/SEW/main/XML/Multimedia/foto_madre_madre_madre.jpg">Foto de la madre de la madre de mi madre</foto>
+                    <foto url="foto_madre_madre_madre.jpg">Foto de la madre de la madre de mi madre</foto>
                     <comentarios>Se dedicó a la música y el baile</comentarios>
                 </persona>
             </persona>
