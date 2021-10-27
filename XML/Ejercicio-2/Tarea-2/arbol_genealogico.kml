@@ -1,0 +1,196 @@
+<kml>
+    <Document>
+        <Placemark>
+            <name>Alejandro Álvarez Varela</name>
+            <description>Nació en:Gozón</description>
+            <Point>
+                <coordinates>-5.892778,43.595556</coordinates>
+                <altitudeMode>relativeToGround</altitudeMode>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>Pedro Álvarez Fuente</name>
+            <description>Nació en:Avilés</description>
+            <Point>
+                <coordinates>-5.924167,43.555556</coordinates>
+                <altitudeMode>relativeToGround</altitudeMode>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>Gustavo Álvarez Peña</name>
+            <description>Nació en:Vigo</description>
+            <Point>
+                <coordinates>-8.714444,42.230833</coordinates>
+                <altitudeMode>relativeToGround</altitudeMode>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>Gustavo Álvarez Peña</name>
+            <description>Falleció en:Vigo</description>
+            <Point>
+                <coordinates>-5.827222,43.375556</coordinates>
+                <altitudeMode>relativeToGround</altitudeMode>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>Jesús Álvarez Rodenas</name>
+            <description>Nació en:Zamora</description>
+            <Point>
+                <coordinates>-5.769040,41.4671131</coordinates>
+                <altitudeMode>relativeToGround</altitudeMode>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>Jesús Álvarez Rodenas</name>
+            <description>Falleció en:Zamora</description>
+            <Point>
+                <coordinates>-5.768056,41.469444</coordinates>
+                <altitudeMode>relativeToGround</altitudeMode>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>Margarita Oliva Peña Ruiz</name>
+            <description>Nació en:Valladolid</description>
+            <Point>
+                <coordinates>-4.726111,41.641111</coordinates>
+                <altitudeMode>relativeToGround</altitudeMode>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>Margarita Oliva Peña Ruiz</name>
+            <description>Falleció en:Valladolid</description>
+            <Point>
+                <coordinates>-5.76701,41.468412</coordinates>
+                <altitudeMode>relativeToGround</altitudeMode>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>Azucena Fuente Codina</name>
+            <description>Nació en:Santiago de Compostela</description>
+            <Point>
+                <coordinates>-8.546111,42.875278</coordinates>
+                <altitudeMode>relativeToGround</altitudeMode>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>José Ramón Fuente Soto</name>
+            <description>Nació en:Oleiros</description>
+            <Point>
+                <coordinates>-8.317778,43.333611</coordinates>
+                <altitudeMode>relativeToGround</altitudeMode>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>José Ramón Fuente Soto</name>
+            <description>Falleció en:Oleiros</description>
+            <Point>
+                <coordinates>-8.556111,42.874127</coordinates>
+                <altitudeMode>relativeToGround</altitudeMode>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>Cándida Codina Guerrero</name>
+            <description>Nació en:A Coruña</description>
+            <Point>
+                <coordinates>-8.413056,43.356944</coordinates>
+                <altitudeMode>relativeToGround</altitudeMode>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>Cándida Codina Guerrero</name>
+            <description>Falleció en:A Coruña</description>
+            <Point>
+                <coordinates>-5.824862,43.371236</coordinates>
+                <altitudeMode>relativeToGround</altitudeMode>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>Nora Varela Muñoz</name>
+            <description>Nació en:Castropol</description>
+            <Point>
+                <coordinates>-7.022778,43.513611</coordinates>
+                <altitudeMode>relativeToGround</altitudeMode>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>Enrique Varela García</name>
+            <description>Nació en:Navia</description>
+            <Point>
+                <coordinates>-6.723056,43.539444</coordinates>
+                <altitudeMode>relativeToGround</altitudeMode>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>Manuel Varela Varela</name>
+            <description>Nació en:Navelgas</description>
+            <Point>
+                <coordinates>-6.544167,43.404167</coordinates>
+                <altitudeMode>relativeToGround</altitudeMode>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>Manuel Varela Varela</name>
+            <description>Falleció en:Navelgas</description>
+            <Point>
+                <coordinates>-6.730056,43.538564</coordinates>
+                <altitudeMode>relativeToGround</altitudeMode>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>Marga García Chacón</name>
+            <description>Nació en:EL Bierzo</description>
+            <Point>
+                <coordinates>-6.665,42.594444</coordinates>
+                <altitudeMode>relativeToGround</altitudeMode>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>Marga García Chacón</name>
+            <description>Falleció en:EL Bierzo</description>
+            <Point>
+                <coordinates>-6.725056,43.541114</coordinates>
+                <altitudeMode>relativeToGround</altitudeMode>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>Alba Muñoz Aramburu</name>
+            <description>Nació en:Aulestia</description>
+            <Point>
+                <coordinates>-2.562778,43.296667</coordinates>
+                <altitudeMode>relativeToGround</altitudeMode>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>Oskar Muñoz Aanda</name>
+            <description>Nació en:Vergara</description>
+            <Point>
+                <coordinates>-2.421944,43.122778</coordinates>
+                <altitudeMode>relativeToGround</altitudeMode>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>Oskar Muñoz Aanda</name>
+            <description>Falleció en:Vergara</description>
+            <Point>
+                <coordinates>-5.827722,43.385556</coordinates>
+                <altitudeMode>relativeToGround</altitudeMode>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>Ane Aramburu Zelaya</name>
+            <description>Nació en:Hernani</description>
+            <Point>
+                <coordinates>-1.975833,43.266389</coordinates>
+                <altitudeMode>relativeToGround</altitudeMode>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>Ane Aramburu Zelaya</name>
+            <description>Falleció en:Hernani</description>
+            <Point>
+                <coordinates>-5.829922,43.355556</coordinates>
+                <altitudeMode>relativeToGround</altitudeMode>
+            </Point>
+        </Placemark>
+    </Document>
+</kml>

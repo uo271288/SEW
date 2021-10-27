@@ -42,8 +42,8 @@
                 <persona nombre="Jesús" apellidos="Álvarez Rodenas" fecha_nacimiento="1919-12-25" fecha_fallecimiento="2005-11-05">
                     <lugar_nacimiento lugar="Zamora">
                         <coordenadas>
-                            <latitud>41.469444</latitud>
-                            <longitud>-5.768056</longitud>
+                            <latitud>41.4671131</latitud>
+                            <longitud>-5.769040</longitud>
                             <altitud>665</altitud>
                         </coordenadas>
                     </lugar_nacimiento>
@@ -67,8 +67,8 @@
                     </lugar_nacimiento>
                     <lugar_fallecimiento lugar="Zamora">
                         <coordenadas>
-                            <latitud>41.469444</latitud>
-                            <longitud>-5.768056</longitud>
+                            <latitud>41.468412</latitud>
+                            <longitud>-5.76701</longitud>
                             <altitud>665</altitud>
                         </coordenadas>
                     </lugar_fallecimiento>
@@ -96,8 +96,8 @@
                     </lugar_nacimiento>
                     <lugar_fallecimiento lugar="Santiago de Compostela">
                         <coordenadas>
-                            <latitud>42.875278</latitud>
-                            <longitud>-8.546111</longitud>
+                            <latitud>42.874127</latitud>
+                            <longitud>-8.556111</longitud>
                             <altitud>244</altitud>
                         </coordenadas>
                     </lugar_fallecimiento>
@@ -114,8 +114,8 @@
                     </lugar_nacimiento>
                     <lugar_fallecimiento lugar="Oviedo">
                         <coordenadas>
-                            <latitud>43.375556</latitud>
-                            <longitud>-5.827222</longitud>
+                            <latitud>43.371236</latitud>
+                            <longitud>-5.824862</longitud>
                             <altitud>221</altitud>
                         </coordenadas>
                     </lugar_fallecimiento>
@@ -154,8 +154,8 @@
                     </lugar_nacimiento>
                     <lugar_fallecimiento lugar="Navia">
                         <coordenadas>
-                            <latitud>43.539444</latitud>
-                            <longitud>-6.723056</longitud>
+                            <latitud>43.538564</latitud>
+                            <longitud>-6.730056</longitud>
                             <altitud>13</altitud>
                         </coordenadas>
                     </lugar_fallecimiento>
@@ -172,8 +172,8 @@
                     </lugar_nacimiento>
                     <lugar_fallecimiento lugar="Navia">
                         <coordenadas>
-                            <latitud>43.539444</latitud>
-                            <longitud>-6.723056</longitud>
+                            <latitud>43.541114</latitud>
+                            <longitud>-6.725056</longitud>
                             <altitud>13</altitud>
                         </coordenadas>
                     </lugar_fallecimiento>
@@ -201,8 +201,8 @@
                     </lugar_nacimiento>
                     <lugar_fallecimiento lugar="Oviedo">
                         <coordenadas>
-                            <latitud>43.375556</latitud>
-                            <longitud>-5.827222</longitud>
+                            <latitud>43.385556</latitud>
+                            <longitud>-5.827722</longitud>
                             <altitud>221</altitud>
                         </coordenadas>
                     </lugar_fallecimiento>
@@ -219,8 +219,8 @@
                     </lugar_nacimiento>
                     <lugar_fallecimiento lugar="Oviedo">
                         <coordenadas>
-                            <latitud>43.375556</latitud>
-                            <longitud>-5.827222</longitud>
+                            <latitud>43.355556</latitud>
+                            <longitud>-5.829922</longitud>
                             <altitud>221</altitud>
                         </coordenadas>
                     </lugar_fallecimiento>
