@@ -1,0 +1,31 @@
+/*001*/
+
+body {
+    background-color: beige;
+    color: black;
+}
+
+
+/*001*/
+
+p {
+    font-size: 1.1em;
+}
+
+
+/*001*/
+
+h1 {
+    text-transform: uppercase;
+    padding: 0.313em;
+    text-align: center;
+}
+
+
+/*001*/
+
+h2 {
+    text-transform: capitalize;
+    padding: 0.625em;
+    text-align: left;
+}

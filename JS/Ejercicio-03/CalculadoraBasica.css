@@ -1,0 +1,49 @@
+/*100*/
+body > main {
+    margin: 0.125em;
+    padding: 1em;
+    background-color: rgb(48, 48, 48);
+    color: black;
+    border-radius: 0.625em;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 0.5em;
+    column-gap: 0.5em;
+    height: 40em;
+    max-width: 30em;
+    min-width: 15em;
+}
+
+/*001*/
+button {
+    font-size: 1.563em;
+    background-color: lightcyan;
+    color: black;
+}
+
+/*001*/
+body > main > textarea {
+    text-align: right;
+    margin-bottom: 1em;
+    background-color: rgb(218, 213, 148);
+    max-height: 5em;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    color: black;
+}
+
+body > main > button:nth-child(4),
+body > main> button:nth-child(8),
+body > main> button:nth-child(12),
+body > main> button:nth-child(16){
+    background-color: rgb(224, 75, 75);
+    color: black;
+}
+
+
+body > main> button:nth-child(1),
+body > main> button:nth-child(2),
+body > main> button:nth-child(3){
+    background-color: gold;
+    color: black;
+}
