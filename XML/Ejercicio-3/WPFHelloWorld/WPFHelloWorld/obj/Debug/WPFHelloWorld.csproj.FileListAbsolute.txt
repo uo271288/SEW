@@ -1,0 +1,15 @@
+C:\Users\alexa\git\SEW\SEW\XML\Ejercicio-3\WPFHelloWorld\WPFHelloWorld\bin\Debug\WPFHelloWorld.exe.config
+C:\Users\alexa\git\SEW\SEW\XML\Ejercicio-3\WPFHelloWorld\WPFHelloWorld\bin\Debug\WPFHelloWorld.exe
+C:\Users\alexa\git\SEW\SEW\XML\Ejercicio-3\WPFHelloWorld\WPFHelloWorld\bin\Debug\WPFHelloWorld.pdb
+C:\Users\alexa\git\SEW\SEW\XML\Ejercicio-3\WPFHelloWorld\WPFHelloWorld\obj\Debug\WPFHelloWorld.csproj.AssemblyReference.cache
+C:\Users\alexa\git\SEW\SEW\XML\Ejercicio-3\WPFHelloWorld\WPFHelloWorld\obj\Debug\MainWindow.g.cs
+C:\Users\alexa\git\SEW\SEW\XML\Ejercicio-3\WPFHelloWorld\WPFHelloWorld\obj\Debug\App.g.cs
+C:\Users\alexa\git\SEW\SEW\XML\Ejercicio-3\WPFHelloWorld\WPFHelloWorld\obj\Debug\WPFHelloWorld_MarkupCompile.cache
+C:\Users\alexa\git\SEW\SEW\XML\Ejercicio-3\WPFHelloWorld\WPFHelloWorld\obj\Debug\WPFHelloWorld_MarkupCompile.lref
+C:\Users\alexa\git\SEW\SEW\XML\Ejercicio-3\WPFHelloWorld\WPFHelloWorld\obj\Debug\MainWindow.baml
+C:\Users\alexa\git\SEW\SEW\XML\Ejercicio-3\WPFHelloWorld\WPFHelloWorld\obj\Debug\WPFHelloWorld.g.resources
+C:\Users\alexa\git\SEW\SEW\XML\Ejercicio-3\WPFHelloWorld\WPFHelloWorld\obj\Debug\WPFHelloWorld.Properties.Resources.resources
+C:\Users\alexa\git\SEW\SEW\XML\Ejercicio-3\WPFHelloWorld\WPFHelloWorld\obj\Debug\WPFHelloWorld.csproj.GenerateResource.cache
+C:\Users\alexa\git\SEW\SEW\XML\Ejercicio-3\WPFHelloWorld\WPFHelloWorld\obj\Debug\WPFHelloWorld.csproj.CoreCompileInputs.cache
+C:\Users\alexa\git\SEW\SEW\XML\Ejercicio-3\WPFHelloWorld\WPFHelloWorld\obj\Debug\WPFHelloWorld.exe
+C:\Users\alexa\git\SEW\SEW\XML\Ejercicio-3\WPFHelloWorld\WPFHelloWorld\obj\Debug\WPFHelloWorld.pdb
