@@ -1,5 +1,5 @@
 /*100*/
-body > main {
+body > form {
     margin: 0.125em;
     padding: 1em;
     background-color: rgb(48, 48, 48);
@@ -22,7 +22,7 @@ button {
 }
 
 /*001*/
-body > main > textarea {
+body > form > textarea {
     text-align: right;
     margin-bottom: 1em;
     background-color: rgb(218, 213, 148);
@@ -32,18 +32,18 @@ body > main > textarea {
     color: black;
 }
 
-body > main > button:nth-child(4),
-body > main> button:nth-child(8),
-body > main> button:nth-child(12),
-body > main> button:nth-child(16){
+body > form > button:nth-child(4),
+body > form > button:nth-child(8),
+body > form > button:nth-child(12),
+body > form > button:nth-child(16){
     background-color: rgb(224, 75, 75);
     color: black;
 }
 
 
-body > main> button:nth-child(1),
-body > main> button:nth-child(2),
-body > main> button:nth-child(3){
+body > form > button:nth-child(1),
+body > form > button:nth-child(2),
+body > form > button:nth-child(3){
     background-color: gold;
     color: black;
 }
