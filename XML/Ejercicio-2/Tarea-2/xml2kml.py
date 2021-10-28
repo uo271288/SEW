@@ -1,4 +1,6 @@
 import xml.etree.ElementTree as ET
+import os
+THIS_FOLDER = os.path.dirname(os.path.abspath(__file__))
 
 class Kml(object):
     def __init__(self):
@@ -46,16 +48,11 @@ def verXML(archivo_XML):
                 latitud = hijo.find("lugar_fallecimiento/coordenadas/latitud").text
                 longitud = hijo.find("lugar_fallecimiento/coordenadas/longitud").text
                 kml.add_placemark(nombre, descripcion, longitud+","+latitud)
-    kml.write("./arbol_genealogico.kml")
+    kml.write(os.path.join(THIS_FOLDER,"arbol_genealogico.kml"))
         
     
     
 def main():
-    print(verXML.__doc__)
+    verXML(os.path.join(THIS_FOLDER,"arbol_genealogico.xml"))
 
-    miArchivoXML = input("Introduzca un archivo XML = ")
-
-    verXML(miArchivoXML)
-
-if __name__ == "__main__":
-    main()
+main()

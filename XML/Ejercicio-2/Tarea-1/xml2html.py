@@ -1,6 +1,7 @@
 import xml.etree.ElementTree as ET
 import codecs
-
+import os
+THIS_FOLDER = os.path.dirname(os.path.abspath(__file__))
 
 def verXML(archivoXML):
     try:
@@ -11,8 +12,10 @@ def verXML(archivoXML):
     except ET.ParseError:
         print("Error procesando en el archivo XML = ", archivoXML)
         exit()
+
     raiz = arbol.getroot()
-    file = codecs.open("arbol_genealogico.html", "w", "utf-8")
+
+    file = codecs.open(os.path.join(THIS_FOLDER,"arbol_genealogico.html"), "w", "utf-8")
     text = (
         "<!DOCTYPE HTML>"
         + '<html lang="es-ES">'
@@ -100,13 +103,6 @@ def verXML(archivoXML):
 
 
 def main():
+    verXML(os.path.join(THIS_FOLDER,"arbol_genealogico.xml"))
 
-    print(verXML.__doc__)
-
-    miArchivoXML = input("Introduzca un archivo XML = ")
-
-    verXML(miArchivoXML)
-
-
-if __name__ == "__main__":
-    main()
+main()

@@ -1,18 +1,21 @@
 import xml.etree.ElementTree as ET
 import codecs
+import os
+THIS_FOLDER = os.path.dirname(os.path.abspath(__file__))
+
 
 list_circles = []
 list_lines = []
 
 
 def recursiveSvg(hijo, bound, level, center, lines):
-    first = True
+    padre = True
     for persona in hijo:
         if persona.tag == "persona":
             x = center
-            if first:
+            if padre:
                 x -= bound
-                first = False
+                padre = False
             else:
                 x += bound
             if lines != None:
@@ -28,12 +31,19 @@ def recursiveSvg(hijo, bound, level, center, lines):
             recursiveSvg(persona, bound / 2, level - 200, x, (x, level))
 
 def ver_XML(archivo_XML):
-    arbol = ET.parse(archivo_XML)
+    try:
+        arbol = ET.parse(archivo_XML)
+    except IOError:
+        print ('No se encuentra el archivo ', archivo_XML)
+        exit()
+    except ET.ParseError:
+        print("Error procesando en el archivo XML = ", archivo_XML)
+        exit()
 
     raiz = arbol.getroot()
     svg = """<?xml version="1.0" encoding="utf-8"?>
-             <svg width="2000" height="2000" style="overflow:visible " version="1.1" xmlns="http://www.w3.org/2000/svg">"""
-    recursiveSvg(raiz.findall("persona"), 700, 800, 1500, None)
+             <svg width="1500" height="800" style="overflow:visible " version="1.1" xmlns="http://www.w3.org/2000/svg">"""
+    recursiveSvg(raiz.findall("persona"), 700, 690, 1400, None)
 
     for circle in list_circles[::-1]:
         svg += (
@@ -65,15 +75,12 @@ def ver_XML(archivo_XML):
         )
 
     svg += "</svg>"
-    file = codecs.open("arbol_genealogico.svg", "w", "utf-8")
+    file = codecs.open(os.path.join(THIS_FOLDER,"arbol_genealogico.svg"), "w", "utf-8")
     file.write(svg)
     file.close()
 
 
 def main():
-    print(ver_XML.__doc__)
-    ver_XML("C:/Users/alexa/git/SEW/SEW/XML/Ejercicio-2/Tarea-3/arbol_genealogico.xml")
+    ver_XML(os.path.join(THIS_FOLDER,"arbol_genealogico.xml"))
 
-
-if __name__ == "__main__":
-    main()
+main()
