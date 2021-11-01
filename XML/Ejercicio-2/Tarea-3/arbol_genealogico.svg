@@ -1,2 +1,171 @@
 <?xml version="1.0" encoding="utf-8"?>
-             <svg width="1500" height="800" style="overflow:visible " version="1.1" xmlns="http://www.w3.org/2000/svg"><g><circle cx="1312.5" cy="90" r="75" style="fill:rgb(0,0,0);"/><text x="1312.5" y="90" text-anchor="middle" font-size="14" style="fill:white">Ane Aramburu Zelaya</text></g><g><circle cx="1137.5" cy="90" r="75" style="fill:rgb(0,0,0);"/><text x="1137.5" y="90" text-anchor="middle" font-size="14" style="fill:white">Oskar Muñoz Aanda</text></g><g><circle cx="1225.0" cy="290" r="75" style="fill:rgb(0,0,0);"/><text x="1225.0" y="290" text-anchor="middle" font-size="14" style="fill:white">Alba Muñoz Aramburu</text></g><g><circle cx="962.5" cy="90" r="75" style="fill:rgb(0,0,0);"/><text x="962.5" y="90" text-anchor="middle" font-size="14" style="fill:white">Marga García Chacón</text></g><g><circle cx="787.5" cy="90" r="75" style="fill:rgb(0,0,0);"/><text x="787.5" y="90" text-anchor="middle" font-size="14" style="fill:white">Manuel Varela Varela</text></g><g><circle cx="875.0" cy="290" r="75" style="fill:rgb(0,0,0);"/><text x="875.0" y="290" text-anchor="middle" font-size="14" style="fill:white">Enrique Varela García</text></g><g><circle cx="1050.0" cy="490" r="75" style="fill:rgb(0,0,0);"/><text x="1050.0" y="490" text-anchor="middle" font-size="14" style="fill:white">Nora Varela Muñoz</text></g><g><circle cx="612.5" cy="90" r="75" style="fill:rgb(0,0,0);"/><text x="612.5" y="90" text-anchor="middle" font-size="14" style="fill:white">Cándida Codina Guerrero</text></g><g><circle cx="437.5" cy="90" r="75" style="fill:rgb(0,0,0);"/><text x="437.5" y="90" text-anchor="middle" font-size="14" style="fill:white">José Ramón Fuente Soto</text></g><g><circle cx="525.0" cy="290" r="75" style="fill:rgb(0,0,0);"/><text x="525.0" y="290" text-anchor="middle" font-size="14" style="fill:white">Azucena Fuente Codina</text></g><g><circle cx="262.5" cy="90" r="75" style="fill:rgb(0,0,0);"/><text x="262.5" y="90" text-anchor="middle" font-size="14" style="fill:white">Margarita Oliva Peña Ruiz</text></g><g><circle cx="87.5" cy="90" r="75" style="fill:rgb(0,0,0);"/><text x="87.5" y="90" text-anchor="middle" font-size="14" style="fill:white">Jesús Álvarez Rodenas</text></g><g><circle cx="175.0" cy="290" r="75" style="fill:rgb(0,0,0);"/><text x="175.0" y="290" text-anchor="middle" font-size="14" style="fill:white">Gustavo Álvarez Peña</text></g><g><circle cx="350.0" cy="490" r="75" style="fill:rgb(0,0,0);"/><text x="350.0" y="490" text-anchor="middle" font-size="14" style="fill:white">Pedro Álvarez Fuente</text></g><g><circle cx="700" cy="690" r="75" style="fill:rgb(0,0,0);"/><text x="700" y="690" text-anchor="middle" font-size="14" style="fill:white">Alejandro Álvarez Varela</text></g><line x1="700" y1="615" x2="350.0" y2="565" stroke="black"/><line x1="350.0" y1="415" x2="175.0" y2="365" stroke="black"/><line x1="175.0" y1="215" x2="87.5" y2="165" stroke="black"/><line x1="175.0" y1="215" x2="262.5" y2="165" stroke="black"/><line x1="350.0" y1="415" x2="525.0" y2="365" stroke="black"/><line x1="525.0" y1="215" x2="437.5" y2="165" stroke="black"/><line x1="525.0" y1="215" x2="612.5" y2="165" stroke="black"/><line x1="700" y1="615" x2="1050.0" y2="565" stroke="black"/><line x1="1050.0" y1="415" x2="875.0" y2="365" stroke="black"/><line x1="875.0" y1="215" x2="787.5" y2="165" stroke="black"/><line x1="875.0" y1="215" x2="962.5" y2="165" stroke="black"/><line x1="1050.0" y1="415" x2="1225.0" y2="365" stroke="black"/><line x1="1225.0" y1="215" x2="1137.5" y2="165" stroke="black"/><line x1="1225.0" y1="215" x2="1312.5" y2="165" stroke="black"/></svg>
+<svg width="2500" height="1300" style="overflow:visible " version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <g>
+        <circle cx="2350.0" cy="200" r="135" style="fill:rgb(100,100,100);"/>
+        <text x="2350.0" y="155" text-anchor="middle" font-size="16" style="fill:black">Ane Aramburu Zelaya</text>
+        <text x="2350.0" y="170" text-anchor="middle" font-size="16" style="fill:black">1922-06-16 1997-10-24</text>
+        <text x="2350.0" y="185" text-anchor="middle" font-size="16" style="fill:black">Hernani</text>
+        <text x="2350.0" y="200" text-anchor="middle" font-size="16" style="fill:black">-1.975833,43.266389 56m</text>
+        <text x="2350.0" y="215" text-anchor="middle" font-size="16" style="fill:black">Oviedo</text>
+        <text x="2350.0" y="230" text-anchor="middle" font-size="16" style="fill:black">-5.829922,43.355556 221m</text>
+        <text x="2350.0" y="245" text-anchor="middle" font-size="16" style="fill:black">Se dedicó a la música y el baile</text>
+        <text x="2350.0" y="260" text-anchor="middle" font-size="16" style="fill:black">foto_madre_madre_madre.jpg</text>
+    </g>
+    <g>
+        <circle cx="2050.0" cy="200" r="135" style="fill:rgb(100,100,100);"/>
+        <text x="2050.0" y="155" text-anchor="middle" font-size="16" style="fill:black">Oskar Muñoz Aanda</text>
+        <text x="2050.0" y="170" text-anchor="middle" font-size="16" style="fill:black">1921-08-15 2021-09-10</text>
+        <text x="2050.0" y="185" text-anchor="middle" font-size="16" style="fill:black">Vergara</text>
+        <text x="2050.0" y="200" text-anchor="middle" font-size="16" style="fill:black">-2.421944,43.122778 139m</text>
+        <text x="2050.0" y="215" text-anchor="middle" font-size="16" style="fill:black">Oviedo</text>
+        <text x="2050.0" y="230" text-anchor="middle" font-size="16" style="fill:black">-5.827722,43.385556 221m</text>
+        <text x="2050.0" y="245" text-anchor="middle" font-size="16" style="fill:black">Tenía una ganadería</text>
+        <text x="2050.0" y="260" text-anchor="middle" font-size="16" style="fill:black">foto_madre_madre_padre.jpg</text>
+    </g>
+    <g>
+        <circle cx="2200.0" cy="500" r="135" style="fill:rgb(100,100,100);"/>
+        <text x="2200.0" y="455" text-anchor="middle" font-size="16" style="fill:black">Alba Muñoz Aramburu</text>
+        <text x="2200.0" y="470" text-anchor="middle" font-size="16" style="fill:black">1940-04-27</text>
+        <text x="2200.0" y="485" text-anchor="middle" font-size="16" style="fill:black">Aulestia</text>
+        <text x="2200.0" y="500" text-anchor="middle" font-size="16" style="fill:black">-2.562778,43.296667 92m</text>
+        <text x="2200.0" y="515" text-anchor="middle" font-size="16" style="fill:black">Tenía una mercería</text>
+        <text x="2200.0" y="530" text-anchor="middle" font-size="16" style="fill:black">foto_madre_madre.jpg</text>
+    </g>
+    <g>
+        <circle cx="1750.0" cy="200" r="135" style="fill:rgb(100,100,100);"/>
+        <text x="1750.0" y="155" text-anchor="middle" font-size="16" style="fill:black">Marga García Chacón</text>
+        <text x="1750.0" y="170" text-anchor="middle" font-size="16" style="fill:black">1913-11-20 1999-05-19</text>
+        <text x="1750.0" y="185" text-anchor="middle" font-size="16" style="fill:black">EL Bierzo</text>
+        <text x="1750.0" y="200" text-anchor="middle" font-size="16" style="fill:black">-6.665,42.594444 522m</text>
+        <text x="1750.0" y="215" text-anchor="middle" font-size="16" style="fill:black">Navia</text>
+        <text x="1750.0" y="230" text-anchor="middle" font-size="16" style="fill:black">-6.725056,43.541114 13m</text>
+        <text x="1750.0" y="245" text-anchor="middle" font-size="16" style="fill:black">Trabajaba en una textil</text>
+        <text x="1750.0" y="260" text-anchor="middle" font-size="16" style="fill:black">foto_madre_padre_madre.jpg</text>
+    </g>
+    <g>
+        <circle cx="1450.0" cy="200" r="135" style="fill:rgb(100,100,100);"/>
+        <text x="1450.0" y="155" text-anchor="middle" font-size="16" style="fill:black">Manuel Varela Varela</text>
+        <text x="1450.0" y="170" text-anchor="middle" font-size="16" style="fill:black">1915-09-13 2000-09-30</text>
+        <text x="1450.0" y="185" text-anchor="middle" font-size="16" style="fill:black">Navelgas</text>
+        <text x="1450.0" y="200" text-anchor="middle" font-size="16" style="fill:black">-6.544167,43.404167 221m</text>
+        <text x="1450.0" y="215" text-anchor="middle" font-size="16" style="fill:black">Navia</text>
+        <text x="1450.0" y="230" text-anchor="middle" font-size="16" style="fill:black">-6.730056,43.538564 13m</text>
+        <text x="1450.0" y="245" text-anchor="middle" font-size="16" style="fill:black">Fue marinero y mariscador</text>
+        <text x="1450.0" y="260" text-anchor="middle" font-size="16" style="fill:black">foto_madre_padre_padre.jpg</text>
+    </g>
+    <g>
+        <circle cx="1600.0" cy="500" r="135" style="fill:rgb(100,100,100);"/>
+        <text x="1600.0" y="455" text-anchor="middle" font-size="16" style="fill:black">Enrique Varela García</text>
+        <text x="1600.0" y="470" text-anchor="middle" font-size="16" style="fill:black">1936-02-28</text>
+        <text x="1600.0" y="485" text-anchor="middle" font-size="16" style="fill:black">Navia</text>
+        <text x="1600.0" y="500" text-anchor="middle" font-size="16" style="fill:black">-6.723056,43.539444 13m</text>
+        <text x="1600.0" y="515" text-anchor="middle" font-size="16" style="fill:black">Fue médico de familia</text>
+        <text x="1600.0" y="530" text-anchor="middle" font-size="16" style="fill:black">foto_madre_padre.jpg</text>
+    </g>
+    <g>
+        <circle cx="1900.0" cy="800" r="135" style="fill:rgb(100,100,100);"/>
+        <text x="1900.0" y="755" text-anchor="middle" font-size="16" style="fill:black">Nora Varela Muñoz</text>
+        <text x="1900.0" y="770" text-anchor="middle" font-size="16" style="fill:black">1970-01-30</text>
+        <text x="1900.0" y="785" text-anchor="middle" font-size="16" style="fill:black">Castropol</text>
+        <text x="1900.0" y="800" text-anchor="middle" font-size="16" style="fill:black">-7.022778,43.513611 53m</text>
+        <text x="1900.0" y="815" text-anchor="middle" font-size="16" style="fill:black">Es profesora</text>
+        <text x="1900.0" y="830" text-anchor="middle" font-size="16" style="fill:black">foto_madre.jpg</text>
+    </g>
+    <g>
+        <circle cx="1150.0" cy="200" r="135" style="fill:rgb(100,100,100);"/>
+        <text x="1150.0" y="155" text-anchor="middle" font-size="16" style="fill:black">Cándida Codina Guerrero</text>
+        <text x="1150.0" y="170" text-anchor="middle" font-size="16" style="fill:black">1912-03-04 2004-10-21</text>
+        <text x="1150.0" y="185" text-anchor="middle" font-size="16" style="fill:black">A Coruña</text>
+        <text x="1150.0" y="200" text-anchor="middle" font-size="16" style="fill:black">-8.413056,43.356944 41m</text>
+        <text x="1150.0" y="215" text-anchor="middle" font-size="16" style="fill:black">Oviedo</text>
+        <text x="1150.0" y="230" text-anchor="middle" font-size="16" style="fill:black">-5.824862,43.371236 221m</text>
+        <text x="1150.0" y="245" text-anchor="middle" font-size="16" style="fill:black">Siempre fue ama de casa</text>
+        <text x="1150.0" y="260" text-anchor="middle" font-size="16" style="fill:black">foto_padre_madre_madre.jpg</text>
+    </g>
+    <g>
+        <circle cx="850.0" cy="200" r="135" style="fill:rgb(100,100,100);"/>
+        <text x="850.0" y="155" text-anchor="middle" font-size="16" style="fill:black">José Ramón Fuente Soto</text>
+        <text x="850.0" y="170" text-anchor="middle" font-size="16" style="fill:black">1910-08-19 2000-10-22</text>
+        <text x="850.0" y="185" text-anchor="middle" font-size="16" style="fill:black">Oleiros</text>
+        <text x="850.0" y="200" text-anchor="middle" font-size="16" style="fill:black">-8.317778,43.333611 123m</text>
+        <text x="850.0" y="215" text-anchor="middle" font-size="16" style="fill:black">Santiago de Compostela</text>
+        <text x="850.0" y="230" text-anchor="middle" font-size="16" style="fill:black">-8.556111,42.874127 244m</text>
+        <text x="850.0" y="245" text-anchor="middle" font-size="16" style="fill:black">Trabajó en una fábrica desde los 16 años</text>
+        <text x="850.0" y="260" text-anchor="middle" font-size="16" style="fill:black">foto_padre_madre_padre.jpg</text>
+    </g>
+    <g>
+        <circle cx="1000.0" cy="500" r="135" style="fill:rgb(100,100,100);"/>
+        <text x="1000.0" y="455" text-anchor="middle" font-size="16" style="fill:black">Azucena Fuente Codina</text>
+        <text x="1000.0" y="470" text-anchor="middle" font-size="16" style="fill:black">1940-08-17</text>
+        <text x="1000.0" y="485" text-anchor="middle" font-size="16" style="fill:black">Santiago de Compostela</text>
+        <text x="1000.0" y="500" text-anchor="middle" font-size="16" style="fill:black">-8.546111,42.875278 244m</text>
+        <text x="1000.0" y="515" text-anchor="middle" font-size="16" style="fill:black">Fue la primera de su familia en obtener un título universitario</text>
+        <text x="1000.0" y="530" text-anchor="middle" font-size="16" style="fill:black">foto_padre_madre.jpg</text>
+    </g>
+    <g>
+        <circle cx="550.0" cy="200" r="135" style="fill:rgb(100,100,100);"/>
+        <text x="550.0" y="155" text-anchor="middle" font-size="16" style="fill:black">Margarita Oliva Peña Ruiz</text>
+        <text x="550.0" y="170" text-anchor="middle" font-size="16" style="fill:black">1918-01-15 1969-06-02</text>
+        <text x="550.0" y="185" text-anchor="middle" font-size="16" style="fill:black">Valladolid</text>
+        <text x="550.0" y="200" text-anchor="middle" font-size="16" style="fill:black">-4.726111,41.641111 689m</text>
+        <text x="550.0" y="215" text-anchor="middle" font-size="16" style="fill:black">Zamora</text>
+        <text x="550.0" y="230" text-anchor="middle" font-size="16" style="fill:black">-5.76701,41.468412 665m</text>
+        <text x="550.0" y="245" text-anchor="middle" font-size="16" style="fill:black">Fallece prematuramente a casua de un cáncer</text>
+        <text x="550.0" y="260" text-anchor="middle" font-size="16" style="fill:black">foto_padre_padre_madre.jpg</text>
+    </g>
+    <g>
+        <circle cx="250.0" cy="200" r="135" style="fill:rgb(100,100,100);"/>
+        <text x="250.0" y="155" text-anchor="middle" font-size="16" style="fill:black">Jesús Álvarez Rodenas</text>
+        <text x="250.0" y="170" text-anchor="middle" font-size="16" style="fill:black">1919-12-25 2005-11-05</text>
+        <text x="250.0" y="185" text-anchor="middle" font-size="16" style="fill:black">Zamora</text>
+        <text x="250.0" y="200" text-anchor="middle" font-size="16" style="fill:black">-5.769040,41.4671131 665m</text>
+        <text x="250.0" y="215" text-anchor="middle" font-size="16" style="fill:black">Zamora</text>
+        <text x="250.0" y="230" text-anchor="middle" font-size="16" style="fill:black">-5.768056,41.469444 665m</text>
+        <text x="250.0" y="245" text-anchor="middle" font-size="16" style="fill:black">Trabajó toda su vida en el campo</text>
+        <text x="250.0" y="260" text-anchor="middle" font-size="16" style="fill:black">foto_padre_padre_padre.jpg</text>
+    </g>
+    <g>
+        <circle cx="400.0" cy="500" r="135" style="fill:rgb(100,100,100);"/>
+        <text x="400.0" y="455" text-anchor="middle" font-size="16" style="fill:black">Gustavo Álvarez Peña</text>
+        <text x="400.0" y="470" text-anchor="middle" font-size="16" style="fill:black">1937-06-19 2010-02-02</text>
+        <text x="400.0" y="485" text-anchor="middle" font-size="16" style="fill:black">Vigo</text>
+        <text x="400.0" y="500" text-anchor="middle" font-size="16" style="fill:black">-8.714444,42.230833 83m</text>
+        <text x="400.0" y="515" text-anchor="middle" font-size="16" style="fill:black">Oviedo</text>
+        <text x="400.0" y="530" text-anchor="middle" font-size="16" style="fill:black">-5.827222,43.375556 221m</text>
+        <text x="400.0" y="545" text-anchor="middle" font-size="16" style="fill:black">Fue economista</text>
+        <text x="400.0" y="560" text-anchor="middle" font-size="16" style="fill:black">foto_padre_padre.jpg</text>
+    </g>
+    <g>
+        <circle cx="700.0" cy="800" r="135" style="fill:rgb(100,100,100);"/>
+        <text x="700.0" y="755" text-anchor="middle" font-size="16" style="fill:black">Pedro Álvarez Fuente</text>
+        <text x="700.0" y="770" text-anchor="middle" font-size="16" style="fill:black">1968-03-11</text>
+        <text x="700.0" y="785" text-anchor="middle" font-size="16" style="fill:black">Avilés</text>
+        <text x="700.0" y="800" text-anchor="middle" font-size="16" style="fill:black">-5.924167,43.555556 17m</text>
+        <text x="700.0" y="815" text-anchor="middle" font-size="16" style="fill:black">Se casó a los 30</text>
+        <text x="700.0" y="830" text-anchor="middle" font-size="16" style="fill:black">foto_padre.jpg</text>
+    </g>
+    <g>
+        <circle cx="1300" cy="1100" r="135" style="fill:rgb(100,100,100);"/>
+        <text x="1300" y="1055" text-anchor="middle" font-size="16" style="fill:black">Alejandro Álvarez Varela</text>
+        <text x="1300" y="1070" text-anchor="middle" font-size="16" style="fill:black">2000-08-13</text>
+        <text x="1300" y="1085" text-anchor="middle" font-size="16" style="fill:black">Gozón</text>
+        <text x="1300" y="1100" text-anchor="middle" font-size="16" style="fill:black">-5.892778,43.595556 50m</text>
+        <text x="1300" y="1115" text-anchor="middle" font-size="16" style="fill:black">Estudiante de la EII de Oviedo</text>
+        <text x="1300" y="1130" text-anchor="middle" font-size="16" style="fill:black">foto_alejandro.jpg</text>
+        <text x="1300" y="1145" text-anchor="middle" font-size="16" style="fill:black">video_alejandro.mp4</text>
+    </g>
+    <line x1="1300" y1="965" x2="700.0" y2="935" stroke="black"/>
+    <line x1="700.0" y1="665" x2="400.0" y2="635" stroke="black"/>
+    <line x1="400.0" y1="365" x2="250.0" y2="335" stroke="black"/>
+    <line x1="400.0" y1="365" x2="550.0" y2="335" stroke="black"/>
+    <line x1="700.0" y1="665" x2="1000.0" y2="635" stroke="black"/>
+    <line x1="1000.0" y1="365" x2="850.0" y2="335" stroke="black"/>
+    <line x1="1000.0" y1="365" x2="1150.0" y2="335" stroke="black"/>
+    <line x1="1300" y1="965" x2="1900.0" y2="935" stroke="black"/>
+    <line x1="1900.0" y1="665" x2="1600.0" y2="635" stroke="black"/>
+    <line x1="1600.0" y1="365" x2="1450.0" y2="335" stroke="black"/>
+    <line x1="1600.0" y1="365" x2="1750.0" y2="335" stroke="black"/>
+    <line x1="1900.0" y1="665" x2="2200.0" y2="635" stroke="black"/>
+    <line x1="2200.0" y1="365" x2="2050.0" y2="335" stroke="black"/>
+    <line x1="2200.0" y1="365" x2="2350.0" y2="335" stroke="black"/>
+</svg>
