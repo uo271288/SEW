@@ -7,6 +7,10 @@ class Calculadora {
         this.memoria = "";
         this.resuelto = false
 
+        this.inputkey();
+    }
+
+    inputkey() {
         document.addEventListener("keydown", (event) => {
             const keyName = event.key.replace(/[^\d.\-\/\*\+]/g, '');
             if (this.resuelto && !["*", "/", "-", "+"].some(el => keyName.includes(el))) {
@@ -75,8 +79,11 @@ class Calculadora {
     }
 
     igual() {
-        this.operacion = Number(eval(this.operacion));
-        this.operacionMostrada = Number(eval(this.operacion));
+        let aux = this.operacion.split(/(\+|\*|\/|\-)/)
+        let operando1 = Number(aux[0])
+        let operando2 = Number(aux[2])
+        this.operacion = eval(operando1+aux[1]+operando2);
+        this.operacionMostrada = this.operacion;
         document.querySelector("body > form > textarea").textContent = this.operacionMostrada;
         this.resuelto = true;
     }
@@ -111,7 +118,6 @@ class Calculadora {
         this.memoria = "";
         this.resuelto = true
     }
-
 }
 
 var calculadora = new Calculadora();

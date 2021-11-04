@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="author" content="Alejandro Álvarez Varela UO271288">
+    <title>Calculadora Cientifica</title>
+    <link rel="stylesheet" type="text/css" href="CalculadoraCientifica.css">
+</head>
+
+<body>
+    <script src="CalculadoraBasica.js"></script>
+    <script src="CalculadoraCientifica.js"></script>
+    <h1>Calculadora Científica</h1>
+    <div class="calculadora">
+        <div>
+            <button id="resultado"></button>
+        </div>
+        <div>
+            <button id="mc" onclick="calculadora.mc()">mc</button>
+            <button id="mr" onclick="calculadora.mr()">mr</button>
+            <button id="mMas" onclick="calculadora.mMas()">m+</button>
+            <button id="mMenos" onclick="calculadora.mMenos()">m-</button>
+            <button id="ms" onclick="calculadora.ms()">ms</button>
+        </div>
+        <div>
+            <button id="x2" onclick="calculadora.x2()">x<sup>2</sup></button>
+            <button id="xy" onclick="calculadora.xy()">x<sup>y</sup></button>
+            <button id="sin" onclick="calculadora.sin()">sin</button>
+            <button id="cos" onclick="calculadora.cos()">cos</button>
+            <button id="tan" onclick="calculadora.tan()">tan</button>
+        </div>
+        <div>
+            <button id="sqrt" onclick="calculadora.sqrt()">&#x221A;</button>
+            <button id="e10x" onclick="calculadora.e10x()">10<sup>x</sup></button>
+            <button id="log10" onclick="calculadora.log10()">log<sub>10</sub></button>
+            <button id="ex" onclick="calculadora.ex()">e<sup>x</sup></button>
+            <button id="mod" onclick="calculadora.mod()">mod</button>
+        </div>
+        <div>
+            <button id="pi" onclick="calculadora.pi()">&#x3C0;</button>
+            <button id="e" onclick="calculadora.e()">e</button>
+            <button id="borrar" onclick="calculadora.borrar()">C</button>
+            <button id="retroceso" onclick="calculadora.retroceso()">&#x2190;</button>
+            <button id="div" onclick="calculadora.div()">&#xF7;</button>
+        </div>
+        <div>
+            <button id="abs" onclick="calculadora.abs()">|x|</button>
+            <button id="siete" onclick="calculadora.digitos('7')">7</button>
+            <button id="ocho" onclick="calculadora.digitos('8')">8</button>
+            <button id="nueve" onclick="calculadora.digitos('9')">9</button>
+            <button id="mult" onclick="calculadora.mult()">&#xD7;</button>
+        </div>
+        <div>
+            <button id="cbrt" onclick="calculadora.cbrt()">&#x221B;</button>
+            <button id="cuatro" onclick="calculadora.digitos('4')">4</button>
+            <button id="cinco" onclick="calculadora.digitos('5')">5</button>
+            <button id="seis" onclick="calculadora.digitos('6')">6</button>
+            <button id="resta" onclick="calculadora.resta()">-</button>
+        </div>
+        <div>
+            <button id="ln" onclick="calculadora.ln()">ln</button>
+            <button id="uno" onclick="calculadora.digitos('1')">1</button>
+            <button id="dos" onclick="calculadora.digitos('2')">2</button>
+            <button id="tres" onclick="calculadora.digitos('3')">3</button>
+            <button id="suma" onclick="calculadora.suma()">+</button>
+        </div>
+        <div>
+            <button id="pl" onclick="calculadora.pl()">(</button>
+            <button id="pr" onclick="calculadora.pr()">)</button>
+            <button id="cero" onclick="calculadora.digitos('0')">0</button>
+            <button id="punto" onclick="calculadora.punto()">.</button>
+            <button id="igual" onclick="calculadora.igual()">=</button>
+        </div>
+    </div>
+</body>
+
+</html>

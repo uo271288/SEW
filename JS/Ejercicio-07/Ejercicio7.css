@@ -1,0 +1,38 @@
+/*001*/
+body {
+    font: 0.938em;
+    font-family: "Lucida Console", "Courier New", monospace;
+    line-height: 2em;
+    background-color: black;
+    color: white;
+}
+
+/*001*/
+footer {
+    text-align: center;
+}
+
+/*001*/
+p {
+    font-size: 1.1em;
+}
+
+/*001*/
+h1 {
+    text-transform: uppercase;
+    padding: 0.313em;
+    text-align: center;
+}
+
+/*001*/
+h2,
+/*001*/
+h3 {
+    padding: 0.625em;
+    text-align: center;
+}
+
+/*001*/
+h3 {
+    font-size: 1em;
+}

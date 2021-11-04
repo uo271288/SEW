@@ -1,0 +1,42 @@
+/*001*/
+
+body {
+    background-color: beige;
+    color: black;
+}
+
+
+/*001*/
+
+h1 {
+    text-transform: uppercase;
+    padding: 0.313em;
+    text-align: center;
+}
+
+
+/*001*/
+
+table {
+    border-collapse: collapse;
+}
+
+
+/*001*/
+
+th,
+
+/*001*/
+
+td {
+    padding: 0.5em 0.5em 0.5em 0.5em;
+    height: 100%;
+    border: 0.063em;
+    text-align: right;
+}
+
+div {
+    width: 10em;
+    display: grid;
+    gap: 1em;
+}
