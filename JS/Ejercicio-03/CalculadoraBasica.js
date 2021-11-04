@@ -2,35 +2,46 @@
 class Calculadora {
 
     constructor() {
+        this.operando1 = 0;
+        this.operando2 = 0;
+        this.operador = "";
         this.operacion = "";
         this.operacionMostrada = "";
-        this.memoria = "";
-        this.resuelto = false
+        this.memoria = 0;
+        this.resuelto = false;
 
         this.inputkey();
     }
 
     inputkey() {
         document.addEventListener("keydown", (event) => {
-            const keyName = event.key.replace(/[^\d.\-\/\*\+]/g, '');
-            if (this.resuelto && !["*", "/", "-", "+"].some(el => keyName.includes(el))) {
-                document.querySelector("body > form > textarea").textContent = "";
-                this.resuelto = false;
-                this.operacion = "";
-                this.operacionMostrada = ""
+            if (["*", "/", "-", "+", "."].some(el => event.key.includes(el))) {
+                switch (event.key) {
+                    case "+":
+                        this.suma()
+                        break;
+                    case "-":
+                        this.resta()
+                        break;
+                    case "*":
+                        this.mult()
+                        break;
+                    case "/":
+                        this.div()
+                        break;
+                    case ".":
+                        this.punto()
+                        break;
+                }
             }
-            if (["*", "/", "-", "+"].some(el => keyName.includes(el))) {
-                this.resuelto = false;
+            else if (!isNaN(event.key)) {
+                this.digitos(event.key)
             }
-            document.querySelector("body > form > textarea").textContent += keyName;
-            this.operacion += keyName
-            this.operacionMostrada += keyName
-            if (event.code.match("Enter")) {
-                this.igual();
-                this.resuelto = true;
+            else if (event.key == "Enter") {
+                this.igual()
             }
-        });
-    }
+        })
+    };
 
     digitos(arg) {
         if (this.resuelto) {
@@ -51,38 +62,45 @@ class Calculadora {
     }
 
     suma() {
-        this.operacion += "+";
+        this.operando1 = new Number(this.operacion)
+        this.operacion = "";
+        this.operador = "+"
         this.operacionMostrada += "+";
         this.resuelto = false;
         document.querySelector("body > form > textarea").textContent = this.operacionMostrada;
     }
 
     resta() {
-        this.operacion += "-";
+        this.operando1 = new Number(this.operacion)
+        this.operacion = "";
+        this.operador = "-"
         this.operacionMostrada += "-";
         this.resuelto = false;
         document.querySelector("body > form > textarea").textContent = this.operacionMostrada;
     }
 
     mult() {
-        this.operacion += "*";
+        this.operando1 = new Number(this.operacion)
+        this.operacion = "";
+        this.operador = "*"
         this.operacionMostrada += "*";
         this.resuelto = false;
         document.querySelector("body > form > textarea").textContent = this.operacionMostrada;
     }
 
     div() {
-        this.operacion += "/";
+        this.operando1 = new Number(this.operacion)
+        this.operacion = "";
+        this.operador = "/"
         this.operacionMostrada += "/";
         this.resuelto = false;
         document.querySelector("body > form > textarea").textContent = this.operacionMostrada;
     }
 
     igual() {
-        let aux = this.operacion.split(/(\+|\*|\/|\-)/)
-        let operando1 = Number(aux[0])
-        let operando2 = Number(aux[2])
-        this.operacion = eval(operando1+aux[1]+operando2);
+        this.operando2 = new Number(this.operacion)
+        this.operacion = eval(this.operando1 + this.operador + this.operando2);
+        this.operador = ""
         this.operacionMostrada = this.operacion;
         document.querySelector("body > form > textarea").textContent = this.operacionMostrada;
         this.resuelto = true;
@@ -90,13 +108,16 @@ class Calculadora {
 
     borrar() {
         document.querySelector("body > form > textarea").textContent = "";
+        this.operando1 = 0;
+        this.operando2 = 0;
+        this.operador = "";
         this.operacion = "";
         this.operacionMostrada = "";
     }
 
     mMenos() {
         if (!Number(document.querySelector("body > form > textarea").textContent).isNaN) {
-            this.memoria = Number(eval(this.memoria + "-" + document.querySelector("body > form > textarea").textContent));
+            this.memoria = Number(this.memoria) - Number(document.querySelector("body > form > textarea").textContent);
             this.operacion = "";
             this.operacionMostrada = "";
         }
@@ -104,7 +125,7 @@ class Calculadora {
 
     mMas() {
         if (!Number(document.querySelector("body > form > textarea").textContent).isNaN) {
-            this.memoria = Number(eval(this.memoria + "+" + document.querySelector("body > form > textarea").textContent));
+            this.memoria = Number(this.memoria) + Number(document.querySelector("body > form > textarea").textContent);
             this.operacion = "";
             this.operacionMostrada = "";
         }
@@ -115,7 +136,7 @@ class Calculadora {
         document.querySelector("body > form > textarea").textContent = resultado;
         this.operacion = resultado;
         this.operacionMostrada = resultado;
-        this.memoria = "";
+        this.memoria = 0;
         this.resuelto = true
     }
 }
