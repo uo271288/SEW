@@ -1,135 +1,48 @@
-/*010*/
-
-.calculadora {
-    display: grid;
+/*100*/
+body > form {
     margin: 0.125em;
     padding: 1em;
     background-color: rgb(48, 48, 48);
-    width: 22.9em;
-    height: 43em;
+    color: black;
     border-radius: 0.625em;
-    color: white;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    row-gap: 0.5em;
+    column-gap: 0.5em;
+    height: 40em;
+    max-width: 30em;
+    min-width: 15em;
 }
 
-
-/*012*/
-
+/*001*/
 button {
-    width: 2.7em;
-    height: 2.7em;
     font-size: 1.563em;
-    margin-right: 0.1em;
     background-color: lightcyan;
     color: black;
 }
 
-
-/*100*/
-
-#resultado {
-    display: block;
-    text-align: center;
-    font-size: 2.5em;
-    margin-bottom: 0.5em;
-    width: 9em;
-    height: 3em;
+/*001*/
+body > form > textarea {
+    text-align: right;
+    margin-bottom: 1em;
     background-color: rgb(218, 213, 148);
-    overflow-x: scroll;
+    max-height: 5em;
+    grid-column-start: 1;
+    grid-column-end: 6;
     color: black;
+    resize: none;
 }
 
-
-/*100*/
-
-#div,
-
-/*100*/
-
-#mult,
-
-/*100*/
-
-#resta,
-
-/*100*/
-
-#suma {
-    background-color: rgb(224, 75, 75);
-    color: black;
-}
-
-
-/*100*/
-
-#mr,
-
-/*100*/
-
-#mc,
-
-/*100*/
-
-#ms,
-
-/*100*/
-
-#mMenos,
-
-/*100*/
-
-#mMas,
-
-/*100*/
-
-#borrar,
-
-/*100*/
-
-#retroceso {
-    background-color: gold;
-    color: black;
-}
-
-
-/*100*/
-
-#uno,
-
-/*100*/
-
-#dos,
-
-/*100*/
-
-#tres,
-
-/*100*/
-
-#cuatro,
-
-/*100*/
-
-#cinco,
-
-/*100*/
-
-#seis,
-
-/*100*/
-
-#siete,
-
-/*100*/
-
-#ocho,
-
-/*100*/
-
-#nueve,
-
-/*100*/
-
-#cero {
-    background-color: rgb(131, 255, 255);
-    color: black;
+body > form > button[type=button]:nth-child(23),
+body > form > button[type=button]:nth-child(24),
+body > form > button[type=button]:nth-child(25),
+body > form > button[type=button]:nth-child(28),
+body > form > button[type=button]:nth-child(29),
+body > form > button[type=button]:nth-child(30),
+body > form > button[type=button]:nth-child(33),
+body > form > button[type=button]:nth-child(34),
+body > form > button[type=button]:nth-child(35),
+body > form > button[type=button]:nth-child(39),
+body > form > button[type=button]:nth-child(40){
+    background-color: lightblue;
 }
