@@ -15,7 +15,7 @@ body > form {
 }
 
 /*001*/
-button {
+input {
     font-size: 1.563em;
     background-color: lightcyan;
     color: black;
@@ -32,18 +32,18 @@ body > form > textarea {
     color: black;
 }
 
-body > form > button:nth-child(4),
-body > form > button:nth-child(8),
-body > form > button:nth-child(12),
-body > form > button:nth-child(16){
+body > form > input:nth-child(4),
+body > form > input:nth-child(8),
+body > form > input:nth-child(12),
+body > form > input:nth-child(16){
     background-color: rgb(224, 75, 75);
     color: black;
 }
 
 
-body > form > button:nth-child(1),
-body > form > button:nth-child(2),
-body > form > button:nth-child(3){
+body > form > input:nth-child(1),
+body > form > input:nth-child(2),
+body > form > input:nth-child(3){
     background-color: gold;
     color: black;
 }
