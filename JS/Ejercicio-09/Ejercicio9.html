@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="author" content="Alejandro Álvarez Varela UO271288">
+    <title>Ejercicio 9</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="Ejercicio9.js"></script>
+    <link rel="stylesheet" href="Ejercicio9.css" />
+</head>
+
+<body>
+    <header>
+        <h1>jQuery: Usa AJAX para obtener un XML con los datos de la estación meteorológica de Oviedo usando <a href="http://openweathermap.org/">OpenWeatherMap</a></h1>
+    </header>
+    <article>
+        <h2>Oleiros</h2>
+        <button id="tiempoOleiros" onclick="new Meteo('Oleiros').verXML()">Ver Tiempo</button>
+
+        <h2>Oviedo</h2>
+        <button id="tiempoOviedo" onclick="new Meteo('Oviedo').verXML()">Ver Tiempo</button>
+
+        <h2>Vigo</h2>
+        <button id="tiempoVigo" onclick="new Meteo('Vigo').verXML()">Ver Tiempo</button>
+
+        <h2>Navia</h2>
+        <button id="tiempoNavia" onclick="new Meteo('Navia').verXML()">Ver Tiempo</button>
+
+        <h2>Castropol</h2>
+        <button id="tiempoCastropol" onclick="new Meteo('Castropol').verXML()">Ver Tiempo</button>
+        <section></section>
+    </article>
+</body>
+
+</html>
