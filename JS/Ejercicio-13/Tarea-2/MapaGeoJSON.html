@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width">
+    <meta name="author" content="Alejandro Álvarez Varela UO271288">
+    <link rel="stylesheet" type="text/css" href="MapaGeoJSON.css" />
+    <title>Ejercicio GeoJSON</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.rawgit.com/geocodezip/geoxml3/master/polys/geoxml3.js"></script>
+    <script src="MapaGeoJSON.js"></script>
+</head>
+
+<body>
+    <h1>Ejercicio GeoJSON</h1>
+    <article>
+        <h2>Introduzca el archivo .GeoJSON</h2>
+        <input type="file" onchange="verJson.load(this.files);" />ç
+        <section></section>
+    </article>
+
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6j4mF6blrc4kZ54S6vYZ2_FpMY9VzyRU&callback=verJson.initMap"></script>
+</body>
+
+</html>

@@ -1,0 +1,13 @@
+/*001*/
+h1 {
+    text-transform: uppercase;
+    padding: 0.313em;
+    text-align: center;
+}
+
+
+/*100*/
+section {
+    height: 1000px;
+    width: 100%;
+}

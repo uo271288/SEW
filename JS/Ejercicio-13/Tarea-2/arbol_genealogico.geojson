@@ -1,0 +1,31 @@
+{
+"type": "FeatureCollection",
+"name": "arbol_genealogico",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "Name": "Alejandro Álvarez Varela", "description": "Nació en:Gozón", "altitudeMode": "relativeToGround" }, "geometry": { "type": "Point", "coordinates": [ -5.892778, 43.595556 ] } },
+{ "type": "Feature", "properties": { "Name": "Pedro Álvarez Fuente", "description": "Nació en:Avilés", "altitudeMode": "relativeToGround" }, "geometry": { "type": "Point", "coordinates": [ -5.924167, 43.555556 ] } },
+{ "type": "Feature", "properties": { "Name": "Gustavo Álvarez Peña", "description": "Nació en:Vigo", "altitudeMode": "relativeToGround" }, "geometry": { "type": "Point", "coordinates": [ -8.714444, 42.230833 ] } },
+{ "type": "Feature", "properties": { "Name": "Gustavo Álvarez Peña", "description": "Falleció en:Vigo", "altitudeMode": "relativeToGround" }, "geometry": { "type": "Point", "coordinates": [ -5.827222, 43.375556 ] } },
+{ "type": "Feature", "properties": { "Name": "Jesús Álvarez Rodenas", "description": "Nació en:Zamora", "altitudeMode": "relativeToGround" }, "geometry": { "type": "Point", "coordinates": [ -5.76904, 41.4671131 ] } },
+{ "type": "Feature", "properties": { "Name": "Jesús Álvarez Rodenas", "description": "Falleció en:Zamora", "altitudeMode": "relativeToGround" }, "geometry": { "type": "Point", "coordinates": [ -5.768056, 41.469444 ] } },
+{ "type": "Feature", "properties": { "Name": "Margarita Oliva Peña Ruiz", "description": "Nació en:Valladolid", "altitudeMode": "relativeToGround" }, "geometry": { "type": "Point", "coordinates": [ -4.726111, 41.641111 ] } },
+{ "type": "Feature", "properties": { "Name": "Margarita Oliva Peña Ruiz", "description": "Falleció en:Valladolid", "altitudeMode": "relativeToGround" }, "geometry": { "type": "Point", "coordinates": [ -5.76701, 41.468412 ] } },
+{ "type": "Feature", "properties": { "Name": "Azucena Fuente Codina", "description": "Nació en:Santiago de Compostela", "altitudeMode": "relativeToGround" }, "geometry": { "type": "Point", "coordinates": [ -8.546111, 42.875278 ] } },
+{ "type": "Feature", "properties": { "Name": "José Ramón Fuente Soto", "description": "Nació en:Oleiros", "altitudeMode": "relativeToGround" }, "geometry": { "type": "Point", "coordinates": [ -8.317778, 43.333611 ] } },
+{ "type": "Feature", "properties": { "Name": "José Ramón Fuente Soto", "description": "Falleció en:Oleiros", "altitudeMode": "relativeToGround" }, "geometry": { "type": "Point", "coordinates": [ -8.556111, 42.874127 ] } },
+{ "type": "Feature", "properties": { "Name": "Cándida Codina Guerrero", "description": "Nació en:A Coruña", "altitudeMode": "relativeToGround" }, "geometry": { "type": "Point", "coordinates": [ -8.413056, 43.356944 ] } },
+{ "type": "Feature", "properties": { "Name": "Cándida Codina Guerrero", "description": "Falleció en:A Coruña", "altitudeMode": "relativeToGround" }, "geometry": { "type": "Point", "coordinates": [ -5.824862, 43.371236 ] } },
+{ "type": "Feature", "properties": { "Name": "Nora Varela Muñoz", "description": "Nació en:Castropol", "altitudeMode": "relativeToGround" }, "geometry": { "type": "Point", "coordinates": [ -7.022778, 43.513611 ] } },
+{ "type": "Feature", "properties": { "Name": "Enrique Varela García", "description": "Nació en:Navia", "altitudeMode": "relativeToGround" }, "geometry": { "type": "Point", "coordinates": [ -6.723056, 43.539444 ] } },
+{ "type": "Feature", "properties": { "Name": "Manuel Varela Varela", "description": "Nació en:Navelgas", "altitudeMode": "relativeToGround" }, "geometry": { "type": "Point", "coordinates": [ -6.544167, 43.404167 ] } },
+{ "type": "Feature", "properties": { "Name": "Manuel Varela Varela", "description": "Falleció en:Navelgas", "altitudeMode": "relativeToGround" }, "geometry": { "type": "Point", "coordinates": [ -6.730056, 43.538564 ] } },
+{ "type": "Feature", "properties": { "Name": "Marga García Chacón", "description": "Nació en:EL Bierzo", "altitudeMode": "relativeToGround" }, "geometry": { "type": "Point", "coordinates": [ -6.665, 42.594444 ] } },
+{ "type": "Feature", "properties": { "Name": "Marga García Chacón", "description": "Falleció en:EL Bierzo", "altitudeMode": "relativeToGround" }, "geometry": { "type": "Point", "coordinates": [ -6.725056, 43.541114 ] } },
+{ "type": "Feature", "properties": { "Name": "Alba Muñoz Aramburu", "description": "Nació en:Aulestia", "altitudeMode": "relativeToGround" }, "geometry": { "type": "Point", "coordinates": [ -2.562778, 43.296667 ] } },
+{ "type": "Feature", "properties": { "Name": "Oskar Muñoz Aanda", "description": "Nació en:Vergara", "altitudeMode": "relativeToGround" }, "geometry": { "type": "Point", "coordinates": [ -2.421944, 43.122778 ] } },
+{ "type": "Feature", "properties": { "Name": "Oskar Muñoz Aanda", "description": "Falleció en:Vergara", "altitudeMode": "relativeToGround" }, "geometry": { "type": "Point", "coordinates": [ -5.827722, 43.385556 ] } },
+{ "type": "Feature", "properties": { "Name": "Ane Aramburu Zelaya", "description": "Nació en:Hernani", "altitudeMode": "relativeToGround" }, "geometry": { "type": "Point", "coordinates": [ -1.975833, 43.266389 ] } },
+{ "type": "Feature", "properties": { "Name": "Ane Aramburu Zelaya", "description": "Falleció en:Hernani", "altitudeMode": "relativeToGround" }, "geometry": { "type": "Point", "coordinates": [ -5.829922, 43.355556 ] } }
+]
+}
