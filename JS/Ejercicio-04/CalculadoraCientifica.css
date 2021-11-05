@@ -1,4 +1,4 @@
-/*100*/
+/*002*/
 body > form {
     margin: 0.125em;
     padding: 1em;
@@ -21,7 +21,7 @@ button {
     color: black;
 }
 
-/*001*/
+/*003*/
 body > form > textarea {
     text-align: right;
     margin-bottom: 1em;
@@ -33,16 +33,51 @@ body > form > textarea {
     resize: none;
 }
 
-body > form > button[type=button]:nth-child(23),
-body > form > button[type=button]:nth-child(24),
-body > form > button[type=button]:nth-child(25),
+/*023*/
+body > form > button[type=button]:nth-child(26),
+/*023*/
+body > form > button[type=button]:nth-child(27),
+/*023*/
 body > form > button[type=button]:nth-child(28),
-body > form > button[type=button]:nth-child(29),
-body > form > button[type=button]:nth-child(30),
+/*023*/
+body > form > button[type=button]:nth-child(31),
+/*023*/
+body > form > button[type=button]:nth-child(32),
+/*023*/
 body > form > button[type=button]:nth-child(33),
-body > form > button[type=button]:nth-child(34),
-body > form > button[type=button]:nth-child(35),
-body > form > button[type=button]:nth-child(39),
-body > form > button[type=button]:nth-child(40){
+/*023*/
+body > form > button[type=button]:nth-child(36),
+/*023*/
+body > form > button[type=button]:nth-child(37),
+/*023*/
+body > form > button[type=button]:nth-child(38),
+/*023*/
+body > form > button[type=button]:nth-child(42),
+/*023*/
+body > form > button[type=button]:nth-child(43){
     background-color: lightblue;
+}
+
+/*023*/
+body > form > button[type=button]:nth-child(2){
+    grid-column: 1;
+}
+
+/*023*/
+body > form > button[type=button]:nth-child(3){
+    grid-column: 2;
+}
+
+/*023*/
+body > form > button[type=button]:nth-child(4) {
+    grid-column: 3;
+}
+
+/*023*/
+body > form > button[type=button]:nth-child(5){
+    grid-column: 1;
+}
+/*023*/
+body > form > button[type=button]:nth-child(6){
+    grid-column: 2;
 }

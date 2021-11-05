@@ -12,47 +12,44 @@
 <body>
     <script src="CalculadoraRPN.js"></script>
     <h1>Calculadora RPN</h1>
-    <div class="calculadora">
-        <div id="pantalla">
-            <div id="resultado"></div>
-            <textarea disabled title="operandos" id="textarea"></textarea>
-        </div>
-        <div>
-            <button id="x2" onclick="calculadora.x2()">x<sup>2</sup></button>
-            <button id="sin" onclick="calculadora.sin()">sin</button>
-            <button id="cos" onclick="calculadora.cos()">cos</button>
-            <button id="tan" onclick="calculadora.tan()">tan</button>
-        </div>
-        <div>
-            <button id="xy" onclick="calculadora.xy()">x<sup>y</sup></button>
-            <button id="borrar" onclick="calculadora.borrar()">C</button>
-            <button id="enter" onclick="calculadora.enter()">Enter</button>
-        </div>
-        <div>
-            <button id="siete" onclick="calculadora.digito('7')">7</button>
-            <button id="ocho" onclick="calculadora.digito('8')">8</button>
-            <button id="nueve" onclick="calculadora.digito('9')">9</button>
-            <button id="div" onclick="calculadora.div()">&#xF7;</button>
-        </div>
-        <div>
-            <button id="cuatro" onclick="calculadora.digito('4')">4</button>
-            <button id="cinco" onclick="calculadora.digito('5')">5</button>
-            <button id="seis" onclick="calculadora.digito('6')">6</button>
-            <button id="mult" onclick="calculadora.mult()">&#xD7;</button>
-        </div>
-        <div>
-            <button id="uno" onclick="calculadora.digito('1')">1</button>
-            <button id="dos" onclick="calculadora.digito('2')">2</button>
-            <button id="tres" onclick="calculadora.digito('3')">3</button>
-            <button id="resta" onclick="calculadora.resta()">-</button>
-        </div>
-        <div>
-            <button id="cero" onclick="calculadora.digito('0')">0</button>
-            <button id="punto" onclick="calculadora.punto()">.</button>
-            <button id="retroceso" onclick="calculadora.retroceso()">&#x2190;</button>
-            <button id="suma" onclick="calculadora.suma()">+</button>
-        </div>
-    </div>
+    <form>
+        <textarea disabled title="resultado"></textarea>
+        <textarea disabled title="operandos"></textarea>
+
+        <button type="button" onclick="calculadora.sqrt()">&#x221A;</button>
+        <button type="button" onclick="calculadora.asin()">asin</button>
+        <button type="button" onclick="calculadora.acos()">acos</button>
+        <button type="button" onclick="calculadora.atan()">atan</button>
+
+        <button type="button" onclick="calculadora.x2()">x<sup>2</sup></button>
+        <button type="button" onclick="calculadora.sin()">sin</button>
+        <button type="button" onclick="calculadora.cos()">cos</button>
+        <button type="button" onclick="calculadora.tan()">tan</button>
+
+        <button type="button" onclick="calculadora.xy()">x<sup>y</sup></button>
+        <button type="button" onclick="calculadora.borrar()">C</button>
+        <button type="button" onclick="calculadora.enter()">Enter</button>
+
+        <button type="button" onclick="calculadora.digito('7')">7</button>
+        <button type="button" onclick="calculadora.digito('8')">8</button>
+        <button type="button" onclick="calculadora.digito('9')">9</button>
+        <button type="button" onclick="calculadora.div()">&#xF7;</button>
+
+        <button type="button" onclick="calculadora.digito('4')">4</button>
+        <button type="button" onclick="calculadora.digito('5')">5</button>
+        <button type="button" onclick="calculadora.digito('6')">6</button>
+        <button type="button" onclick="calculadora.mult()">&#xD7;</button>
+
+        <button type="button" onclick="calculadora.digito('1')">1</button>
+        <button type="button" onclick="calculadora.digito('2')">2</button>
+        <button type="button" onclick="calculadora.digito('3')">3</button>
+        <button type="button" onclick="calculadora.resta()">-</button>
+
+        <button type="button" onclick="calculadora.digito('0')">0</button>
+        <button type="button" onclick="calculadora.punto()">.</button>
+        <button type="button" onclick="calculadora.retroceso()">&#x2190;</button>
+        <button type="button" onclick="calculadora.suma()">+</button>
+    </form>
 </body>
 
 </html>
