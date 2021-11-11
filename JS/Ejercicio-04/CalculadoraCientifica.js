@@ -271,6 +271,8 @@ class CalculadoraCientifica extends Calculadora {
         let aux = this.operacionMostrada
         this.igual()
         this.operacionMostrada = aux + ")"
+        this.operando1 = "";
+        this.resuelto = false
         document.querySelector("body > form > textarea").textContent = this.operacionMostrada;
     }
 
@@ -280,14 +282,14 @@ class CalculadoraCientifica extends Calculadora {
     }
 
     deg() {
-        if(this.radians){
-            this.operacion = new Number(this.operacion)*(180/Math.PI);
+        if (this.radians) {
+            this.operacion = new Number(this.operacion) * (180 / Math.PI);
             this.operacionMostrada = this.operacion
             document.querySelector("body > form > textarea").textContent = this.operacionMostrada;
             this.radians = false;
         }
-        else{
-            this.operacion = new Number(this.operacion)*(Math.PI/180);
+        else {
+            this.operacion = new Number(this.operacion) * (Math.PI / 180);
             this.operacionMostrada = this.operacion
             document.querySelector("body > form > textarea").textContent = this.operacionMostrada;
             this.radians = true;
@@ -338,13 +340,13 @@ class CalculadoraCientifica extends Calculadora {
     }
 
     f_e() {
-        if(!this.notation){
+        if (!this.notation) {
             this.operacion = new Number(this.operacion).toExponential()
             this.operacionMostrada = this.operacion
             document.querySelector("body > form > textarea").textContent = this.operacionMostrada;
             this.notation = true;
         }
-        else{
+        else {
             this.operacion = new Number(this.operacion)
             this.operacionMostrada = this.operacion
             document.querySelector("body > form > textarea").textContent = this.operacionMostrada;

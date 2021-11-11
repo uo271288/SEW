@@ -1,8 +1,8 @@
-/*100*/
+/*002*/
 body > form {
     margin: 0.125em;
     padding: 1em;
-    background-color: rgb(48, 48, 48);
+    background-color: rgb(73, 73, 73);
     color: black;
     border-radius: 0.625em;
     display: grid;
@@ -17,34 +17,49 @@ body > form {
 /*001*/
 button {
     font-size: 1.563em;
-    background-color: lightcyan;
+    background-color: grey;
     color: black;
+    border-radius: 0.625em;
 }
 
-/*001*/
+/*003*/
 body > form > textarea {
     text-align: right;
     margin-bottom: 1em;
-    background-color: rgb(218, 213, 148);
+    background-color: palegreen;
     max-height: 5em;
     grid-column-start: 1;
     grid-column-end: 5;
     color: black;
     resize: none;
+    border-radius: 0.625em;
 }
 
-body > form > button[type=button]:nth-child(5),
-body > form > button[type=button]:nth-child(9),
-body > form > button[type=button]:nth-child(13),
-body > form > button[type=button]:nth-child(17){
+
+/*013*/
+body > form > button:nth-child(5),
+/*013*/
+body > form > button:nth-child(9),
+/*013*/
+body > form > button:nth-child(13),
+/*013*/
+body > form > button:nth-child(17){
     background-color: rgb(224, 75, 75);
     color: black;
 }
 
+/*013*/
+body > form > button:nth-child(2),
+/*013*/
+body > form > button:nth-child(3),
+/*013*/
+body > form > button:nth-child(4){
+    background-color: rgb(37, 37, 37);
+    color: white;
+}
 
-body > form > button[type=button]:nth-child(2),
-body > form > button[type=button]:nth-child(3),
-body > form > button[type=button]:nth-child(4){
-    background-color: gold;
+/*013*/
+body > form > button:nth-child(21){
+    background-color: lightgray;
     color: black;
 }
