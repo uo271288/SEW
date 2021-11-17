@@ -22,3 +22,8 @@ button {
     line-height: 36px;
     text-align: center;
 }
+
+/*001*/
+a {
+    color: lightskyblue;
+}
