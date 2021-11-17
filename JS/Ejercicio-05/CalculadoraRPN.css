@@ -62,6 +62,7 @@ body > form > button:nth-child(26),
 /*013*/
 body > form > button:nth-child(27){
     background-color: lightblue;
+    color: black;
 }
 
 /*013*/
