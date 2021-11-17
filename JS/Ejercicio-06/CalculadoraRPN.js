@@ -192,6 +192,15 @@ class CalculadoraRPN {
         }
     }
 
+    sqrt() {
+        if (this.pila.tamanno() >= 1) {
+            var a = this.pila.desapilar();
+            var b = Math.sqrt(a);
+            this.pila.apilar(b);
+            document.querySelector("body > form > textarea:nth-child(1)").innerHTML = this.pila.mostrar();
+        }
+    }
+
     xy() {
         if (this.pila.tamanno() >= 2) {
             var a = this.pila.desapilar();

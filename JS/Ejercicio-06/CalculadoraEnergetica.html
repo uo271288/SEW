@@ -12,7 +12,34 @@
 
 <body>
     <h1>Calculadora de consumo energético de una vivienda</h1>
-    <div>
+    <form>
+
+
+        <button type="button" onclick="calculadora.borrar()">C</button>
+        <button type="button" onclick="calculadora.enter()">Enter</button>
+
+        <button type="button" onclick="calculadora.digito('7')">7</button>
+        <button type="button" onclick="calculadora.digito('8')">8</button>
+        <button type="button" onclick="calculadora.digito('9')">9</button>
+        <button type="button" onclick="calculadora.div()">&#xF7;</button>
+
+        <button type="button" onclick="calculadora.digito('4')">4</button>
+        <button type="button" onclick="calculadora.digito('5')">5</button>
+        <button type="button" onclick="calculadora.digito('6')">6</button>
+        <button type="button" onclick="calculadora.mult()">&#xD7;</button>
+
+        <button type="button" onclick="calculadora.digito('1')">1</button>
+        <button type="button" onclick="calculadora.digito('2')">2</button>
+        <button type="button" onclick="calculadora.digito('3')">3</button>
+        <button type="button" onclick="calculadora.resta()">-</button>
+
+        <button type="button" onclick="calculadora.digito('0')">0</button>
+        <button type="button" onclick="calculadora.punto()">.</button>
+        <button type="button" onclick="calculadora.retroceso()">&#x2190;</button>
+        <button type="button" onclick="calculadora.suma()">+</button>
+
+
+        
         <label for="electrodomestico">Electrodoméstico:</label>
         <input id="electrodomestico" type="text">
         <label for="potencia">Potencia:</label>
@@ -21,7 +48,7 @@
         <input id="precio" type="number">
         <button id="annadir" onclick="calculadora.annadir()">Añadir electrodoméstico</button>
         <button id="calcular" onclick="calculadora.calcular()">Calcular</button>
-    </div>
+    </form>
 </body>
 
 </html>

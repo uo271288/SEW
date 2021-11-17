@@ -14,13 +14,14 @@ class Electrodomestico {
     }
 }
 
-class Calculadora {
+class Calculadora extends CalculadoraRPN{
     constructor() {
-        this.electrodomesticos = [];
+        super();
+        this.electrodomesticos = new PilaLIFO();
     }
 
     annadir() {
-        this.electrodomesticos.push(new Electrodomestico(document.getElementById("electrodomestico").value,
+        this.electrodomesticos.apilar(new Electrodomestico(document.getElementById("electrodomestico").value,
             document.getElementById("potencia").value, document.getElementById("precio").value));
         document.getElementById("electrodomestico").value = "";
         document.getElementById("potencia").value = "";
