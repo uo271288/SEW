@@ -3,7 +3,7 @@ class Meteo {
     constructor(ciudad) {
         this.apikey = "041a43573582af70aa2bf15c729cfa48";
         this.ciudad = ciudad;
-        this.url = "http://api.openweathermap.org/data/2.5/weather?q=" + this.ciudad + "&APPID=" + this.apikey;
+        this.url = "https://api.openweathermap.org/data/2.5/weather?q=" + this.ciudad + "&APPID=" + this.apikey;
         this.correcto = "¡Todo correcto! JSON recibido de <a href='http://openweathermap.org'>OpenWeatherMap</a>"
     }
     cargarDatos() {
