@@ -1,0 +1,29 @@
+/*001*/
+body {
+    background-color: black;
+    color: lightgray;
+}
+
+/*001*/
+h1 {
+    text-align: center;
+}
+
+/*001*/
+button {
+    position: relative;
+    cursor: pointer;
+    width: 150px;
+    height: 40px;
+    background: lightgray;
+    border-radius: 33px;
+    margin: 0px 7px 11px 1px;
+    color: black;
+    line-height: 36px;
+    text-align: center;
+}
+
+/*001*/
+a {
+    color: lightskyblue;
+}
