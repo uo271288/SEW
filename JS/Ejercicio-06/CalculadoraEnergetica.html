@@ -13,13 +13,13 @@
 
 <body>
     <h1>Calculadora de consumo energético de una vivienda</h1>
-    <form>
+    <form action="" method="get">
         <textarea disabled title="resultado"></textarea>
         <textarea disabled title="operandos"></textarea>
 
         <button type="button" onclick="calculadora.total()">Total</button>
         <button type="button" onclick="calculadora.precio()">Precio</button>
-        <button type="button" onclick="calculadora.borrar()">C</button>
+        <button type="submit" onclick="calculadora.borrar()">C</button>
         <button type="button" onclick="calculadora.enter()">Enter</button>
 
         <button type="button" onclick="calculadora.digito('7')">7</button>
