@@ -57,7 +57,7 @@ class Meteo {
                 var horaMedidaLocal = (new Date(horaMedidaMiliSeg1970)).toLocaleTimeString("es-ES");
                 var fechaMedidaLocal = (new Date(horaMedidaMiliSeg1970)).toLocaleDateString("es-ES");
 
-                var stringDatos = '<ul><li><img alt="Imagen del tiempo" src= "http://openweathermap.org/img/w/' + icon + '.png" height="64px" width="64px"></li>';
+                var stringDatos = '<li><img alt="Imagen del tiempo" src= "http://openweathermap.org/img/w/' + icon + '.png" height="64px" width="64px"></li>';
                 stringDatos += "<li>Número de elementos del XML: " + totalNodos + "</li>";
                 stringDatos += "<li>Ciudad: " + ciudad + "</li>";
                 stringDatos += "<li>Longitud: " + longitud + " grados</li>";
@@ -83,7 +83,7 @@ class Meteo {
                 stringDatos += "<li>Precipitación modo: " + precipitacionMode + "</li>";
                 stringDatos += "<li>Descripción: " + descripcion + "</li>";
                 stringDatos += "<li>Hora de la medida: " + horaMedidaLocal + "</li>";
-                stringDatos += "<li>Fecha de la medida: " + fechaMedidaLocal + "</li></ul>";
+                stringDatos += "<li>Fecha de la medida: " + fechaMedidaLocal + "</li>";
                 
                 $("body").append('<ul></ul>');
                 $("ul").html(stringDatos);
@@ -102,9 +102,9 @@ class Meteo {
         $("section").append(elemento);
     }
     verXML() {
-        $("ul").empty();
+        $("ul").remove();
         $("section").empty();
-        this.crearElemento("h2", "Datos en XML desde <a href='http://openweathermap.org'>OpenWeatherMap</a>", "footer");
+        this.crearElemento("h2", "Datos en XML desde <a href='http://openweathermap.org'>OpenWeatherMap</a>");
         this.crearElemento("h3", this.correcto);
         this.crearElemento("h4", "XML");
         this.crearElemento("pre", "");
