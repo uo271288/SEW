@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="author" content="Alejandro Álvarez Varela UO271288">
+    <title>Ejercicio 9</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="Ejercicio9.js"></script>
+    <link rel="stylesheet" href="Ejercicio9.css">
+</head>
+
+<body>
+    <header>
+        <h1>jQuery: Usa AJAX para obtener un XML con los datos de la estación meteorológica de Oviedo usando <a
+                href="http://openweathermap.org/">OpenWeatherMap</a></h1>
+    </header>
+    <article>
+        <h2>Oleiros</h2>
+        <button id="tiempoOleiros" onclick="new Meteo('Oleiros').verXML()">Ver Tiempo</button>
+
+        <h2>Oviedo</h2>
+        <button id="tiempoOviedo" onclick="new Meteo('Oviedo').verXML()">Ver Tiempo</button>
+
+        <h2>Vigo</h2>
+        <button id="tiempoVigo" onclick="new Meteo('Vigo').verXML()">Ver Tiempo</button>
+
+        <h2>Navia</h2>
+        <button id="tiempoNavia" onclick="new Meteo('Navia').verXML()">Ver Tiempo</button>
+
+        <h2>Castropol</h2>
+        <button id="tiempoCastropol" onclick="new Meteo('Castropol').verXML()">Ver Tiempo</button>
+        <p>A continuación se mostrará el resultado</p>
+        <section>
+            <h2>Datos en XML desde <a href="http://openweathermap.org">OpenWeatherMap</a></h2>
+            <h3>¡Todo correcto! XML recibido de <a href="http://openweathermap.org/">OpenWeatherMap</a></h3>
+            <h4>XML</h4>
+            <pre>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;current&gt;&lt;city id="6359923" name="Castropol"&gt;&lt;coord lon="-6.9671" lat="43.486"/&gt;&lt;country&gt;ES&lt;/country&gt;&lt;timezone&gt;3600&lt;/timezone&gt;&lt;sun rise="2021-11-18T07:25:34" set="2021-11-18T17:00:51"/&gt;&lt;/city&gt;&lt;temperature value="14.92" min="14.92" max="14.92" unit="celsius"/&gt;&lt;feels_like value="14.01" unit="celsius"/&gt;&lt;humidity value="59" unit="%"/&gt;&lt;pressure value="1028" unit="hPa"/&gt;&lt;wind&gt;&lt;speed value="2.89" unit="m/s" name="Light breeze"/&gt;&lt;gusts value="9.3"/&gt;&lt;direction value="64" code="ENE" name="East-northeast"/&gt;&lt;/wind&gt;&lt;clouds value="27" name="scattered clouds"/&gt;&lt;visibility value="10000"/&gt;&lt;precipitation mode="no"/&gt;&lt;weather number="802" value="nubes dispersas" icon="03d"/&gt;&lt;lastupdate value="2021-11-18T11:25:29"/&gt;&lt;/current&gt;</pre>
+            <h4>Datos</h4>
+        </section>
+    </article>
+
+
+    <ul>
+        <ul>
+            <li><img alt="Imagen del tiempo" src="http://openweathermap.org/img/w/03d.png" height="64px" width="64px">
+            </li>
+            <li>Número de elementos del XML: 19</li>
+            <li>Ciudad: Castropol</li>
+            <li>Longitud: -6.9671 grados</li>
+            <li>Latitud: 43.486 grados</li>
+            <li>País: ES</li>
+            <li>Amanece a las: 8:25:34</li>
+            <li>Oscurece a las: 18:00:51</li>
+            <li>Temperatura: 14.92 grados Celsius</li>
+            <li>Temperatura mínima: 14.92 grados Celsius</li>
+            <li>Temperatura máxima: 14.92 grados Celsius</li>
+            <li>Temperatura (unidades): celsius</li>
+            <li>Humedad: 59 %</li>
+            <li>Presión: 1028 hPa</li>
+            <li>Velocidad del viento: 2.89 metros/segundo</li>
+            <li>Nombre del viento: Light breeze</li>
+            <li>Dirección del viento: 64 grados</li>
+            <li>Código del viento: ENE</li>
+            <li>Nombre del viento: East-northeast</li>
+            <li>Nubosidad: 27</li>
+            <li>Nombre nubosidad: scattered clouds</li>
+            <li>Visibilidad: 10000 metros</li>
+            <li>Precipitación valor: undefined</li>
+            <li>Precipitación modo: no</li>
+            <li>Descripción: nubes dispersas</li>
+            <li>Hora de la medida: 12:25:29</li>
+            <li>Fecha de la medida: 18/11/2021</li>
+        </ul>
+    </ul>
+</body>
+
+</html>
