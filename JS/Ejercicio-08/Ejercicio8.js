@@ -14,7 +14,7 @@ class Meteo {
             success: function(datos) {
                 $("pre").text(JSON.stringify(datos, null, 2));
 
-                var stringDatos = '<li><img src="http://openweathermap.org/img/w/' + datos.weather[0].icon + '.png" height="64px" width="64px"></li>';
+                var stringDatos = '<li><img alt="Imagen del tiempo" src="http://openweathermap.org/img/w/' + datos.weather[0].icon + '.png" height="64px" width="64px"></li>';
                 stringDatos += "<li>Ciudad: " + datos.name + "</li>";
                 stringDatos += "<li>País: " + datos.sys.country + "</li>";
                 stringDatos += "<li>Latitud: " + datos.coord.lat + " grados</li>";
