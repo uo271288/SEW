@@ -1,44 +1,57 @@
-class Electrodomestico {
-    constructor(electrodomestico, potencia, precio) {
-        this.electrodomestico = electrodomestico;
-        this.potencia = potencia;
-        this.precio = precio;
+"use strict"
+class PilaLIFO {
+    constructor() {
+        this.pila = new Array();
+    }
+    apilar(valor) {
+        this.pila.push(valor);
     }
 
-    getNombre() {
-        return this.electrodomestico;
+    desapilar() {
+        return (this.pila.pop());
     }
 
-    getConsumo() {
-        return this.potencia * this.precio;
+    vaciar() {
+        var size = this.pila.length;
+        for (var i = 0; i < size; i++)
+            this.pila.pop();
+    }
+
+    mostrar() {
+        var stringPila = ""
+        var j = this.pila.length;
+        for (var i in this.pila)
+            stringPila += j-- + ":" + this.pila[i] + " kw/h\n";
+
+        return stringPila;
+    }
+
+    tamanno() {
+        return this.pila.length;
     }
 }
 
-class Calculadora extends CalculadoraRPN{
-    constructor() {
-        super();
-        this.electrodomesticos = new PilaLIFO();
-    }
+class Calculadora extends CalculadoraRPN {
 
-    annadir() {
-        this.electrodomesticos.apilar(new Electrodomestico(document.getElementById("electrodomestico").value,
-            document.getElementById("potencia").value, document.getElementById("precio").value));
-        document.getElementById("electrodomestico").value = "";
-        document.getElementById("potencia").value = "";
-        document.getElementById("precio").value = "";
-    }
-    calcular() {
-        var table = document.createElement('table');
-        table.id = 'tabla';
-        document.getElementsByTagName("body")[0].appendChild(table);
-        document.getElementById("tabla").outerHTML = '<table id="tabla"><tr><th>Electrodoméstico</th><th>Precio</th></tr></table>';
+    total() {
+
         var total = 0.0;
-        for (var electrodomestico of this.electrodomesticos) {
-
-            document.getElementById("tabla").innerHTML += "<tr><td>" + electrodomestico.getNombre() + "</td><td>" + electrodomestico.getConsumo() + " €/h</td></tr>";
-            total += electrodomestico.getConsumo();
+        for (var element of this.pila.pila) {
+            total += parseFloat(element);
         }
-        document.getElementById("tabla").innerHTML += '<tr><th colspan="2">Total</th></tr><tr><td colspan="2">' + total + ' €/h</td></tr>';
+
+        this.pila.vaciar();
+        this.pila.apilar(total);
+        document.querySelector("body > form > textarea:nth-child(1)").innerHTML = this.pila.mostrar().split(":")[1];
+    }
+
+    precio() {
+        if (this.pila.tamanno() >= 1) {
+            var a = this.pila.desapilar();
+            var b = a * 0.29666;
+            this.pila.apilar(b);
+            document.querySelector("body > form > textarea:nth-child(1)").innerHTML = this.pila.mostrar().split(":")[1].split(" ")[0]+" €";
+        }
     }
 }
 var calculadora = new Calculadora();

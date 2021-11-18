@@ -1,35 +1,4 @@
 "use strict";
-class PilaLIFO {
-    constructor() {
-        this.pila = new Array();
-    }
-    apilar(valor) {
-        this.pila.push(valor);
-    }
-
-    desapilar() {
-        return (this.pila.pop());
-    }
-
-    vaciar() {
-        var size = this.pila.length;
-        for (var i = 0; i < size; i++)
-            this.pila.pop();
-    }
-
-    mostrar() {
-        var stringPila = ""
-        var j = this.pila.length;
-        for (var i in this.pila)
-            stringPila +=j-- + ":" + this.pila[i]+"\n";
-
-        return stringPila;
-    }
-
-    tamanno() {
-        return this.pila.length;
-    }
-}
 
 class CalculadoraRPN {
 

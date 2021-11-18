@@ -7,14 +7,18 @@
     <meta name="author" content="Alejandro Álvarez Varela UO271288">
     <title>Ejercicio 6</title>
     <link rel="stylesheet" type="text/css" href="CalculadoraEnergetica.css" />
+    <script src="CalculadoraRPN.js"></script>
     <script src="CalculadoraEnergetica.js"></script>
 </head>
 
 <body>
     <h1>Calculadora de consumo energético de una vivienda</h1>
     <form>
+        <textarea disabled title="resultado"></textarea>
+        <textarea disabled title="operandos"></textarea>
 
-
+        <button type="button" onclick="calculadora.total()">Total</button>
+        <button type="button" onclick="calculadora.precio()">Precio</button>
         <button type="button" onclick="calculadora.borrar()">C</button>
         <button type="button" onclick="calculadora.enter()">Enter</button>
 
@@ -36,19 +40,7 @@
         <button type="button" onclick="calculadora.digito('0')">0</button>
         <button type="button" onclick="calculadora.punto()">.</button>
         <button type="button" onclick="calculadora.retroceso()">&#x2190;</button>
-        <button type="button" onclick="calculadora.suma()">+</button>
-
-
-        
-        <label for="electrodomestico">Electrodoméstico:</label>
-        <input id="electrodomestico" type="text">
-        <label for="potencia">Potencia:</label>
-        <input id="potencia" type="number">
-        <label for="precio">Precio:</label>
-        <input id="precio" type="number">
-        <button id="annadir" onclick="calculadora.annadir()">Añadir electrodoméstico</button>
-        <button id="calcular" onclick="calculadora.calcular()">Calcular</button>
+        <button type="button" onclick="calculadora.suma()">+</button>        
     </form>
 </body>
-
 </html>
