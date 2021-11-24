@@ -1,39 +1,44 @@
 class GeoLocalizacion {
-    initMap() {
-        document.body.appendChild(document.createElement("section"))
-        var centro = { lat: 43.3672702, lng: -5.8502461 };
-        var mapaGeoposicionado = new google.maps.Map(document.querySelector("body > section"), {
-            zoom: 8,
-            center: centro,
-            mapTypeId: google.maps.MapTypeId.ROADMAP
-        });
 
-        infoWindow = new google.maps.InfoWindow;
-        if (navigator.geolocation) {
-            navigator.geolocation.getCurrentPosition(function(position) {
-                var pos = {
-                    lat: position.coords.latitude,
-                    lng: position.coords.longitude
-                };
-
-                infoWindow.setPosition(pos);
-                infoWindow.setContent('Localización encontrada');
-                infoWindow.open(mapaGeoposicionado);
-                mapaGeoposicionado.setCenter(pos);
-            }, function() {
-                handleLocationError(true, infoWindow, mapaGeoposicionado.getCenter());
-            });
-        } else {
-            handleLocationError(false, infoWindow, mapaGeoposicionado.getCenter());
+    constructor() {
+        navigator.geolocation.getCurrentPosition(this.getPosicion.bind(this), this.verErrores.bind(this));
+    }
+    getPosicion(posicion) {
+        this.oviedo = [posicion.coords.longitude,posicion.coords.latitude];
+        this.apiKey = "pk.eyJ1IjoidW8yNzEyODgiLCJhIjoiY2t3Ynk4bG5hMGZhdjJwbjJzNjZwMHI2OCJ9.4VqHsw5zVVkrOGjQLn3doA";
+        this.container = "mapaDinamico";
+        this.mapStyle = "mapbox://styles/mapbox/dark-v10";
+        this.mensaje = "Se ha realizado correctamente la petición de geolocalización";
+        this.zoom = 12;
+    }
+    verErrores(error) {
+        switch (error.code) {
+            case error.PERMISSION_DENIED:
+                this.mensaje = "El usuario no permite la petición de geolocalización"
+                break;
+            case error.POSITION_UNAVAILABLE:
+                this.mensaje = "Información de geolocalización no disponible"
+                break;
+            case error.TIMEOUT:
+                this.mensaje = "La petición de geolocalización ha caducado"
+                break;
+            case error.UNKNOWN_ERROR:
+                this.mensaje = "Se ha producido un error desconocido"
+                break;
         }
     }
 
-    handleLocationError(browserHasGeolocation, infoWindow, pos) {
-        infoWindow.setPosition(pos);
-        infoWindow.setContent(browserHasGeolocation ?
-            'Error: Ha fallado la geolocalización' :
-            'Error: Su navegador no soporta geolocalización');
-        infoWindow.open(mapaGeoposicionado);
-    }
+    mapaDinamico(){       
+        mapboxgl.accessToken = this.apiKey;
+        let map = new mapboxgl.Map({
+          container: this.container,
+          style: this.mapStyle,
+          center: this.oviedo,
+          zoom: this.zoom
+        });
+        let marker1 = new mapboxgl.Marker()
+            .setLngLat(this.oviedo)
+            .addTo(map);
+    }     
 }
 var miMapa = new GeoLocalizacion();

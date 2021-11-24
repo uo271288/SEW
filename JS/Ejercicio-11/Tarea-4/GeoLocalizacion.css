@@ -1,5 +1,5 @@
 /*100*/
-section {
-    height: 500px;
-    width: 100%;
-}
+#mapaDinamico{
+    width: 40em; 
+    height: 30em;
+  }

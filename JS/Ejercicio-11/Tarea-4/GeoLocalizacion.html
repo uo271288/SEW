@@ -8,12 +8,19 @@
     <title>Mapa Dinámico Google</title>
     <meta name="viewport" content="initial-scale=1.0" />
     <link href="GeoLocalizacion.css" rel="stylesheet" />
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v2.6.0/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v2.6.0/mapbox-gl.css' rel='stylesheet' />
+    <script src="GeoLocalizacion.js"></script>
 </head>
 
 <body>
-    <script src="GeoLocalizacion.js"></script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6j4mF6blrc4kZ54S6vYZ2_FpMY9VzyRU&callback=mapaDinamicoGoogle.initMap">
-    </script>
+    <h1>Clase Geolocalización</h1>
+    <main>
+        <input type="button" value="Obtener mis datos de ubicación" onClick="mapaDinamico.mapaDinamico()" />
+        <section id="mapaDinamico">
+            <h2>Mapa dinámico</h2>
+        </section>
+    </main>
 </body>
 
 </html>

@@ -1,13 +1,26 @@
-/*001*/
-h1 {
-    text-transform: uppercase;
-    padding: 0.313em;
-    text-align: center;
+/*100*/
+#mapaDinamico{
+    height: 40em;
+    width: 50em;
 }
 
+/*001*/
+h1 {
+    background-color: white;
+    text-align: center;
+    color: blue;
+}
 
-/*100*/
-section {
-    height: 1000px;
-    width: 100%;
+/*001*/
+h2 {
+    background-color: white;
+    text-align: left;
+    color: green;
+}
+
+/*001*/
+p {
+    background-color: white;
+    text-align: left;
+    color: black;
 }

@@ -7,11 +7,8 @@ class GeoLocalizacion {
         this.mensaje = "Se ha realizado correctamente la petición de geolocalización";
         this.longitud = posicion.coords.longitude;
         this.latitud = posicion.coords.latitude;
-        this.precision = posicion.coords.accuracy;
-        this.altitud = posicion.coords.altitude;
-        this.precisionAltitud = posicion.coords.altitudeAccuracy;
-        this.rumbo = posicion.coords.heading;
-        this.velocidad = posicion.coords.speed;
+        this.zoom = 12;
+        this.rotacion = 0;
     }
     verErrores(error) {
         switch (error.code) {
@@ -29,19 +26,17 @@ class GeoLocalizacion {
                 break;
         }
     }
-    
-    getMapaEstaticoGoogle(dondeVerlo) {
+
+    getMapaEstatico() {
         var ubicacion = document.querySelector("body > section");
 
-        var apiKey = "&key=AIzaSyC6j4mF6blrc4kZ54S6vYZ2_FpMY9VzyRU";
-        var url = "https://maps.googleapis.com/maps/api/staticmap?";
-        var centro = "center=" + this.latitud + "," + this.longitud;
-        var zoom = "&zoom=15";
-        var tamaño = "&size=800x600";
-        var marcador = "&markers=color:red%7Clabel:S%7C" + this.latitud + "," + this.longitud;
-        var sensor = "&sensor=false";
+        var apiKey = "?access_token=pk.eyJ1IjoidW8yNzEyODgiLCJhIjoiY2t3Ynk2YjhvM29xbzJvcm9lYnBidnFoZiJ9.hmiazSSrkMwSbBryHqHZcQ";
+        var url = "https://api.mapbox.com/styles/v1/mapbox/streets-v11/static/";
+        var centro = this.longitud + "," + this.latitud + "," + this.zoom + "," + this.rotacion;
+        var tamaño = "/500x500";
+        var marker = "pin-s+000000(" + this.longitud + "," + this.latitud + ")/";
 
-        this.imagenMapa = url + centro + zoom + tamaño + marcador + sensor + apiKey;
+        this.imagenMapa = url + marker + centro + tamaño + apiKey;
         ubicacion.innerHTML = "<img src='" + this.imagenMapa + "'/>";
     }
 }
