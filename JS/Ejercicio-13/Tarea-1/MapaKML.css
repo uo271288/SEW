@@ -1,28 +1,19 @@
-/*001*/
-
-p {
-    text-align: center;
-    height: 500px;
+/*100*/
+#map { 
+    height: 40em;
+    width: 50em;
 }
 
-
 /*001*/
-
 h1 {
+    background-color: white;
     text-align: center;
+    color: blue;
 }
 
-
 /*001*/
-
-section {
-    text-align: center;
-}
-
-
-/*001*/
-
-body {
-    background-color: beige;
-    color: black;
+h2 {
+    background-color: white;
+    text-align: left;
+    color: green;
 }

@@ -7,8 +7,8 @@
     <meta name="author" content="Alejandro Álvarez Varela UO271288">
     <link rel="stylesheet" type="text/css" href="MapaGeoJSON.css" />
     <title>Ejercicio GeoJSON</title>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://cdn.rawgit.com/geocodezip/geoxml3/master/polys/geoxml3.js"></script>
+    <script src='https://api.mapbox.com/mapbox.js/v3.3.1/mapbox.js'></script>
+    <link href='https://api.mapbox.com/mapbox.js/v3.3.1/mapbox.css' rel='stylesheet' />
     <script src="MapaGeoJSON.js"></script>
 </head>
 
@@ -17,13 +17,13 @@
     <article>
         <h2>Introduzca el archivo .GeoJSON</h2>
         <input type="file" onchange="verJson.load(this.files);" />
-        <section>
+        <main>
             <h2>Mapa</h2>
-        </section>
-    </article>
+            <section id="map">
 
-    <script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6j4mF6blrc4kZ54S6vYZ2_FpMY9VzyRU&callback=verJson.initMap"></script>
+            </section>
+        </main>
+    </article>
 </body>
 
 </html>

@@ -1,20 +1,15 @@
 "use strict";
 class MapaKML {
-    initMap(files) {
-        var archivo = files[0];
-        var mapa = new google.maps.Map(document.querySelector("body > section > p"));
-        mapa.setCenter({ lat: 43.2185, lng: -6.87628 });
-        mapa.setZoom(4);
-        mapa.setMapTypeId(google.maps.MapTypeId.HYBRID);
-        var xml = new geoXML3.parser({ map: mapa });
+    initMap() {
+        L.mapbox.accessToken = 'pk.eyJ1IjoidW8yNzEyODgiLCJhIjoiY2t3Ynk2YjhvM29xbzJvcm9lYnBidnFoZiJ9.hmiazSSrkMwSbBryHqHZcQ';
+        var map = L.mapbox.map('map')
+            .addLayer(L.mapbox.styleLayer('mapbox://styles/mapbox/streets-v11'));
 
-        if (archivo.name.endsWith(".kml")) {
-            var reader = new FileReader();
-            reader.readAsText(archivo);
-            reader.onload = function(evento) {
-                xml.parseKmlString(reader.result);
-            }
-        }
+        var runLayer = omnivore.kml('arbol_genealogico.kml')
+            .on('ready', function () {
+                map.fitBounds(runLayer.getBounds());
+            })
+            .addTo(map);
     }
 }
 
