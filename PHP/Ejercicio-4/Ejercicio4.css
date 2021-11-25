@@ -1,0 +1,30 @@
+h1{
+    text-align:left;
+    color:blue;
+}
+h2{
+    text-align:left;
+    color:green;
+}
+h3{
+    text-align:left;
+    color:red;
+}
+h4{
+    text-align:left;
+    color:mediumorchid;
+}
+p{
+    color:gray;
+}
+code{
+    text-align:left;
+    color:blue;
+}
+footer{
+    margin-top:2em;
+}
+footer a img{
+    height:31px; 
+    width:88px;
+}
