@@ -361,6 +361,21 @@ class CalculadoraCientifica extends Calculadora {
         document.querySelector("body > form > textarea").textContent = str;
         this.operacionMostrada = str;
     }
+
+    fact(){
+        this.operacion = this.factorial(new Number(this.operacion));
+        this.operacionMostrada = this.operacion;
+        document.querySelector("body > form > textarea").textContent = this.operacionMostrada;
+    }
+
+    factorial(n) {
+        var f = [];
+        if (n == 0 || n == 1)
+            return 1;
+        if (f[n] > 0)
+            return f[n];
+        return f[n] = this.factorial(n - 1) * n;
+    }
 }
 
 var calculadora = new CalculadoraCientifica();
