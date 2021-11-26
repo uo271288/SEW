@@ -17,11 +17,6 @@ class Reproductor {
         }
     }
 
-
-
-
-
-
     cargarSubtitulos() {
         var video = document.querySelector("body > section > video"),
             track,
@@ -35,8 +30,6 @@ class Reproductor {
         track.addCue(new VTTCue(10.5, 11.5, "Me wa matar wee"));
         track.addCue(new VTTCue(12, 13, "Weeee"));
     }
-
-
 
     leerArchivoTexto(files) {
         document.body.appendChild(document.createElement("section"))
