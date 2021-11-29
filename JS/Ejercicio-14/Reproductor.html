@@ -13,8 +13,8 @@
     <h1>Reproductor de videos con subtitulos</h1>
     <label for="archivoTexto">Seleccione un archivo de video: </label>
     <input type="file" id="archivoTexto" onchange="reproductor.leerArchivoTexto(this.files);">
-    <button id="loadcues" onclick="reproductor.cargarSubtitulos()">Cargar subtitulos</button>
-    <button id="fullscreen" onclick="reproductor.toggleFullScreen()">Pantalla completa</button>
+    <button onclick="reproductor.cargarSubtitulos()">Cargar subtitulos</button>
+    <button onclick="reproductor.toggleFullScreen()">Pantalla completa</button>
     <script src="Reproductor.js"></script>
 </body>
 

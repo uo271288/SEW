@@ -10,28 +10,27 @@
     <script src="Ejercicio12.js"></script>
 </head>
 
-<body onload="lector.calcularTamañoArchivos();lector.validar();">
+<body lector.validar();">
     <h1>Lector de textos</h1>
     <section>
         <h2>API File: Selecionar varios archivos de la máquina cliente</h2>
         <label for="subirArchivos">Seleccione un archivo de texto: </label>
         <input id="subirArchivos" type="file" name="Archivos" onchange="lector.calcularTamañoArchivos();" multiple>
-        <p>Archivos seleccionados: <span id="numero">0</span></p>
-        <p>Tamaño total: <span id="tamaño">0</span></p>
-        <span id="nombres"></span>
+        <p>Archivos seleccionados: </p>
+        <p>Tamaño total: </p>
+       <p>Nombres de los archivos: </p>
 
 
         <label for="archivoTexto">Seleccione un archivo de texto: </label>
 
         <input type="file" id="archivoTexto" onchange="lector.leerArchivoTexto(this.files);">
 
-        <p id="nombreArchivo"></p>
-        <p id="tamañoArchivo"></p>
-        <p id="tipoArchivo"></p>
-        <p id="ultimaModificacion"></p>
-        <p id="contenidoArchivo"></p>
-        <pre id="areaTexto"></pre>
-        <p id="errorLectura"></p>
+        <p>Nombre del archivo: </p>
+        <p>Tamaño del archivo: </p>
+        <p>Tipo del archivo: </p>
+        <p>Ultima modificación: </p>
+        <p>Contenido del archivo: </p>
+        <pre></pre>
     </section>
 
 </body>

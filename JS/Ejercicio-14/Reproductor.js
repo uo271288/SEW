@@ -20,7 +20,7 @@ class Reproductor {
     cargarSubtitulos() {
         var video = document.querySelector("body > section > video"),
             track,
-            track = video.addTextTrack("captions", "English", "en");
+            track = video.addTextTrack("captions", "Spanish", "es");
         track.mode = "showing";
         track.addCue(new VTTCue(0, 2, "La vi con otra paloma"));
         track.addCue(new VTTCue(2.5, 4, "* inspira lastimosamente * me wa matar"));

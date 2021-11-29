@@ -27,14 +27,14 @@ class Ejercicio7 {
     }
 
     suma() {
-        $("body").append('<textarea id="total"></textarea>');
+        $("body").append('<textarea></textarea>');
         $(document).ready(function () {
             var total = 0;
             $("table td").each(function () {
                 if (!isNaN($(this).text()))
                     total += parseInt($(this).text());
             });
-            $("#total").text("El total es: " + total);
+            $("textarea").text("El total es: " + total);
         });
     }
 }
