@@ -24,6 +24,7 @@ class GeoLocalizacion {
     verTodo() {
         var ubicacion = document.querySelector("body > section");
         var datos = '';
+        datos += '<h2>Mis datos de ubicación</h2>';
         datos += '<p>Longitud: ' + this.longitud + ' grados</p>';
         datos += '<p>Latitud: ' + this.latitud + ' grados</p>';
         datos += '<p>Precisión de la latitud y longitud: ' + this.precision + ' metros</p>';

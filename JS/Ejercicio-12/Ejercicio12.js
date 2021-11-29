@@ -21,7 +21,7 @@ class Lector {
         }
         var nombresTiposTamaños = "";
         for (var i = 0; i < nArchivos; i++) {
-            nombresTiposTamaños += "<p>Archivo[" + i + "] = " + archivos[i].name + " Tamaño: " + archivos[i].size + " bytes " + " Tipo: " + archivos[i].type + "</p>";
+            nombresTiposTamaños += "Archivo[" + i + "] = " + archivos[i].name + " Tamaño: " + archivos[i].size + " bytes " + " Tipo: " + archivos[i].type;
         }
 
         document.querySelector("body > section > p:nth-child(4)").innerHTML += nArchivos;

@@ -32,11 +32,13 @@ class Reproductor {
     }
 
     leerArchivoTexto(files) {
-        document.body.appendChild(document.createElement("section"))
+        var video = document.createElement("section")
+        video.innerHTML += "<h2>Reproductor</h2>";
+        document.body.appendChild(video)
         var archivo = files[0];
         var tipoTexto = 'video.*';
         if (archivo.type.match(tipoTexto)) {
-            document.querySelector("body > section").innerHTML = '<video controls><source src="' + archivo.name + '"></video>';
+            document.querySelector("body > section").innerHTML += '<video controls><source src="' + archivo.name + '"></video>';
         } else {
             errorArchivo.innerText = "Error : ¡¡¡ Archivo no válido !!!";
         }

@@ -37,7 +37,7 @@ class GeoLocalizacion {
         var marker = "pin-s+000000(" + this.longitud + "," + this.latitud + ")/";
 
         this.imagenMapa = url + marker + centro + tamaño + apiKey;
-        ubicacion.innerHTML = "<img src='" + this.imagenMapa + "'/>";
+        ubicacion.innerHTML = "<h2>Representa la imagen de un mapa estático con los alrededores de la posición del usuario</h2><img alt='mapa estatico' src='" + this.imagenMapa + "'/>";
     }
 }
 var miMapa = new GeoLocalizacion();

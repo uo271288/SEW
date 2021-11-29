@@ -26,4 +26,11 @@ button {
 /*001*/
 a {
     color: lightskyblue;
+    background-color: black;
+}
+
+/*001*/
+img {
+    height: 5em;
+    width: 5em;
 }

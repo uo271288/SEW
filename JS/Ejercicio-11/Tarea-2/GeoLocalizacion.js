@@ -40,7 +40,8 @@ class GeoLocalizacion {
     }
     verTodo() {
         var ubicacion = document.querySelector("body > section");
-        var datos = '<p>' + this.mensaje + '</p>';
+        var datos = '<h2>La geolocalización es más precisa cuando se usan dispositivos con GPS</h2>';
+        datos += '<p>' + this.mensaje + '</p>';
         datos += '<p>Longitud: ' + this.longitud + ' grados</p>';
         datos += '<p>Latitud: ' + this.latitud + ' grados</p>';
         datos += '<p>Precisión de la longitud y latitud: ' + this.precision + ' metros</p>';
