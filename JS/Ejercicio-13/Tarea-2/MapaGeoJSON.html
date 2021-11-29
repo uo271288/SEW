@@ -15,7 +15,8 @@
 <body>
     <h1>Ejercicio GeoJSON</h1>
     <h2>Introduzca el archivo .GeoJSON</h2>
-    <input type="file" onchange="verJson.load(this.files);" />
+    <label for="subirArchivos">Seleccione un archivo GeoJSON: </label>
+    <input id="subirArchivos" type="file" onchange="verJson.load(this.files);" />
     <main>
         <section id="map">
             <h2>Mapa</h2>
