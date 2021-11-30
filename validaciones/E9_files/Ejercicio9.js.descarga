@@ -16,7 +16,6 @@ class Meteo {
             method: 'GET',
             success: function(datos) {
 
-                $("pre").text((new XMLSerializer()).serializeToString(datos));
                 var icon = $('weather', datos).attr("icon");
                 var totalNodos = $('*', datos).length;
                 var ciudad = $('city', datos).attr("name");
@@ -91,7 +90,6 @@ class Meteo {
             error: function() {
                 $("h3").html("¡Tenemos problemas! No puedo obtener XML de <a href='http://openweathermap.org'>OpenWeatherMap</a>");
                 $("h4").remove();
-                $("pre").remove();
                 $("ul").remove();
             }
         });
@@ -106,8 +104,6 @@ class Meteo {
         $("section").empty();
         this.crearElemento("h2", "Datos en XML desde <a href='http://openweathermap.org'>OpenWeatherMap</a>");
         this.crearElemento("h3", this.correcto);
-        this.crearElemento("h4", "XML");
-        this.crearElemento("pre", "");
         this.crearElemento("h4", "Datos");
         this.cargarDatos();
     }

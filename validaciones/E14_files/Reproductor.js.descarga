@@ -33,7 +33,7 @@ class Reproductor {
 
     leerArchivoTexto(files) {
         var video = document.createElement("section")
-        video.innerHTML += "<h2>Reproductor</h2>";
+        video.innerHTML += "<h2>Reproductor</h2><p>Video cargado correctamente</p>";
         document.body.appendChild(video)
         var archivo = files[0];
         var tipoTexto = 'video.*';

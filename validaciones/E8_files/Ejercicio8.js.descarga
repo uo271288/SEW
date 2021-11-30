@@ -12,7 +12,6 @@ class Meteo {
             url: this.url,
             method: 'GET',
             success: function(datos) {
-                $("pre").text(JSON.stringify(datos, null, 2));
 
                 var stringDatos = '<li><img alt="Imagen del tiempo" src="http://openweathermap.org/img/w/' + datos.weather[0].icon + '.png"></li>';
                 stringDatos += "<li>Ciudad: " + datos.name + "</li>";
@@ -40,7 +39,6 @@ class Meteo {
             error: function() {
                 $("h3").html("¡Tenemos problemas! No puedo obtener JSON de <a href='http://openweathermap.org'>OpenWeatherMap</a>");
                 $("h4").remove();
-                $("pre").remove();
                 $("ul").remove();
             }
         });
@@ -55,8 +53,6 @@ class Meteo {
         $("section").empty();
         this.crearElemento("h2", "Datos en JSON desde <a href='http://openweathermap.org'>OpenWeatherMap</a>");
         this.crearElemento("h3", this.correcto);
-        this.crearElemento("h4", "JSON");
-        this.crearElemento("pre", "");
         this.crearElemento("h4", "Datos");
         this.cargarDatos();
     }
