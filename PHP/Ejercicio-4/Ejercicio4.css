@@ -6,25 +6,30 @@ h2{
     text-align:left;
     color:green;
 }
-h3{
-    text-align:left;
-    color:red;
+
+/*001*/
+table {
+    border-collapse: collapse;
 }
-h4{
-    text-align:left;
-    color:mediumorchid;
+
+/*001*/
+th {
+    background-color: #424242;
+    color: #E3E3E3;
 }
-p{
-    color:gray;
+
+/*001*/
+td {
+    background-color: #BABABA;
+    color: #292929;
 }
-code{
-    text-align:left;
-    color:blue;
-}
-footer{
-    margin-top:2em;
-}
-footer a img{
-    height:31px; 
-    width:88px;
+
+/*001*/
+th,
+/*001*/
+td {
+    border: 0.063em;
+    border-style: solid;
+    border-color: white;
+    text-align: center;
 }

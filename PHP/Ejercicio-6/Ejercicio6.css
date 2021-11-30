@@ -1,0 +1,45 @@
+body{
+    background: #bbccdd;
+    font-family: sans-serif;
+}
+h1{
+    text-align:center;
+    color:black;
+}
+h2{
+    text-align:center;
+    color:black;
+}
+nav ul li{
+    list-style-type: none;
+    margin: 10px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 110%;
+    text-align: center;
+}
+nav ul li a{
+	color:black;
+}
+p {
+	font-weight: bold;
+	margin-top: 1em;
+	margin-bottom: 0.1em;
+}
+ul{
+    text-align:center;
+}
+li{
+    display: block;
+}
+#confirm{
+	color: red;
+	font-weight: bold;
+	text-align: center;
+}
+#formbase, footer{
+	margin-top: 2em;
+    text-align: center;
+}
+
+

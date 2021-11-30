@@ -4,86 +4,52 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Factorial</title>
-	<link rel="stylesheet" href="100-JSON-OpenWeatherMap.css">
+	<link rel="stylesheet" href="Ejercicio4.css">
 </head>
 
 <body>
-	<h1>Datos meteorológicos en JSON de <a href="http://openweathermap.org/">OpenWeatherMap</a></h1>
+	<h1>Datos meteorológicos en JSON de <a href="https://openweathermap.org/">OpenWeatherMap</a></h1>
 	<section>
 		<h2>Código fuente PHP</h2>
 		<?php
-		$apikey = "47b790fd0fc41878c80c57c9846132cb";
-		$ciudad = "Oviedo";
-		$codigoPais ="ES";
-		$unidades = "&units=metric";
-		$idioma = "&lang=es";
-		$url = "http://api.openweathermap.org/data/2.5/weather?q=" . $ciudad ."," .$codigoPais . $unidades . $idioma . "&APPID=" . $apikey;
-		
-		// Se solicita el archivo JSON de la url que se pasa como parámetro y se recibe como un string
-		$datos = file_get_contents($url);
-		
-		echo "<h2>JSON recibido</h2>";
-		
-		// Muestra el archivo JSON recibido como string maquetado en bonito
-		echo "<pre>";
-		$jsonMaquetado = json_decode($datos, JSON_PRETTY_PRINT);
-		print_r($jsonMaquetado);
-		echo "</pre>";
-		
-		// Se convierte el JSON en un objeto PHP
-		$json = json_decode($datos);
-		
-		if($json==null) {
-			echo "<h3>Error en el archivo JSON recibido</h3>";
-		}
-		else {
-			echo "<h3>JSON decodificado correctamente</h3>";
-		}
-		
-		# Datos contenidos en el JSON
-		$estacion = $json->name;
-		$pais =$json->sys->country;
-		$lat = $json->coord->lat;
-		$lon = $json->coord->lon;
-		$temp = $json->main->temp;
-		$tempmax = $json->main->temp_max;
-		$tempmin = $json->main->temp_min;
-		$presion = $json->main->pressure;
-		$humedad = $json->main->humidity;
-		$velocidadViento = $json->wind->speed;
-		if(isset($json->wind->deg)) {
-			$direccionViento = $json->wind->deg;
-		}
-		else{
-			$direccionViento ="No disponible";
-		}
-		$estadoCielo = $json->weather[0]->main;
-		$descripcion = $json->weather[0]->description;
-		$icono = $json->weather[0]->icon;
-		$URLicono = "http://openweathermap.org/img/w/" . $icono . ".png";
-		$nubosidad = $json->clouds->all;
-		$amanece = $json->sys->sunrise;
-		$oscurece = $json->sys->sunset;
-		$fechaHoraMedida = $json->dt;
-		
-		
-		echo "<h2>Datos</h2>";
-		echo "<img src = '$URLicono' alt = '$descripcion' >";
-		echo "<p>Ciudad: " . $estacion . "</p>";
-		echo "<p>País: " . $pais . "</p>";
-		echo "<p>[longitud = ".$lon. " grados, latitud = ".$lat. " grados]</p>";
-		echo "<p>Estado del cielo: " .$estadoCielo ."</p>";
-		echo "<p>Descripción: ".$descripcion."</p>";
-		echo "<p>Nubosidad: " . $nubosidad . " %</p>";
-		echo "<p>Temperatura: ".$temp." grados Celsius [Máx: ".$tempmax." grados Celsius, Mín: ".$tempmin." grados Celsius]</p>";
-		echo "<p>Presión: ".$presion. " milibares</p>";
-		echo "<p>Humedad: ".$humedad. " %</p>";
-		echo "<p>Velocidad del viento: " . $velocidadViento . " metros/segundo</p>";
-		echo "<p>Dirección del viento: " . $direccionViento . " grados</p>";
-		echo "<p>Fecha y hora del amanecer: " . date("d-m-Y G:i:s",$amanece) . "</p>";
-		echo "<p>Fecha y hora del oscurecer: " . date("d-m-Y G:i:s",$oscurece) . "</p>";
-		echo "<p>Fecha y hora de la medida: " . date("d-m-Y G:i:s",$fechaHoraMedida) . "</p>";
-		?>	
+		$endpoint = 'latest';
+		$access_key = 'o5wmw3144wt0xmfb5j1013om0n12288c33oe7173m61kte8d4x8oeq4pmfxh';
+		$ch = curl_init('https://metals-api.com/api/' . $endpoint . '?access_key=' . $access_key . '');
+		curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+		$json = curl_exec($ch);
+		curl_close($ch);
+		$exchangeRates = json_decode($json, true);
+		echo "<table>
+				<tr>
+					<th>Moneda</th>
+					<th>Precio</th>
+				</tr>
+				<tr>
+					<td>USD</td>
+					<td>" . $exchangeRates['rates']['USD'] . "$</td>
+				</tr>
+				<tr>
+					<td>EUR</td>
+					<td>" . $exchangeRates['rates']['EUR'] . "€</td>
+				</tr>
+				<tr>
+					<td>JPY</td>
+					<td>" . $exchangeRates['rates']['JPY'] . "¥</td>
+				</tr>
+				<tr>
+					<td>GBP</td>
+					<td>" . $exchangeRates['rates']['GBP'] . "£</td>
+				</tr>
+				<tr>
+					<td>AUD</td>
+					<td>" . $exchangeRates['rates']['AUD'] . "$</td>
+				</tr>
+				<tr>
+					<td>CAD</td>
+					<td>" . $exchangeRates['rates']['CAD'] . "$</td>
+				</tr>
+			  </table";
+		?>
 
 </body>
 
