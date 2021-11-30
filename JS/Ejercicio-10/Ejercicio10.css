@@ -44,3 +44,9 @@ td {
     padding:0.5em;
     text-align: center;
 }
+
+/*001*/
+a {
+    background-color: black;
+    color: #E3E3E3;
+}
