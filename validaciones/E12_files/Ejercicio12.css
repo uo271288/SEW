@@ -1,0 +1,15 @@
+/*001*/
+body {
+    font-size: 1.1em;
+    color: black;
+    background-color: white;
+}
+
+/*001*/
+h1 {
+    text-transform: uppercase;
+    padding: 0.313em;
+    text-align: center;
+    color: midnightblue;
+    background-color: white;
+}

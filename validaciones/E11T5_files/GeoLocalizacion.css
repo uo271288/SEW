@@ -1,0 +1,26 @@
+/*001*/
+section {
+    height: 40em;
+    width: 50em;
+}
+
+/*001*/
+h1 {
+    background-color: white;
+    text-align: center;
+    color: blue;
+}
+
+/*001*/
+h2 {
+    background-color: white;
+    text-align: left;
+    color: green;
+}
+
+/*001*/
+p {
+    background-color: white;
+    text-align: left;
+    color: black;
+}
