@@ -65,9 +65,3 @@ body > form > button:nth-child(19)
     background-color: lightblue;
     color: black;
 }
-
-/*013*/
-/* body > form > button:nth-child(5) {
-    grid-column-start: 3;
-    grid-column-end: 5;
-} */
