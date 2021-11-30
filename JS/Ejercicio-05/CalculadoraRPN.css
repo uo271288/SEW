@@ -69,4 +69,26 @@ body > form > button:nth-child(27){
 body > form > button:nth-child(13){
     grid-column-start: 3;
     grid-column-end: 5;
+    background-color: rgb(109, 218, 255);
+    color: black;
+}
+
+/*013*/
+body > form > button:nth-child(12),
+/*013*/
+body > form > button:nth-child(28){
+    background-color: rgb(255, 207, 94);
+    color: black;
+}
+
+/*013*/
+body > form > button:nth-child(17),
+/*013*/
+body > form > button:nth-child(21),
+/*013*/
+body > form > button:nth-child(25),
+/*013*/
+body > form > button:nth-child(29) {
+    background-color: rgb(255, 77, 77);
+    color: black;
 }
