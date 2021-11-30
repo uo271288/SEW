@@ -21,7 +21,7 @@ class PilaLIFO {
         var stringPila = ""
         var j = this.pila.length;
         for (var i in this.pila)
-            stringPila +=j-- + ":" + this.pila[i]+"\n";
+            stringPila +="Índice: "+j-- + " -> Valor: " + this.pila[i]+"\n";
 
         return stringPila;
     }
