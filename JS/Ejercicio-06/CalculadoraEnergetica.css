@@ -40,27 +40,27 @@ body > form > textarea:nth-child(2) {
 }
 
 /*013*/
-body > form > button:nth-child(6),
-/*013*/
 body > form > button:nth-child(7),
 /*013*/
 body > form > button:nth-child(8),
 /*013*/
-body > form > button:nth-child(10),
+body > form > button:nth-child(9),
 /*013*/
 body > form > button:nth-child(11),
 /*013*/
 body > form > button:nth-child(12),
 /*013*/
-body > form > button:nth-child(14),
+body > form > button:nth-child(13),
 /*013*/
 body > form > button:nth-child(15),
 /*013*/
 body > form > button:nth-child(16),
 /*013*/
-body > form > button:nth-child(18),
+body > form > button:nth-child(17),
 /*013*/
-body > form > button:nth-child(19)
+body > form > button:nth-child(19),
+/*013*/
+body > form > button:nth-child(20)
 {
     background-color: lightblue;
     color: black;
