@@ -8,7 +8,7 @@
 		<title>Calculadora básica</title>
 		<meta name="description" content="Calculadora básica. Ejercicio 1">
 		<meta name="keywords" content="calculadora,calculo,matematicas">
-		<meta name="author" content="Alejandro Antuña">
+		<meta name="author" content="Alejandro Álvarez Varela">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="CalculadoraBasica.css"/>
 	</head>    
@@ -35,7 +35,7 @@
 					if ($this->getconsola() === "NaN" | $this->getconsola() === "Syntax Error" | $this->getconsola() === "Infinity"){
 						$this->consola = "";
 					}        
-					$this->consola .= $value;				//AÑADE A LO QUE HAY EN LA CONSOLA EL NUEVO VALOR
+					$this->consola .= $value;
 				}
 
 				public function calcular(){
@@ -47,7 +47,7 @@
 				}
 
 				public function memMostrar(){
-					$this->consola .= $this->getmemoria();	//AÑADE A LO QUE HAY EN LA CONSOLA EL NUEVO VALOR
+					$this->consola .= $this->getmemoria();
 					$this->memoria = 0;
 				}
 
