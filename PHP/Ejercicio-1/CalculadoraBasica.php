@@ -14,7 +14,6 @@
 	</head>    
 	<body>
 		<h1>Calculadora Básica</h1>
-		<main>
 			<?php
 				class CalculadoraBasica {
 					public $consola;
@@ -53,12 +52,10 @@
 
 				public function memSum(){
 					$this->memoria = $this->getmemoria() + eval("return $this->consola ;");
-					$this->consola = $this->getmemoria();
 				}
 
 				public function memSub(){
 					$this->memoria = $this->getmemoria() - eval("return $this->consola ;");
-					$this->consola = $this->getmemoria();
 				}
 
 				public function delete(){
@@ -113,30 +110,29 @@
 					$calculadora->calcular();
 			};
 
-			echo "<form action='#' method='post' name='Calculadora'>
-				<input type='text' id='resultado' name='expresion' value='$calculadora->consola' readonly/>
-				<input type='submit' class='button' name='mrc' value='MRC'/>
-				<input type='submit' class='button' name='m-' value='M-'/>
-				<input type='submit' class='button' name='m+' value='M+'/>
-				<input type='submit' class='button' name='/' value='/'/>
-				<input type='submit' class='button' name='7' value='7'/>
-				<input type='submit' class='button' name='8' value='8'/>
-				<input type='submit' class='button' name='9' value='9'/>
-				<input type='submit' class='button' name='*' value='x'/>
-				<input type='submit' class='button' name='4' value='4'/>
-				<input type='submit' class='button' name='5' value='5'/>
-				<input type='submit' class='button' name='6' value='6'/>
-				<input type='submit' class='button' name='-' value='-'/>
-				<input type='submit' class='button' name='1' value='1'/>
-				<input type='submit' class='button' name='2' value='2'/>
-				<input type='submit' class='button' name='3' value='3'/>
-				<input type='submit' class='button' name='+' value='+'/>
-				<input type='submit' class='button' name='0' value='0'/>
-				<input type='submit' class='button' name=',' value='.'/>
-				<input type='submit' class='button' name='C' value='C'/>
-				<input type='submit' class='button' name='=' value='='/>
+			echo "<form action='CalculadoraBasica.php' method='post' name='Calculadora'>
+				<textarea disabled>$calculadora->consola</textarea>
+				<button type='submit' name='mrc'>MRC</button>
+				<button type='submit' name='m-'>M-</button>
+				<button type='submit' name='m+'>M+</button>
+				<button type='submit' name='/'>/</button>
+				<button type='submit' name='7'>7</button>
+				<button type='submit' name='8'>8</button>
+				<button type='submit' name='9'>9</button>
+				<button type='submit' name='*'>x</button>
+				<button type='submit' name='4'>4</button>
+				<button type='submit' name='5'>5</button>
+				<button type='submit' name='6'>6</button>
+				<button type='submit' name='-'>-</button>
+				<button type='submit' name='1'>1</button>
+				<button type='submit' name='2'>2</button>
+				<button type='submit' name='3'>3</button>
+				<button type='submit' name='+'>+</button>
+				<button type='submit' name='0'>0</button>
+				<button type='submit' name=','>.</button>
+				<button type='submit' name='C'>C</button>
+				<button type='submit' name='='>=</button>
 			</form>";
 			?>
-		</main>
 	</body>
 </html>

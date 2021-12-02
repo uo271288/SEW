@@ -1,99 +1,114 @@
 <!DOCTYPE html>
 <html lang="es">
-	<head>
-		<meta charset="UTF-8"/>
-		<title>Actualizar datos introducidos</title>
-		<meta name="description" content="Gestión BBDD con PHP. Ejercicio 6">
-		<meta name="keywords" content="bbdd, sql, php">
-		<meta name="author" content="Alejandro Antuña">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link href="Ejercicio6.css" rel="stylesheet" />
-	</head>
-    
-	<body>
-		<h1>Gestión BBDD MySQL con PHP</h1>
-		<h2>Menú para gestionar la BBDD:</h2>
-		<nav>  
-			<ul>
-				<li><a href="Ejercicio6.html" title="Menú principal">Menú principal</a></li>
-				<li><a href="CreaBBDD.php" title="Crear Base de Datos">Crear Base de Datos</a></li>
-				<li><a href="CreaTabla.php" title="Crear Tabla">Crear una tabla</a></li>
-				<li><a href="InsertarDatos.php" title="Insertar Datos de prueba de usabilidad">Insertar datos de prueba de usabilidad</a></li>
-				<li><a href="BuscarDatos.php" title="BuscarDatosTabla">Buscar datos en una tabla</a></li>
-				<li><a href="EliminarDatos.php" title="Eliminar Datos Introducidos">Eliminar datos introducidos</a></li>
-				<li><a href="GenerarInforme.php" title="Generar informe de datos">Generar informe de datos</a></li>
-				<li><a href="CargarDatos.php" title="Cargar datos desde archivo local">Cargar datos desde archivo local</a></li>
-				<li><a href="ExportarDatos.php" title="Exportar datos a fichero">Exportar datos a fichero</a></li>
-			</ul>
-		</nav> 
-		<h1>Actualizar datos introducidos en pruebas_usabilidad</h1>   
-		<form id="formbase" action='#' method='post'>
-			Id del dato a actualizar: 
-				<input type='text' class='text' name='id'/>
-				<br>
-			<p>Datos del usuario</p>
-			Edad del usuario: 
-				<input type='text' class='text' name='edad'/>
-				<br>
-			Sexo del usuario: 
-				<select name="sexo">
-					<option value="hombre">Hombre</option>
-					<option value="mujer">Mujer</option>
-				</select>
-				<br>
-			<p>Datos de la prueba</p>
-			¿Prueba realizada correctamente?:
-				<input type='text' class='text' name='correcta'/>
-				<br>
-			Tiempo empleado en realizar la prueba:
-				<input type='text' class='text' name='tiempo'/>
-				<br>
-			Pericia demostrada: 
-				<select name="pericia">
-					<option value="0">0</option>
-					<option value="1">1</option>
-					<option value="2">2</option>
-					<option value="3">3</option>
-					<option value="4">4</option>
-					<option value="5">5</option>
-					<option value="6">6</option>
-					<option value="7">7</option>
-					<option value="8">8</option>
-					<option value="9">9</option>
-					<option value="10">10</option>
-				</select>
-				<br>
-			<p>Aspectos sobre la aplicación probada</p>
-			Valoración de la aplicación: 
-				<select name="valoracion">
-					<option value="0">0</option>
-					<option value="1">1</option>
-					<option value="2">2</option>
-					<option value="3">3</option>
-					<option value="4">4</option>
-					<option value="5">5</option>
-					<option value="6">6</option>
-					<option value="7">7</option>
-					<option value="8">8</option>
-					<option value="9">9</option>
-					<option value="10">10</option>
-				</select>
-				<br>
-			Propuestas de mejora de la aplicación: 
-				<input type='text' class='text' name='propuestas'/>
-				<br>			
-			Comentarios extras: 
-				<input type='text' class='text' name='comentarios'/>
-				<br>
-			<input type='submit' class='button' name='modificar' value='Actualizar'/>
-		</form>
-		<?php
-			require('BaseDatos.php');
-			$base = new BaseDatos();
 
-			if (count($_POST)>0)   
-				if(isset($_POST['modificar']))                 
-					$base->actualizarDatos(); 
-		?>    
-	</body>
+<head>
+	<meta charset="UTF-8" />
+	<title>Actualizar datos introducidos</title>
+	<meta name="description" content="Gestión BBDD con PHP. Ejercicio 6">
+	<meta name="keywords" content="bbdd, sql, php">
+	<meta name="author" content="Alejandro Álvarez Varela">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="Ejercicio6.css" rel="stylesheet" />
+</head>
+
+<body>
+	<h1>Gestión BBDD MySQL con PHP</h1>
+	<h2>Menú para gestionar la BBDD:</h2>
+	<nav>
+		<ul>
+			<li><a href="Ejercicio6.html" title="Menú principal">Menú principal</a></li>
+			<li><a href="CreaBBDD.php" title="Crear Base de Datos">Crear Base de Datos</a></li>
+			<li><a href="CreaTabla.php" title="Crear Tabla">Crear una tabla</a></li>
+			<li><a href="InsertarDatos.php" title="Insertar Datos de prueba de usabilidad">Insertar datos de prueba de usabilidad</a></li>
+			<li><a href="BuscarDatos.php" title="BuscarDatosTabla">Buscar datos en una tabla</a></li>
+			<li><a href="EliminarDatos.php" title="Eliminar Datos Introducidos">Eliminar datos introducidos</a></li>
+			<li><a href="GenerarInforme.php" title="Generar informe de datos">Generar informe de datos</a></li>
+			<li><a href="CargarDatos.php" title="Cargar datos desde archivo local">Cargar datos desde archivo local</a></li>
+			<li><a href="ExportarDatos.php" title="Exportar datos a fichero">Exportar datos a fichero</a></li>
+		</ul>
+	</nav>
+	<h1>Actualizar datos introducidos en pruebas_usabilidad</h1>
+	<form action='#' method='post'>
+		<label for="id">Id: </label>
+		<input id="id" type="text" placeholder="1" name="id" required>
+		<br>
+		<label for="nombre">Nombre: </label>
+		<input id="nombre" type="text" placeholder="Alejandro" name="nombre" required>
+		<br>
+		<label for="apellidos">Apellidos: </label>
+		<input id="apellidos" type="text" placeholder="Álvarez Varela" name="apellidos" required>
+		<br>
+		<label for="correo">Email: </label>
+		<input id="correo" type="email" placeholder="uo271288@uniovi.es" name="email" required>
+		<br>
+		<label for="telefono">Teléfono: </label>
+		<input id="telefono" type="tel" pattern="[0-9]{9}" placeholder="123456789" name="telefono" required>
+		<br>
+		<label for="edad">Edad: </label>
+		<input id="edad" type="number" placeholder="21" name="edad" required>
+		<fieldset>
+			<legend> Sexo </legend>
+			<input id="masculino" type="radio" name="sexo" value="Masculino" checked>
+			<label for="masculino">Masculino</label>
+			<input id="femenino" type="radio" name="sexo" value="Femenino">
+			<label for="femenino">Femenino</label>
+		</fieldset>
+		<label for="pericia">Pericia: </label>
+		<select id="pericia" name="pericia">
+			<option value="0" selected>0</option>
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+			<option value="6">6</option>
+			<option value="7">7</option>
+			<option value="8">8</option>
+			<option value="9">9</option>
+			<option value="10">10</option>
+		</select>
+		<br>
+		<label for="tiempo">Tiempo: </label>
+		<input id="tiempo" type="number" placeholder="60" name="tiempo" required>
+		<br>
+		<fieldset>
+			<legend> ¿Realizado correctamente? </legend>
+			<input id="si" type="radio" name="correcta" value="Si" checked>
+			<label for="si">Si</label>
+			<input id="no" type="radio" name="correcta" value="No">
+			<label for="no">No</label>
+		</fieldset>
+		<label for="comentarios">Escribe tu comentario: </label>
+		<textarea id="comentarios" name="comentarios" placeholder="Comentarios..." required></textarea>
+		<br>
+		<label for="propuestas">Propuestas: </label>
+		<textarea id="propuestas" name="propuestas" placeholder="Propuestas..." required></textarea>
+		<br>
+		<label for="valoracion">Valoración: </label>
+		<select id="valoracion" name="valoracion">
+			<option value="0" selected>0</option>
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+			<option value="6">6</option>
+			<option value="7">7</option>
+			<option value="8">8</option>
+			<option value="9">9</option>
+			<option value="10">10</option>
+		</select>
+		<br>
+		<button type="submit" name="modificar">Actualizar</button>
+	</form>
+	<?php
+	require('BaseDatos.php');
+	$base = new BaseDatos();
+
+	if (count($_POST) > 0)
+		if (isset($_POST['modificar']))
+			$base->actualizarDatos();
+	?>
+</body>
+
 </html>

@@ -1,34 +1,85 @@
-main{
-  display:block;
-  padding:20px;
-  background-color:black;
-  width:265px;
-  height:300px;
-  border-radius: 25px;
-  margin-bottom: 2em;
+/*002*/
+
+body>form {
+    margin: 0.125em;
+    padding: 1em;
+    background-color: rgb(73, 73, 73);
+    color: black;
+    border-radius: 0.625em;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 0.5em;
+    column-gap: 0.5em;
+    height: 40em;
+    max-width: 30em;
+    min-width: 15em;
 }
-input[type=text] {
-    width: 73%;
-    padding: 16px 32px;
-    font-size: 16px;
-    margin: 8px 0;
-    border: 1px solid silver;
-    border-radius: 1px;
-    text-align: left;
-    color: #333;
-    background: #ccc;
+
+
+/*001*/
+
+button {
+    font-size: 1.563em;
+    background-color: grey;
+    color: black;
+    border-radius: 0.625em;
 }
-input[type=button], input[type=submit], input[type=reset] {
-    background-color: #00B0F0;
-    border: none;
+
+
+/*003*/
+
+body>form>textarea {
+    text-align: right;
+    margin-bottom: 1em;
+    background-color: palegreen;
+    max-height: 5em;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    color: black;
+    resize: none;
+    border-radius: 0.625em;
+}
+
+
+/*013*/
+
+body>form>button:nth-child(5),
+
+/*013*/
+
+body>form>button:nth-child(9),
+
+/*013*/
+
+body>form>button:nth-child(13),
+
+/*013*/
+
+body>form>button:nth-child(17) {
+    background-color: rgb(224, 75, 75);
+    color: black;
+}
+
+
+/*013*/
+
+body>form>button:nth-child(2),
+
+/*013*/
+
+body>form>button:nth-child(3),
+
+/*013*/
+
+body>form>button:nth-child(4) {
+    background-color: rgb(37, 37, 37);
     color: white;
-    padding: 8px 12px;
-    font-size: 16px;
-    min-width: 22%;
-    text-decoration: none;
-    margin: 4px 2px;
-    cursor: pointer;
 }
-input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover {
-  background-color: #333;
+
+
+/*013*/
+
+body>form>button:nth-child(21) {
+    background-color: lightgray;
+    color: black;
 }

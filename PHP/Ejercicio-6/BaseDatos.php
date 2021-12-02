@@ -1,213 +1,274 @@
 <?php
 
-    class BaseDatos{
-        private $servername;
-        private $username;
-        private $password;
-        private $database;
+class BaseDatos
+{
+    private $servername;
+    private $username;
+    private $password;
+    private $database;
 
-        public function __construct(){
-            $this->servername = "localhost";
-            $this->username = "DBUSER2021";
-            $this->password = "DBPSWD2021";
-            $this->database = "PruebasUsabilidad";
+    public function __construct()
+    {
+        $this->servername = "localhost";
+        $this->username = "DBUSER2021";
+        $this->password = "DBPSWD2021";
+        $this->database = "PruebasUsabilidad";
+    }
+
+    public function crearBaseDeDatos()
+    {
+        $transacc = new mysqli($this->servername, $this->username, $this->password);
+        $consulta = "CREATE DATABASE IF NOT EXISTS PruebasUsabilidad COLLATE utf8_spanish_ci";
+        if ($transacc->query($consulta) === TRUE)
+            echo "<p>Se ha creado la base de datos 'PruebasUsabilidad'</p>";
+        else {
+            echo "<p>La base de datos ya existe o no se ha podido crear</p>";
+            exit();
         }
+        $transacc->close();
+    }
 
-        public function crearBaseDeDatos(){            
-            $transacc = new mysqli($this->servername,$this->username,$this->password);            
-            $consulta = "CREATE DATABASE IF NOT EXISTS PruebasUsabilidad COLLATE utf8_spanish_ci";
-            if($transacc->query($consulta) === TRUE)
-                echo "<p id=\"confirm\">Se ha creado la base de datos 'PruebasUsabilidad'</p>";
-            else { 
-                echo "<p id=\"confirm\">La base de datos ya existe o no se ha podido crear</p>";
-                exit();
-            } 
-            $transacc->close();  
-        }
+    public function crearTabla()
+    {
+        $transacc = new mysqli($this->servername, $this->username, $this->password, $this->database);
 
-        public function crearTabla(){
-            $transacc = new mysqli($this->servername,$this->username,$this->password,$this->database);
-
-            $consulta = "CREATE TABLE IF NOT EXISTS pruebas_usabilidad (
-                        id INT NOT NULL AUTO_INCREMENT, edad INT, sexo VARCHAR(30),
-                        pericia INT, tiempo DOUBLE, correcta VARCHAR(3), comentarios VARCHAR(255),
+        $consulta = "CREATE TABLE IF NOT EXISTS pruebas_usabilidad (
+                        id INT NOT NULL AUTO_INCREMENT,nombre VARCHAR(30), apellidos VARCHAR(30), email VARCHAR(30),
+                        telefono VARCHAR(30), edad INT, sexo VARCHAR(30),
+                        pericia INT, tiempo INT, correcta VARCHAR(3), comentarios VARCHAR(255),
 						propuestas VARCHAR(255), valoracion INT,
                         PRIMARY KEY (id), CHECK (pericia BETWEEN 0 AND 10), CHECK (valoracion BETWEEN 0 AND 10))";
 
-            if($transacc->query($consulta) === TRUE)
-                echo "<p id=\"confirm\">Se ha creado la tabla 'pruebas_usabilidad'</p>";
-            else { 
-                echo "<p id=\"confirm\">La tabla ya existe o no se ha podido crear</p>";
-                exit();
-             }
-             $transacc->close(); 
+        if ($transacc->query($consulta) === TRUE)
+            echo "<p>Se ha creado la tabla 'pruebas_usabilidad'</p>";
+        else {
+            echo "<p>La tabla ya existe o no se ha podido crear</p>";
+            exit();
         }
+        $transacc->close();
+    }
 
-        public function insertarDatos(){
-            $transacc = new mysqli($this->servername,$this->username,$this->password,$this->database);
-            $consultaInsercion = $transacc->prepare("INSERT INTO pruebas_usabilidad (edad, sexo, pericia, tiempo, correcta, comentarios, propuestas, valoracion) VALUES (?,?,?,?,?,?,?,?)"); 
-            if ((empty($_POST['valoracion']) ||empty($_POST['edad']) || empty($_POST['propuestas']) || empty($_POST['pericia']) 
-				|| empty($_POST['correcta']) || empty($_POST['comentarios'])
-				|| empty($_POST['tiempo'])   || empty($_POST['sexo'])))
-                echo "<p id=\"confirm\">No se puede realizar la inserción, faltan campos por completar</p>";
+    public function insertarDatos()
+    {
+        $transacc = new mysqli($this->servername, $this->username, $this->password, $this->database);
+        $consultaInsercion = $transacc->prepare("INSERT INTO pruebas_usabilidad (nombre, apellidos, email, telefono, edad, sexo, pericia, tiempo, correcta, comentarios, propuestas, valoracion) VALUES (?,?,?,?,?,?,?,?,?,?,?,?)");
+        if ((empty($_POST['valoracion']) || empty($_POST['edad']) || empty($_POST['propuestas']) || empty($_POST['pericia'])
+            || empty($_POST['correcta']) || empty($_POST['comentarios'])
+            || empty($_POST['tiempo'])   || empty($_POST['sexo'] || empty($_POST['nombre']) || empty($_POST['apellidos']) || empty($_POST['email']) || empty($_POST['telefono']))))
+            echo "<p>No se puede realizar la inserción, faltan campos por completar</p>";
+        else {
+            $consultaInsercion->bind_param(
+                'ssssisiisssi',
+                $_POST["nombre"],
+                $_POST["apellidos"],
+                $_POST["email"],
+                $_POST["telefono"],
+                $_POST["edad"],
+                $_POST["sexo"],
+                $_POST["pericia"],
+                $_POST["tiempo"],
+                $_POST["correcta"],
+                $_POST["comentarios"],
+                $_POST["propuestas"],
+                $_POST["valoracion"]
+            );
+            $consultaInsercion->execute();
+            echo "<p>Inserción realizada correctamente</p>";
+            $consultaInsercion->close();
+        }
+        $transacc->close();
+    }
+
+    public function buscarDatos()
+    {
+        if (empty($_POST['id']))
+            echo "<p>Introduzca id</p>";
+        $transacc = new mysqli($this->servername, $this->username, $this->password, $this->database);
+        $consulta = $transacc->prepare("SELECT * FROM pruebas_usabilidad WHERE id = ?");
+        $consulta->bind_param('i', $_POST["id"]);
+        $consulta->execute();
+        $resultado = $consulta->get_result();
+        if ($resultado->num_rows >= 1) {
+            echo "<h2>Datos de la prueba de usabilidad con id solicitado:</h2>";
+            echo "<ul>";
+            while ($row = $resultado->fetch_assoc()) {
+                echo "<li>Edad del usuario que realizó la prueba: " . $row["nombre"] . "</li>";
+                echo "<li>Edad del usuario que realizó la prueba: " . $row["apellidos"] . "</li>";
+                echo "<li>Edad del usuario que realizó la prueba: " . $row["email"] . "</li>";
+                echo "<li>Edad del usuario que realizó la prueba: " . $row["telefono"] . "</li>";
+                echo "<li>Edad del usuario que realizó la prueba: " . $row["edad"] . "</li>";
+                echo "<li>Sexo del usuario que realizó la prueba: " . $row["sexo"] . "</li>";
+                echo "<li>¿Prueba realizada correctamente? " . $row["correcta"] . "</li>";
+                echo "<li>Tiempo empleado en la prueba: " . $row["tiempo"] . "</li>";
+                echo "<li>Pericia mostrada: " . $row["pericia"] . "</li>";
+                echo "<li>Valoración de la aplicación: " . $row["valoracion"] . "</li>";
+                echo "<li>Propuestas de mejora de la aplicación: " . $row["propuestas"] . "</li>";
+                echo "<li>Comentarios extras: " . $row["comentarios"] . "</li>";
+            }
+            echo "</ul>";
+        }
+        $consulta->close();
+        $transacc->close();
+    }
+
+    public function actualizarDatos()
+    {
+        if (empty($_POST['id']))
+            echo "<p>Introduzca id</p>";
+        else {
+            $transacc = new mysqli($this->servername, $this->username, $this->password, $this->database);
+            $consulta = $transacc->prepare("UPDATE pruebas_usabilidad SET nombre = ?, apellidos = ?, email = ?, telefono = ?, edad = ?, sexo = ?, pericia = ?, tiempo = ?, correcta = ?, comentarios = ?, propuestas = ?, valoracion = ? WHERE id=?");
+            if (
+                empty($_POST['edad']) || empty($_POST['sexo']) || empty($_POST['pericia']) || empty($_POST['tiempo'])
+                || empty($_POST['correcta']) || empty($_POST['comentarios'])
+                || empty($_POST['propuestas']) || empty($_POST['valoracion']) || empty($_POST['nombre']) || empty($_POST['apellidos']) || empty($_POST['email']) || empty($_POST['telefono'])
+            )
+                echo "<p>No se puede realizar la actualización, faltan campos por completar</p>";
             else {
-                $consultaInsercion->bind_param('isidsssi', 
-                    $_POST["edad"],$_POST["sexo"], $_POST["pericia"], $_POST["tiempo"], $_POST["correcta"], $_POST["comentarios"], $_POST["propuestas"], $_POST["valoracion"]);
-                $consultaInsercion->execute();
-                echo "<p id=\"confirm\">Inserción realizada correctamente</p>";
-                $consultaInsercion->close();
-            }
-            $transacc->close();
-        }
-
-        public function buscarDatos(){
-            if (empty($_POST['id']) )
-                echo "<p id=\"confirm\">Introduzca id</p>";
-            $transacc = new mysqli($this->servername,$this->username,$this->password,$this->database);
-            $consulta = $transacc->prepare("SELECT * FROM pruebas_usabilidad WHERE id = ?");
-            $consulta->bind_param('i', $_POST["id"]);     
-            $consulta->execute(); 
-            $resultado = $consulta->get_result();
-            if ($resultado->num_rows >= 1) {
-                echo "<h2>Datos de la prueba de usabilidad con id solicitado:</h2>";
-                echo "<ul>";
-                while($row = $resultado->fetch_assoc()) {
-					echo "<li>Edad del usuario que realizó la prueba: " . $row["edad"] . "</li>";
-                    echo "<li>Sexo del usuario que realizó la prueba: " . $row["sexo"] . "</li>";
-					echo "<li>¿Prueba realizada correctamente? " . $row["correcta"] . "</li>";
-					echo "<li>Tiempo empleado en la prueba: " . $row["tiempo"] . "</li>";
-                    echo "<li>Pericia mostrada: " . $row["pericia"] . "</li>";
-					echo "<li>Valoración de la aplicación: " . $row["valoracion"] . "</li>";
-                    echo "<li>Propuestas de mejora de la aplicación: " . $row["propuestas"] . "</li>";
-					echo "<li>Comentarios extras: " . $row["comentarios"] . "</li>";
-                }
-                echo "</ul>";
-            }
-            $consulta->close();
-            $transacc->close();
-        }
-
-        public function actualizarDatos(){
-            if (empty($_POST['id']) )
-                echo "<p id=\"confirm\">Introduzca id</p>";
-			else{
-                $transacc = new mysqli($this->servername,$this->username,$this->password,$this->database);
-                $consulta = $transacc->prepare("UPDATE pruebas_usabilidad SET edad = ?, sexo = ?, pericia = ?, tiempo = ?, correcta = ?, comentarios = ?, propuestas = ?, valoracion = ? WHERE id=?"); 
-                if (empty($_POST['edad']) || empty($_POST['sexo']) || empty($_POST['pericia']) || empty($_POST['tiempo']) 
-					|| empty($_POST['correcta']) || empty($_POST['comentarios'])
-                    || empty($_POST['propuestas']) || empty($_POST['valoracion']))
-                    echo "<p id=\"confirm\">No se puede realizar la actualización, faltan campos por completar</p>";
-                else{
-                    $consulta->bind_param('isidsssii', 
-                        $_POST["edad"],$_POST["sexo"], $_POST["pericia"], $_POST["tiempo"], $_POST["correcta"], $_POST["comentarios"], $_POST["propuestas"], $_POST["valoracion"],$_POST["id"]);
-                    $consulta->execute();
-                    $consulta->close();
-					echo "<p id=\"confirm\">Actualización realizada correctamente</p>";
-                }
-				$transacc->close();
-            }
-        }		
-		
-        public function borrarDatos(){
-            if (empty($_POST['id']) )
-                echo "<p id=\"confirm\">Introduzca id</p>";
-            else{
-                $transacc = new mysqli($this->servername,$this->username,$this->password,$this->database);
-                $consulta = $transacc->prepare("DELETE FROM pruebas_usabilidad WHERE id=?"); 
-                $consulta->bind_param('i', $_POST["id"]); 
+                $consulta->bind_param(
+                    'ssssisiisssii',
+                    $_POST["nombre"],
+                    $_POST["apellidos"],
+                    $_POST["email"],
+                    $_POST["telefono"],
+                    $_POST["edad"],
+                    $_POST["sexo"],
+                    $_POST["pericia"],
+                    $_POST["tiempo"],
+                    $_POST["correcta"],
+                    $_POST["comentarios"],
+                    $_POST["propuestas"],
+                    $_POST["valoracion"],
+                    $_POST["id"]
+                );
                 $consulta->execute();
                 $consulta->close();
-                echo "<p id=\"confirm\">Eliminación realizada correctamente</p>";
-                $transacc->close();
+                echo "<p>Actualización realizada correctamente</p>";
             }
+            $transacc->close();
         }
+    }
 
-        public function generarInforme(){
-            $totalUsuarios = $this->totalUsuarios();
-			$edadMedia = $this->getMediaValor('edad');
-			$porcentajeHombres = ($this->getCountValor('WHERE sexo="hombre"') / $totalUsuarios) * 100;
-			$porcentajeMujeres = ($this->getCountValor('WHERE sexo="mujer"') / $totalUsuarios) * 100;
-			$periciaMedia = $this->getMediaValor('pericia');
-			$puntuacionMedia = $this->getMediaValor('valoracion');
-			$tiempoMedio = $this->getMediaValor('tiempo');
-			if ($totalUsuarios > 0)
-				$porcentajeCorrectas = ($this->getCountValor('WHERE correcta="si"') / $totalUsuarios) * 100;
-			else $porcentajeCorrectas = 0;
-			
-			echo "<ul>";
-			echo "<li>Edad media de los usuarios $edadMedia años</li>";
-			echo "<li>Frecuencia del %  de cada tipo de sexo entre los usuarios
+    public function borrarDatos()
+    {
+        if (empty($_POST['id']))
+            echo "<p>Introduzca id</p>";
+        else {
+            $transacc = new mysqli($this->servername, $this->username, $this->password, $this->database);
+            $consulta = $transacc->prepare("DELETE FROM pruebas_usabilidad WHERE id=?");
+            $consulta->bind_param('i', $_POST["id"]);
+            $consulta->execute();
+            $consulta->close();
+            echo "<p>Eliminación realizada correctamente</p>";
+            $transacc->close();
+        }
+    }
+
+    public function generarInforme()
+    {
+        $totalUsuarios = $this->totalUsuarios();
+        $edadMedia = $this->getMediaValor('edad');
+        $porcentajeMasculino = ($this->getCountValor('WHERE sexo="masculino"') / $totalUsuarios) * 100;
+        $porcentajeFemenino = ($this->getCountValor('WHERE sexo="femenino"') / $totalUsuarios) * 100;
+        $periciaMedia = $this->getMediaValor('pericia');
+        $puntuacionMedia = $this->getMediaValor('valoracion');
+        $tiempoMedio = $this->getMediaValor('tiempo');
+        if ($totalUsuarios > 0)
+            $porcentajeCorrectas = ($this->getCountValor('WHERE correcta="si"') / $totalUsuarios) * 100;
+        else $porcentajeCorrectas = 0;
+
+        echo "<ul>";
+        echo "<li>Edad media de los usuarios $edadMedia años</li>";
+        echo "<li>Frecuencia del %  de cada tipo de sexo entre los usuarios
 				<ul>
-				<li>Hombres: $porcentajeHombres%</li>
-				<li>Mujeres: $porcentajeMujeres%</li>
+				<li>Masculino: $porcentajeMasculino%</li>
+				<li>Femenino: $porcentajeFemenino%</li>
 				</ul>
 			</li>";
-			echo "<br>";
-			echo "<li>Valor medio del nivel o pericia informática de los usuarios $periciaMedia</li>";
-			echo "<li>Tiempo medio para la tarea $tiempoMedio</li>";
-			echo "<li>Porcentaje de usuarios que han realizado la tarea correctamente $porcentajeCorrectas%</li>";
-			echo "<li>Valor medio de la puntuación de los usuarios sobre la aplicación $puntuacionMedia</li>";
-			echo "</ul>";
-        }
-		
-		private function getMediaValor($a1){            
-            $transacc = new mysqli($this->servername,$this->username,$this->password,$this->database);
-            $resultado =  $transacc->query('SELECT AVG(' .$a1 .') AS valor FROM pruebas_usabilidad');
-            $media = null;
-            if ($resultado->num_rows > 0)
-                while($row = $resultado->fetch_assoc())
-                     $media = $row["valor"];
-            $transacc->close();
-            return $media;
-        }
+        echo "<br>";
+        echo "<li>Valor medio del nivel o pericia informática de los usuarios $periciaMedia</li>";
+        echo "<li>Tiempo medio para la tarea $tiempoMedio</li>";
+        echo "<li>Porcentaje de usuarios que han realizado la tarea correctamente $porcentajeCorrectas%</li>";
+        echo "<li>Valor medio de la puntuación de los usuarios sobre la aplicación $puntuacionMedia</li>";
+        echo "</ul>";
+    }
 
-        private function getCountValor($a1){
-            $transacc = new mysqli($this->servername,$this->username,$this->password,$this->database);
-            $resultado =  $transacc->query('SELECT COUNT(*) AS contador FROM pruebas_usabilidad ' .$a1);
-            $total = null;
-            if ($resultado->num_rows > 0)
-                while($row = $resultado->fetch_assoc())
-                     $total = $row["contador"];
-            $transacc->close();
-            return $total;
-        }
+    private function getMediaValor($a1)
+    {
+        $transacc = new mysqli($this->servername, $this->username, $this->password, $this->database);
+        $resultado =  $transacc->query('SELECT AVG(' . $a1 . ') AS valor FROM pruebas_usabilidad');
+        $media = null;
+        if ($resultado->num_rows > 0)
+            while ($row = $resultado->fetch_assoc())
+                $media = $row["valor"];
+        $transacc->close();
+        return $media;
+    }
 
-        private function totalUsuarios(){
-            $transacc = new mysqli($this->servername,$this->username,$this->password,$this->database);
-            $nUsuarios =  $transacc->query('SELECT COUNT(*) AS cuenta FROM pruebas_usabilidad');
-            $total = null;
-            if ($nUsuarios->num_rows > 0)
-                while($row = $nUsuarios->fetch_assoc())
-                     $total = $row["cuenta"];
-            $transacc->close();
-            return $total;
-        }
+    private function getCountValor($a1)
+    {
+        $transacc = new mysqli($this->servername, $this->username, $this->password, $this->database);
+        $resultado =  $transacc->query('SELECT COUNT(*) AS contador FROM pruebas_usabilidad ' . $a1);
+        $total = null;
+        if ($resultado->num_rows > 0)
+            while ($row = $resultado->fetch_assoc())
+                $total = $row["contador"];
+        $transacc->close();
+        return $total;
+    }
 
-        public function cargarDatos(){            
-            $transacc = new mysqli($this->servername,$this->username,$this->password,$this->database);
-            $archivo = fopen("pruebasUsabilidad.csv", "r");            
-            while(($datos = fgetcsv($archivo,",")) == true){
-                $consultaInsercion = $transacc->prepare("INSERT INTO pruebas_usabilidad VALUES (?,?,?,?,?,?,?,?,?)"); 
-                $consultaInsercion->bind_param('iisidsssi', 
-                     $datos[0],$datos[1], $datos[2], $datos[3], $datos[4], $datos[5], $datos[6], $datos[7], $datos[8]);
-                $consultaInsercion->execute();
+    private function totalUsuarios()
+    {
+        $transacc = new mysqli($this->servername, $this->username, $this->password, $this->database);
+        $nUsuarios =  $transacc->query('SELECT COUNT(*) AS cuenta FROM pruebas_usabilidad');
+        $total = null;
+        if ($nUsuarios->num_rows > 0)
+            while ($row = $nUsuarios->fetch_assoc())
+                $total = $row["cuenta"];
+        $transacc->close();
+        return $total;
+    }
+
+    public function cargarDatos()
+    {
+        $transacc = new mysqli($this->servername, $this->username, $this->password, $this->database);
+        $archivo = fopen("pruebasUsabilidad.csv", "r");
+        while (($datos = fgetcsv($archivo, ",")) == true) {
+            $consultaInsercion = $transacc->prepare("INSERT INTO pruebas_usabilidad VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?)");
+            $consultaInsercion->bind_param(
+                'issssisiisssi',
+                $datos[0],
+                $datos[1],
+                $datos[2],
+                $datos[3],
+                $datos[4],
+                $datos[5],
+                $datos[6],
+                $datos[7],
+                $datos[8],
+                $datos[9],
+                $datos[10],
+                $datos[11],
+                $datos[12]
+            );
+            $consultaInsercion->execute();
+        }
+        $consultaInsercion->close();
+        echo "<p>Datos cargados correctamente</p>";
+    }
+
+    public function exportarDatos()
+    {
+        $transacc = new mysqli($this->servername, $this->username, $this->password, $this->database);
+        $datosExportar =  $transacc->query('SELECT * FROM pruebas_usabilidad');
+        $cadenaParaExportar = "";
+        if ($datosExportar->num_rows > 0) {
+            while ($row = $datosExportar->fetch_assoc()) {
+                $cadenaParaExportar .= $row['id'] . "," . $row['nombre'] . "," . $row['apellidos'] . "," . $row['email'] . "," . $row['telefono'] . "," . $row['edad'] . "," . $row['sexo'] . "," . $row['pericia'] . "," . $row['tiempo'] . "," . $row['correcta'] . "," . $row['comentarios'] . "," . $row['propuestas'] . "," . $row['valoracion'] . "\n";
             }
-            $consultaInsercion->close();
-            echo "<p id=\"confirm\">Datos cargados correctamente</p>";
-        }		
-		
-        public function exportarDatos(){
-            $transacc = new mysqli($this->servername,$this->username,$this->password,$this->database);
-            $datosExportar =  $transacc->query('SELECT * FROM pruebas_usabilidad');
-			$cadenaParaExportar = "";
-            if ($datosExportar->num_rows > 0) {
-                while($row = $datosExportar->fetch_assoc()) {
-                    $cadenaParaExportar .= $row['id']. ",". $row['edad'] . "," .$row['sexo'].",". $row['pericia'] .",". $row['tiempo'] .",". $row['correcta'] .",". $row['comentarios'] .",". $row['propuestas'] .",". $row['valoracion'] ."\n"; 
-                }
-            }             
-            $transacc->close();
-            file_put_contents("pruebasUsabilidad_exportado.csv",$cadenaParaExportar);            
-            echo "<p id=\"confirm\">Fichero csv generado correctamente</p>";
         }
-	}
-?>
+        $transacc->close();
+        file_put_contents("pruebasUsabilidad_exportado.csv", $cadenaParaExportar);
+        echo "<p>Fichero csv generado correctamente</p>";
+    }
+}
