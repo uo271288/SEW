@@ -43,11 +43,11 @@ class BaseDatos
         }
 
         $consulta = "CREATE TABLE IF NOT EXISTS vehicletype (
-            id INT NOT NULL AUTO_INCREMENT, typename VARCHAR(200), priceperhour FLOAT
+            id INT NOT NULL AUTO_INCREMENT, typename VARCHAR(200), priceperhour FLOAT,
             PRIMARY KEY (id), CONSTRAINT typename_unique UNIQUE (typename))";
 
         if ($transacc->query($consulta) === TRUE)
-            echo "<p>Se ha creado la tabla 'vehicle'</p>";
+            echo "<p>Se ha creado la tabla 'vehicletype'</p>";
         else {
             echo "<p>La tabla ya existe o no se ha podido crear vehicletype</p>";
             exit();
@@ -55,7 +55,7 @@ class BaseDatos
 
         $consulta = "CREATE TABLE IF NOT EXISTS vehicle (
                         id INT NOT NULL AUTO_INCREMENT, platenumber VARCHAR(200), make VARCHAR(200),
-                        model VARCHAR(200), client_id INT, vehicletype_id INT
+                        model VARCHAR(200), client_id INT, vehicletype_id INT,
                         PRIMARY KEY (id), FOREIGN KEY (client_id) REFERENCES client(id), 
                         FOREIGN KEY (vehicletype_id) REFERENCES vehicletype(id),
                         CONSTRAINT platenumber_unique UNIQUE (platenumber))";
@@ -68,13 +68,13 @@ class BaseDatos
         }
 
         $consulta = "CREATE TABLE IF NOT EXISTS workorder (
-            id INT NOT NULL AUTO_INCREMENT, vehicle_id INT, workdate DATE
+            id INT NOT NULL AUTO_INCREMENT, vehicle_id INT, workdate DATE,
             workorderdescription VARCHAR(300), amount FLOAT, 
             PRIMARY KEY (id), FOREIGN KEY (vehicle_id) REFERENCES vehicle(id), 
             CONSTRAINT date_vehicle UNIQUE (workdate,vehicle_id))";
 
         if ($transacc->query($consulta) === TRUE)
-            echo "<p>Se ha creado la tabla 'vehicle'</p>";
+            echo "<p>Se ha creado la tabla 'workorder'</p>";
         else {
             echo "<p>La tabla ya existe o no se ha podido crear workorder</p>";
             exit();
@@ -172,7 +172,7 @@ class BaseDatos
     public function buscarClientes()
     {
         $transacc = new mysqli($this->servername, $this->username, $this->password, $this->database);
-        $consulta = $transacc->prepare("SELECT * FROM cliente");
+        $consulta = $transacc->prepare("SELECT * FROM client");
         $consulta->execute();
         $resultado = $consulta->get_result();
         if ($resultado->num_rows >= 1) {
@@ -329,7 +329,7 @@ class BaseDatos
             } elseif ($a2 == 2) {
                 $consultaInsercion = $transacc->prepare("INSERT INTO vehicle VALUES (?,?,?,?,?,?)");
                 $consultaInsercion->bind_param(
-                    'iisssii',
+                    'iissii',
                     $datos[0],
                     $datos[1],
                     $datos[2],

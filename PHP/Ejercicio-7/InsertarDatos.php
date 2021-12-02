@@ -16,7 +16,7 @@
 	<h2>Menú para gestionar la BBDD:</h2>
 	<nav>
 		<ul>
-			<li><a href="index.html" title="Menú principal">Menú principal</a></li>
+			<li><a href="Workshop.html" title="Menú principal">Menú principal</a></li>
 			<li><a href="CreaBBDD.php" title="Crear Base de Datos">Crear Base de Datos</a></li>
 			<li><a href="BuscarDatos.php" title="Buscar Datos Introducidos">Buscar datos introducidos</a></li>
 			<li><a href="EliminarDatos.php" title="Eliminar Datos Introducidos">Eliminar datos introducidos</a></li>
@@ -27,13 +27,13 @@
 		<fieldset>
 			<legend>Cliente</legend>
 			<label for="dni">Dni: </label>
-			<input id="dni" type="text" placeholder="1234G" name="dni" required>
+			<input id="dni" type="text" placeholder="1234G" name="dni" >
 			<br>
-			<label for="nombre">Nombre: </label>
-			<input id="nombre" type="text" placeholder="Alejandro" name="nombre" required>
+			<label for="clientname">Nombre: </label>
+			<input id="clientname" type="text" placeholder="Alejandro" name="clientname" >
 			<br>
-			<label for="apellidos">Apellidos: </label>
-			<input id="apellidos" type="text" placeholder="Álvarez Varela" name="apellidos" required>
+			<label for="clientsurname">Apellidos: </label>
+			<input id="clientsurname" type="text" placeholder="Álvarez Varela" name="clientsurname" >
 
 			<button type="submit" name="insertarc">Insertar cliente</button>
 		</fieldset>
@@ -41,19 +41,19 @@
 		<fieldset>
 			<legend>Vehiculo</legend>
 			<label for="platenumber">Matricula: </label>
-			<input id="platenumber" type="text" placeholder="1234GGG" name="platenumber" required>
+			<input id="platenumber" type="text" placeholder="1234GGG" name="platenumber" >
 			<br>
 			<label for="make">Marca: </label>
-			<input id="make" type="text" placeholder="Seat" name="make" required>
+			<input id="make" type="text" placeholder="Seat" name="make" >
 			<br>
 			<label for="model">Modelo: </label>
-			<input id="model" type="text" placeholder="Ibiza" name="model" required>
+			<input id="model" type="text" placeholder="Ibiza" name="model" >
 			<br>
-			<label for="client">Id del propietario: </label>
-			<input id="client" type="number" placeholder="1" name="client" required>
+			<label for="client_id">Id del propietario: </label>
+			<input id="client_id" type="number" placeholder="1" name="client_id" >
 			<br>
-			<label for="type">Id del tipo de vehiculo: </label>
-			<input id="type" type="number" placeholder="1" name="type" required>
+			<label for="vehicletype_id">Id del tipo de vehiculo: </label>
+			<input id="vehicletype_id" type="number" placeholder="1" name="vehicletype_id" >
 
 			<button type="submit" name="insertarv">Insertar vehiculo</button>
 		</fieldset>
@@ -61,29 +61,29 @@
 		<fieldset>
 			<legend>Tipo de vehiculo</legend>
 			<label for="typename">Nombre: </label>
-			<input id="typename" type="text" placeholder="Furgoneta" name="typename" required>
+			<input id="typename" type="text" placeholder="Furgoneta" name="typename" >
 			<br>
 			<label for="priceperhour">Precio por hora: </label>
-			<input id="priceperhour" type="number" placeholder="5.5" name="priceperhour" required>
+			<input id="priceperhour" type="number" step="0.01" placeholder="5.5" name="priceperhour" >
 
-			<button type="submit" name="insertarv">Insertar vehiculo</button>
+			<button type="submit" name="insertart">Insertar tipo de vehiculo</button>
 		</fieldset>
 		<br>
 		<fieldset>
 			<legend>Workorder</legend>
-			<label for="vehicle">Id del vehiculo: </label>
-			<input id="vehicle" type="number" placeholder="1" name="vehicle" required>
+			<label for="vehicle_id">Id del vehiculo: </label>
+			<input id="vehicle_id" type="number" placeholder="1" name="vehicle_id" >
 			<br>
-			<label for="date">Fecha: </label>
-			<input id="date" type="date" name="date" required>
+			<label for="workdate">Fecha: </label>
+			<input id="workdate" type="date" name="workdate" >
 			<br>
-			<label for="description">Descripcion: </label>
-			<input id="description" type="text" placeholder="Pierde aceite" name="description" required>
+			<label for="workorderdescription">Descripcion: </label>
+			<input id="workorderdescription" type="text" placeholder="Pierde aceite" name="workorderdescription" >
 			<br>
-			<label for="coste">Coste: </label>
-			<input id="coste" type="number" placeholder="34.60" name="coste" required>
+			<label for="amount">Coste: </label>
+			<input id="amount" type="number" step="0.01" placeholder="34.60" name="amount" >
 
-			<button type="submit" name="insertarv">Insertar vehiculo</button>
+			<button type="submit" name="insertarw">Insertar workorder</button>
 		</fieldset>
 	</form>
 

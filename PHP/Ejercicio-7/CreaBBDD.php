@@ -2,7 +2,7 @@
 <html lang="es">
 
 <head>
-<meta charset="UTF-8" />
+	<meta charset="UTF-8" />
 	<title>Busca datos introducidos</title>
 	<meta name="description" content="Gestión BBDD con PHP. Ejercicio 6">
 	<meta name="keywords" content="bbdd, sql, php">
@@ -34,8 +34,8 @@
 			$base->crearBaseDeDatos();
 			$base->crearTabla();
 			$base->cargarDatos("clientes.csv", 1);
-			$base->cargarDatos("vehiculos.csv", 2);
 			$base->cargarDatos("tiposvehiculo.csv", 3);
+			$base->cargarDatos("vehiculos.csv", 2);
 			$base->cargarDatos("workorders.csv", 4);
 		}
 	?>
