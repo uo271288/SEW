@@ -185,7 +185,6 @@ class BaseDatos
 				<li>Femenino: $porcentajeFemenino%</li>
 				</ul>
 			</li>";
-        echo "<br>";
         echo "<li>Valor medio del nivel o pericia informática de los usuarios $periciaMedia</li>";
         echo "<li>Tiempo medio para la tarea $tiempoMedio</li>";
         echo "<li>Porcentaje de usuarios que han realizado la tarea correctamente $porcentajeCorrectas%</li>";

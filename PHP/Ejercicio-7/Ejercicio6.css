@@ -1,45 +1,81 @@
-body{
+/*001*/
+
+body {
     background: #bbccdd;
-    font-family: sans-serif;
-}
-h1{
-    text-align:center;
-    color:black;
-}
-h2{
-    text-align:center;
-    color:black;
-}
-nav ul li{
-    list-style-type: none;
-    margin: 10px;
-    border-radius: 10px;
-    font-weight: bold;
-    font-size: 110%;
+    color: black;
+    font-family: "Lucida Console", "Courier New", monospace;
     text-align: center;
 }
-nav ul li a{
-	color:black;
-}
+
+
+/*001*/
+
 p {
-	font-weight: bold;
-	margin-top: 1em;
-	margin-bottom: 0.1em;
+    background: #bbccdd;
+    color: red;
+    font-size: 1.2em;
+    font-weight: bold;
 }
-ul{
-    text-align:center;
+
+
+/*001*/
+
+a {
+    color: seagreen;
 }
-li{
+
+
+/*002*/
+
+ul {
+    list-style: none;
+    padding-left: 0em;
+}
+
+
+/*003*/
+
+nav ul li {
     display: block;
-}
-#confirm{
-	color: red;
-	font-weight: bold;
-	text-align: center;
-}
-#formbase, footer{
-	margin-top: 2em;
-    text-align: center;
+    padding: 0.5em;
 }
 
 
+/*001*/
+
+form {
+    text-align: left;
+}
+
+
+/*013*/
+
+fieldset {
+    max-width: 17em;
+}
+
+
+/*001*/
+
+input,
+
+/*001*/
+
+select {
+    margin: 1em;
+}
+
+
+/*001*/
+
+textarea {
+    vertical-align: middle;
+    margin: 1em;
+}
+
+
+/*001*/
+
+select {
+    width: 3.2em;
+}
