@@ -19,7 +19,7 @@
 			<?php
 			$endpoint = 'latest';
 			$access_key = 'o5wmw3144wt0xmfb5j1013om0n12288c33oe7173m61kte8d4x8oeq4pmfxh';
-			$ch = curl_init('https://metals-api.com/api/' . $endpoint . '?access_key=' . $access_key . '');
+			$ch = curl_init('https://metals-api.com/api/' . $endpoint . '?access_key=' . $access_key . '&base=XCU');
 			curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 			$json = curl_exec($ch);
 			curl_close($ch);
