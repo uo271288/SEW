@@ -150,7 +150,7 @@ class BaseDatos
     public function insertarWorkorder()
     {
         $transacc = new mysqli($this->servername, $this->username, $this->password, $this->database);
-        $consultaInsercion = $transacc->prepare("INSERT INTO workorder (vehicle_id, workdate
+        $consultaInsercion = $transacc->prepare("INSERT INTO workorder (vehicle_id, workdate,
                 workorderdescription, amount) VALUES (?,?,?,?)");
         if ((empty($_POST['vehicle_id']) || empty($_POST['workdate']) || empty($_POST['workorderdescription']) || empty($_POST['amount'])))
             echo "<p>No se puede realizar la inserción, faltan campos por completar</p>";

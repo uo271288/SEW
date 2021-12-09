@@ -34,15 +34,16 @@
 	require('BaseDatos.php');
 	$base = new BaseDatos();
 
-	if (count($_POST) > 0)
+	if (count($_POST) > 0) {
 		if (isset($_POST['eliminarc']))
 			$base->borrarCliente();
-	if (isset($_POST['eliminard']))
-		$base->borrarVehiculo();
-	if (isset($_POST['eliminarp']))
-		$base->borrarTipoVehiculo();
-	if (isset($_POST['eliminarw']))
-		$base->borrarWorkorder();
+		if (isset($_POST['eliminarv']))
+			$base->borrarVehiculo();
+		if (isset($_POST['eliminart']))
+			$base->borrarTipoVehiculo();
+		if (isset($_POST['eliminarw']))
+			$base->borrarWorkorder();
+	}
 	?>
 </body>
 
