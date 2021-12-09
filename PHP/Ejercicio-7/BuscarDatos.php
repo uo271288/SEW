@@ -8,7 +8,7 @@
 	<meta name="keywords" content="bbdd, sql, php">
 	<meta name="author" content="Alejandro Álvarez Varela">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link href="Ejercicio6.css" rel="stylesheet" />
+	<link href="Ejercicio7.css" rel="stylesheet" />
 </head>
 
 <body>
