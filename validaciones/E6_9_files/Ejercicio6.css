@@ -1,8 +1,6 @@
 /*001*/
 
 body {
-    background: #bbccdd;
-    color: black;
     font-family: "Lucida Console", "Courier New", monospace;
     text-align: center;
 }
@@ -11,7 +9,7 @@ body {
 /*001*/
 
 p {
-    background: #bbccdd;
+    background-color: white;
     color: red;
     font-size: 1.2em;
     font-weight: bold;
@@ -22,6 +20,7 @@ p {
 
 a {
     color: seagreen;
+    background-color: white;
 }
 
 
