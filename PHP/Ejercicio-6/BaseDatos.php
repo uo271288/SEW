@@ -232,7 +232,7 @@ class BaseDatos
     {
         $transacc = new mysqli($this->servername, $this->username, $this->password, $this->database);
         $archivo = fopen("pruebasUsabilidad.csv", "r");
-        while (($datos = fgetcsv($archivo, ",")) == true) {
+        while (($datos = fgetcsv($archivo)) == true) {
             $consultaInsercion = $transacc->prepare("INSERT INTO pruebas_usabilidad VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?)");
             $consultaInsercion->bind_param(
                 'issssisiisssi',
