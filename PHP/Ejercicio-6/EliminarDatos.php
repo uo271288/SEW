@@ -30,7 +30,7 @@
 	<h1>Eliminar datos introducidos en pruebas_usabilidad</h1>
 	<form id="formbase" action='#' method='post'>
 		<label for="id">Id del elemento a eliminar: </label>
-		<input type='text' class='text' name='id' />
+		<input id="id" type='text' class='text' name='id' />
 		<input type='submit' class='button' name='eliminar' value='Eliminar' />
 	</form>
 	<?php
