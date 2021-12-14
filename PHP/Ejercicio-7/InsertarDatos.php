@@ -6,7 +6,7 @@
 	<title>Inserta datos en tabla de la bbdd</title>
 	<meta name="description" content="Gestión BBDD con PHP. Ejercicio 6">
 	<meta name="keywords" content="bbdd, sql, php">
-	<meta name="author" content="Alejandro Antuña">
+	<meta name="author" content="Alejandro Álvarez Varela">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="Ejercicio7.css" rel="stylesheet" />
 </head>
