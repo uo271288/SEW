@@ -28,7 +28,8 @@
 		</ul>
 	</nav>
 	<h1>Cargar datos desde un csv local</h1>
-	<form id="formbase" action='#' method='post'>
+	<form action='#' method='post' enctype='multipart/form-data'>
+		<input type='file' name='archivo' />
 		<input type='submit' class='button' name='cargar' value='Cargar' />
 	</form>
 	<?php

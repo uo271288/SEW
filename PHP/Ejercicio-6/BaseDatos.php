@@ -231,7 +231,7 @@ class BaseDatos
     public function cargarDatos()
     {
         $transacc = new mysqli($this->servername, $this->username, $this->password, $this->database);
-        $archivo = fopen("pruebasUsabilidad.csv", "r");
+        $archivo = fopen($_FILES['archivo']['tmp_name'], 'rb');
         while (($datos = fgetcsv($archivo)) == true) {
             $consultaInsercion = $transacc->prepare("INSERT INTO pruebas_usabilidad VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?)");
             $consultaInsercion->bind_param(
