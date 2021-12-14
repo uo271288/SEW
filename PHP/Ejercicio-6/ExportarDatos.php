@@ -28,8 +28,8 @@
 		</ul>
 	</nav>
 	<h1>Exportar datos a fichero (pruebasUsabilidad_exportado.csv)</h1>
-	<form id="formbase" action='#' method='post'>
-		<input type='submit' class='button' name='exportar' value='Exportar' />
+	<form action='#' method='post'>
+		<input type='submit' name='exportar' value='Exportar' />
 	</form>
 	<?php
 	require('BaseDatos.php');

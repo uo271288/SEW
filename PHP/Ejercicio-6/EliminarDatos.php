@@ -28,10 +28,10 @@
 		</ul>
 	</nav>
 	<h1>Eliminar datos introducidos en pruebas_usabilidad</h1>
-	<form id="formbase" action='#' method='post'>
+	<form action='#' method='post'>
 		<label for="id">Id del elemento a eliminar: </label>
-		<input id="id" type='text' class='text' name='id' />
-		<input type='submit' class='button' name='eliminar' value='Eliminar' />
+		<input id="id" type='text' name='id' />
+		<input type='submit' name='eliminar' value='Eliminar' />
 	</form>
 	<?php
 	require('BaseDatos.php');

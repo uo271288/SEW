@@ -28,10 +28,10 @@
 		</ul>
 	</nav>
 	<h1>Buscar introducidos en pruebas_usabilidad</h1>
-	<form id="formbase" action='#' method='post'>
+	<form action='#' method='post'>
 		<label for="id">Introduzca el id del dato a mostrar:</label>
-		<input id="id" type='text' class='text' name='id' />
-		<input type='submit' class='button' name='buscar' value='Buscar' />
+		<input id="id" type='text' name='id' />
+		<input type='submit' name='buscar' value='Buscar' />
 	</form>
 	<?php
 	require('BaseDatos.php');

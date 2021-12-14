@@ -28,8 +28,8 @@
 		</ul>
 	</nav>
 	<h1>Listado detallado de las pruebas de usabilidad almacenadas</h1>
-	<form id="formbase" action='#' method='post'>
-		<input type='submit' class='button' name='generar' value='Detallar pruebas realizadas' />
+	<form action='#' method='post'>
+		<input type='submit' name='generar' value='Detallar pruebas realizadas' />
 	</form>
 	<?php
 	require('BaseDatos.php');

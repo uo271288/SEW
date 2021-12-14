@@ -29,8 +29,9 @@
 	</nav>
 	<h1>Cargar datos desde un csv local</h1>
 	<form action='#' method='post' enctype='multipart/form-data'>
-		<input type='file' name='archivo' />
-		<input type='submit' class='button' name='cargar' value='Cargar' />
+		<label for="file"></label>
+		<input id ="file" type='file' name='archivo' />
+		<input type='submit' name='cargar' value='Cargar' />
 	</form>
 	<?php
 	require('BaseDatos.php');

@@ -1,0 +1,82 @@
+/*001*/
+
+body {
+    background-color: white;
+    color: black;
+    font-family: "Lucida Console", "Courier New", monospace;
+    text-align: center;
+}
+
+
+/*001*/
+
+p {
+    background-color: white;
+    color: red;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+
+/*001*/
+
+a {
+    color: #75033e;
+    background-color: white;
+}
+
+
+/*002*/
+
+ul {
+    list-style: none;
+    padding-left: 0em;
+}
+
+
+/*003*/
+
+nav ul li {
+    display: block;
+    padding: 0.5em;
+}
+
+
+/*001*/
+
+form {
+    text-align: left;
+}
+
+
+/*013*/
+
+fieldset {
+    max-width: 17em;
+}
+
+
+/*001*/
+
+input,
+
+/*001*/
+
+select {
+    margin: 1em;
+}
+
+
+/*001*/
+
+textarea {
+    vertical-align: middle;
+    margin: 1em;
+}
+
+
+/*001*/
+
+select {
+    width: 3.2em;
+}

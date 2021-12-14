@@ -28,8 +28,8 @@
 		</ul>
 	</nav>
 	<h1>Crear base de datos de nombre PruebasUsabilidad</h1>
-	<form id="formbase" action='#' method='post'>
-		<input type='submit' class='button' name='generaBase' value='Crear base de datos' />
+	<form action='#' method='post'>
+		<input type='submit' name='generaBase' value='Crear base de datos' />
 	</form>
 	<?php
 	require('BaseDatos.php');

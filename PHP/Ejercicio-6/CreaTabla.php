@@ -28,8 +28,8 @@
 		</ul>
 	</nav>
 	<h1>Crear tabla de nombre pruebas_usabilidad</h1>
-	<form id="formbase" action='#' method='post'>
-		<input type='submit' class='button' name='generaTabla' value='Crear tabla' />
+	<form action='#' method='post'>
+		<input type='submit' name='generaTabla' value='Crear tabla' />
 	</form>
 	<?php
 	require('BaseDatos.php');

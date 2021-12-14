@@ -22,13 +22,13 @@
 		</ul>
 	</nav>
 	<h1>Eliminar dato introducido</h1>
-	<form id="formbase" action='#' method='post'>
+	<form action='#' method='post'>
 		<label for="id">Id del elemento a eliminar:</label>
 		<input id="id" type='text' name='id' required />
-		<input type='submit' class='button' name='eliminarc' value='Eliminar cliente' />
-		<input type='submit' class='button' name='eliminarv' value='Eliminar vehiculo' />
-		<input type='submit' class='button' name='eliminart' value='Eliminar tipo de vehiculo' />
-		<input type='submit' class='button' name='eliminarw' value='Eliminar workorder' />
+		<input type='submit' name='eliminarc' value='Eliminar cliente' />
+		<input type='submit' name='eliminarv' value='Eliminar vehiculo' />
+		<input type='submit' name='eliminart' value='Eliminar tipo de vehiculo' />
+		<input type='submit' name='eliminarw' value='Eliminar workorder' />
 	</form>
 	<?php
 	require('BaseDatos.php');
