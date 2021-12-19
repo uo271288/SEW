@@ -112,9 +112,9 @@ session_start();
 		}
 	};
 
-	if (!isset($_SESSION['calculadora']))
-		$_SESSION['calculadora'] = new CalculadoraCientifica();
-	$calculadora = $_SESSION['calculadora'];
+	if (!isset($_SESSION['calculadoraC']))
+		$_SESSION['calculadoraC'] = new CalculadoraCientifica();
+	$calculadora = $_SESSION['calculadoraC'];
 
 	if (count($_POST) > 0) {
 		if (isset($_POST['raiz']))

@@ -184,9 +184,9 @@ session_start();
 		}
 	};
 
-	if (!isset($_SESSION['calculadora']))
-		$_SESSION['calculadora'] = new CalculadoraRPN();
-	$calculadora = $_SESSION['calculadora'];
+	if (!isset($_SESSION['calculadoraR']))
+		$_SESSION['calculadoraR'] = new CalculadoraRPN();
+	$calculadora = $_SESSION['calculadoraR'];
 
 	if (count($_POST) > 0) {
 		if (isset($_POST['sin']))

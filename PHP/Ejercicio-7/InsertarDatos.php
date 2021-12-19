@@ -17,7 +17,6 @@
 	<nav>
 		<ul>
 			<li><a href="Workshop.html" title="Menú principal">Menú principal</a></li>
-			<li><a href="CreaBBDD.php" title="Crear Base de Datos">Crear Base de Datos</a></li>
 			<li><a href="BuscarDatos.php" title="Buscar Datos Introducidos">Buscar datos introducidos</a></li>
 			<li><a href="EliminarDatos.php" title="Eliminar Datos Introducidos">Eliminar datos introducidos</a></li>
 		</ul>
