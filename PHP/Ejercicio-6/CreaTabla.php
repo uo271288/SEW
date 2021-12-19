@@ -27,7 +27,7 @@
 			<li><a href="ExportarDatos.php" title="Exportar datos a fichero">Exportar datos a fichero</a></li>
 		</ul>
 	</nav>
-	<h1>Crear tabla de nombre pruebas_usabilidad</h1>
+	<h1>Crear tabla de nombre PruebasUsabilidad</h1>
 	<form action='#' method='post'>
 		<input type='submit' name='generaTabla' value='Crear tabla' />
 	</form>

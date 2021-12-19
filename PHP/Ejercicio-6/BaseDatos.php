@@ -32,7 +32,7 @@ class BaseDatos
     {
         $transacc = new mysqli($this->servername, $this->username, $this->password, $this->database);
 
-        $consulta = "CREATE TABLE IF NOT EXISTS pruebas_usabilidad (
+        $consulta = "CREATE TABLE IF NOT EXISTS PruebasUsabilidad (
                         id INT NOT NULL AUTO_INCREMENT,nombre VARCHAR(30), apellidos VARCHAR(30), email VARCHAR(30),
                         telefono VARCHAR(30), edad INT, sexo VARCHAR(30),
                         pericia INT, tiempo INT, correcta VARCHAR(3), comentarios VARCHAR(255),
@@ -40,7 +40,7 @@ class BaseDatos
                         PRIMARY KEY (id), CHECK (pericia BETWEEN 0 AND 10), CHECK (valoracion BETWEEN 0 AND 10))";
 
         if ($transacc->query($consulta) === TRUE)
-            echo "<p>Se ha creado la tabla 'pruebas_usabilidad'</p>";
+            echo "<p>Se ha creado la tabla 'PruebasUsabilidad'</p>";
         else {
             echo "<p>La tabla ya existe o no se ha podido crear</p>";
             exit();
@@ -51,7 +51,7 @@ class BaseDatos
     public function insertarDatos()
     {
         $transacc = new mysqli($this->servername, $this->username, $this->password, $this->database);
-        $consultaInsercion = $transacc->prepare("INSERT INTO pruebas_usabilidad (nombre, apellidos, email, telefono, edad, sexo, pericia, tiempo, correcta, comentarios, propuestas, valoracion) VALUES (?,?,?,?,?,?,?,?,?,?,?,?)");
+        $consultaInsercion = $transacc->prepare("INSERT INTO PruebasUsabilidad (nombre, apellidos, email, telefono, edad, sexo, pericia, tiempo, correcta, comentarios, propuestas, valoracion) VALUES (?,?,?,?,?,?,?,?,?,?,?,?)");
         if ((empty($_POST['valoracion']) || empty($_POST['edad']) || empty($_POST['propuestas']) || empty($_POST['pericia'])
             || empty($_POST['correcta']) || empty($_POST['comentarios'])
             || empty($_POST['tiempo'])   || empty($_POST['sexo'] || empty($_POST['nombre']) || empty($_POST['apellidos']) || empty($_POST['email']) || empty($_POST['telefono']))))
@@ -84,7 +84,7 @@ class BaseDatos
         if (empty($_POST['id']))
             echo "<p>Introduzca id</p>";
         $transacc = new mysqli($this->servername, $this->username, $this->password, $this->database);
-        $consulta = $transacc->prepare("SELECT * FROM pruebas_usabilidad WHERE id = ?");
+        $consulta = $transacc->prepare("SELECT * FROM PruebasUsabilidad WHERE id = ?");
         $consulta->bind_param('i', $_POST["id"]);
         $consulta->execute();
         $resultado = $consulta->get_result();
@@ -117,14 +117,15 @@ class BaseDatos
             echo "<p>Introduzca id</p>";
         else {
             $transacc = new mysqli($this->servername, $this->username, $this->password, $this->database);
-            $consulta = $transacc->prepare("UPDATE pruebas_usabilidad SET nombre = ?, apellidos = ?, email = ?, telefono = ?, edad = ?, sexo = ?, pericia = ?, tiempo = ?, correcta = ?, comentarios = ?, propuestas = ?, valoracion = ? WHERE id=?");
+            $consulta = $transacc->prepare("UPDATE PruebasUsabilidad SET nombre = ?, apellidos = ?, email = ?, telefono = ?, edad = ?, sexo = ?, pericia = ?, tiempo = ?, correcta = ?, comentarios = ?, propuestas = ?, valoracion = ? WHERE id=?");
             if (
                 empty($_POST['edad']) || empty($_POST['sexo']) || empty($_POST['pericia']) || empty($_POST['tiempo'])
                 || empty($_POST['correcta']) || empty($_POST['comentarios'])
-                || empty($_POST['propuestas']) || empty($_POST['valoracion']) || empty($_POST['nombre']) || empty($_POST['apellidos']) || empty($_POST['email']) || empty($_POST['telefono'])
-            )
+                || empty($_POST['propuestas']) || empty($_POST['valoracion']) || empty($_POST['nombre']) || empty($_POST['apellidos'])
+                || empty($_POST['email']) || empty($_POST['telefono'])
+            ) {
                 echo "<p>No se puede realizar la actualización, faltan campos por completar</p>";
-            else {
+            } else {
                 $consulta->bind_param(
                     'ssssisiisssii',
                     $_POST["nombre"],
@@ -155,7 +156,7 @@ class BaseDatos
             echo "<p>Introduzca id</p>";
         else {
             $transacc = new mysqli($this->servername, $this->username, $this->password, $this->database);
-            $consulta = $transacc->prepare("DELETE FROM pruebas_usabilidad WHERE id=?");
+            $consulta = $transacc->prepare("DELETE FROM PruebasUsabilidad WHERE id=?");
             $consulta->bind_param('i', $_POST["id"]);
             $consulta->execute();
             $consulta->close();
@@ -195,7 +196,7 @@ class BaseDatos
     private function getMediaValor($a1)
     {
         $transacc = new mysqli($this->servername, $this->username, $this->password, $this->database);
-        $resultado =  $transacc->query('SELECT AVG(' . $a1 . ') AS valor FROM pruebas_usabilidad');
+        $resultado =  $transacc->query('SELECT AVG(' . $a1 . ') AS valor FROM PruebasUsabilidad');
         $media = null;
         if ($resultado->num_rows > 0)
             while ($row = $resultado->fetch_assoc())
@@ -207,7 +208,7 @@ class BaseDatos
     private function getCountValor($a1)
     {
         $transacc = new mysqli($this->servername, $this->username, $this->password, $this->database);
-        $resultado =  $transacc->query('SELECT COUNT(*) AS contador FROM pruebas_usabilidad ' . $a1);
+        $resultado =  $transacc->query('SELECT COUNT(*) AS contador FROM PruebasUsabilidad ' . $a1);
         $total = null;
         if ($resultado->num_rows > 0)
             while ($row = $resultado->fetch_assoc())
@@ -219,7 +220,7 @@ class BaseDatos
     private function totalUsuarios()
     {
         $transacc = new mysqli($this->servername, $this->username, $this->password, $this->database);
-        $nUsuarios =  $transacc->query('SELECT COUNT(*) AS cuenta FROM pruebas_usabilidad');
+        $nUsuarios =  $transacc->query('SELECT COUNT(*) AS cuenta FROM PruebasUsabilidad');
         $total = null;
         if ($nUsuarios->num_rows > 0)
             while ($row = $nUsuarios->fetch_assoc())
@@ -233,7 +234,7 @@ class BaseDatos
         $transacc = new mysqli($this->servername, $this->username, $this->password, $this->database);
         $archivo = fopen($_FILES['archivo']['tmp_name'], 'rb');
         while (($datos = fgetcsv($archivo)) == true) {
-            $consultaInsercion = $transacc->prepare("INSERT INTO pruebas_usabilidad VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?)");
+            $consultaInsercion = $transacc->prepare("INSERT INTO PruebasUsabilidad VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?)");
             $consultaInsercion->bind_param(
                 'issssisiisssi',
                 $datos[0],
@@ -259,7 +260,7 @@ class BaseDatos
     public function exportarDatos()
     {
         $transacc = new mysqli($this->servername, $this->username, $this->password, $this->database);
-        $datosExportar =  $transacc->query('SELECT * FROM pruebas_usabilidad');
+        $datosExportar =  $transacc->query('SELECT * FROM PruebasUsabilidad');
         $cadenaParaExportar = "";
         if ($datosExportar->num_rows > 0) {
             while ($row = $datosExportar->fetch_assoc()) {

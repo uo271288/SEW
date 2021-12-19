@@ -27,7 +27,7 @@
 			<li><a href="ExportarDatos.php" title="Exportar datos a fichero">Exportar datos a fichero</a></li>
 		</ul>
 	</nav>
-	<h1>Complete los datos a insertar en la tabla pruebas_usabilidad</h1>
+	<h1>Complete los datos a insertar en la tabla PruebasUsabilidad</h1>
 	<form action='#' method='post'>
 		<label for="nombre">Nombre: </label>
 		<input id="nombre" type="text" placeholder="Alejandro" name="nombre" required>

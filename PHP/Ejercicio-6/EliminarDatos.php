@@ -27,7 +27,7 @@
 			<li><a href="ExportarDatos.php" title="Exportar datos a fichero">Exportar datos a fichero</a></li>
 		</ul>
 	</nav>
-	<h1>Eliminar datos introducidos en pruebas_usabilidad</h1>
+	<h1>Eliminar datos introducidos en PruebasUsabilidad</h1>
 	<form action='#' method='post'>
 		<label for="id">Id del elemento a eliminar: </label>
 		<input id="id" type='text' name='id' />

@@ -27,7 +27,7 @@
 			<li><a href="ExportarDatos.php" title="Exportar datos a fichero">Exportar datos a fichero</a></li>
 		</ul>
 	</nav>
-	<h1>Actualizar datos introducidos en pruebas_usabilidad</h1>
+	<h1>Actualizar datos introducidos en PruebasUsabilidad</h1>
 	<form action='#' method='post'>
 		<label for="id">Id: </label>
 		<input id="id" type="text" placeholder="1" name="id" required>
