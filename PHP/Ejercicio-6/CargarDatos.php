@@ -34,7 +34,7 @@
 		<input type='submit' name='cargar' value='Cargar' />
 	</form>
 	<?php
-	require('BaseDatos.php');
+	require('Ejercicio6.php');
 	$base = new BaseDatos();
 
 	if (count($_POST) > 0)

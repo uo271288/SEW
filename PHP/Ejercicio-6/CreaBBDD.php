@@ -32,7 +32,7 @@
 		<input type='submit' name='generaBase' value='Crear base de datos' />
 	</form>
 	<?php
-	require('BaseDatos.php');
+	require('Ejercicio6.php');
 	$base = new BaseDatos();
 	if (count($_POST) > 0)
 		if (isset($_POST['generaBase']))

@@ -32,7 +32,7 @@
 		<input type='submit' name='generaTabla' value='Crear tabla' />
 	</form>
 	<?php
-	require('BaseDatos.php');
+	require('Ejercicio6.php');
 	$data = new BaseDatos();
 
 	if (count($_POST) > 0)

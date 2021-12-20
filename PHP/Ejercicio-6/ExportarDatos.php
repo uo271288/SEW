@@ -32,7 +32,7 @@
 		<input type='submit' name='exportar' value='Exportar' />
 	</form>
 	<?php
-	require('BaseDatos.php');
+	require('Ejercicio6.php');
 	$base = new BaseDatos();
 
 	if (count($_POST) > 0)

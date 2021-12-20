@@ -34,7 +34,7 @@
 		<input type='submit' name='buscar' value='Buscar' />
 	</form>
 	<?php
-	require('BaseDatos.php');
+	require('Ejercicio6.php');
 	$base = new BaseDatos();
 	if (count($_POST) > 0)
 		if (isset($_POST['buscar']))
